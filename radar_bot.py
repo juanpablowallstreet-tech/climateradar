@@ -45,12 +45,14 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 
 import radar_climatico as R
+import kalshi_trader as KT
 
 BASE = Path(__file__).resolve().parent
 STATE_DIR = BASE / "estado"
 STATE_DIR.mkdir(exist_ok=True)
 CONFIG = STATE_DIR / "radar_config.json"
 ALERTS = STATE_DIR / "alertas.csv"
+BOOK = STATE_DIR / "posiciones.json"
 DASH = BASE / "radar_climatico.html"
 UTC = timezone.utc
 
@@ -62,7 +64,7 @@ CSV_FIELDS = ["fecha_alerta", "ticker", "evento", "ciudad", "tipo", "fecha_event
               "lado", "precio", "modelo", "edge", "resultado", "pnl"]
 REALERT_STEP = 0.05   # vuelve a avisar del mismo mercado si el edge mejora 5c o mas
 MAX_ALERTS_PER_SCAN = 8
-MODEL_VERSION = 5     # al cambiar el modelo, se archiva el registro viejo para no ensuciar /stats
+MODEL_VERSION = 6     # al cambiar el modelo, se archiva el registro viejo para no ensuciar /stats
 
 try:
     sys.stdout.reconfigure(errors="replace")
@@ -104,7 +106,7 @@ def migrate(cfg, tg=None):
 
 
 def save_cfg(cfg, keep_token=True):
-    data = dict(cfg)
+    data = {k: v for k, v in cfg.items() if not k.startswith("_")}
     if not keep_token:
         data.pop("token", None)  # en la nube el token vive en un secreto, nunca en el repo
     tmp = CONFIG.with_suffix(".tmp")
@@ -209,6 +211,15 @@ HELP = (
     "/stats — resultados de alertas liquidadas\n"
     "/escanear — escanear ya\n"
     "/raros on|off — incluir edges sospechosos (🧪)\n"
+    "\n<b>🤖 Trading automático</b>\n"
+    "/trading on|off — prender o apagar compras\n"
+    "/cartera — saldo, posiciones y P&L\n"
+    "/tope 1 — USD máximo por operación\n"
+    "/topedia 10 — USD máximo por día\n"
+    "/edgebot 6 — edge mínimo para comprar (¢)\n"
+    "/tp 30 — take-profit en %\n"
+    "/perdida 5 — freno si el día pierde X USD\n"
+    "/vendertodo — vende todo lo abierto\n"
     "/pausa · /seguir · /estado"
 )
 
@@ -243,18 +254,22 @@ def passes(r, cfg):
 
 
 def pick_alerts(rows, cfg):
-    """Devuelve (alertas_nuevas, es_primera_vez_por_clave). Evita repetir el mismo mercado."""
+    """Devuelve (alertas_nuevas, es_primera_vez_por_clave). Una por evento, sin repetir mercados."""
     sent = cfg.setdefault("enviadas", {})
-    out = []
+    out, seen_events = [], set()
     for r in rows:
+        if r.get("event") in seen_events:
+            continue
         if not passes(r, cfg):
             continue
         key = f"{r['ticker']}|{r['side']}"
         prev = sent.get(key)
         if prev is None:
             out.append((r, True))
+            seen_events.add(r.get("event"))
         elif r["ev"] >= prev[0] + REALERT_STEP:
             out.append((r, False))
+            seen_events.add(r.get("event"))
     return out
 
 
@@ -392,6 +407,43 @@ def handle_command(text, cfg, state, tg, chat_id):
             reply(f"✅ Escaneo cada {cfg['intervalo_min']} min.")
         except Exception:
             reply("Usá así: <code>/intervalo 10</code>")
+    elif cmd == "/trading":
+        T = trading_cfg(cfg)
+        if arg in ("on", "si", "sí", "1"):
+            T["activo"] = True
+            reply("🤖 <b>Trading ACTIVO.</b> Compro y vendo solo con estos topes:\n" + KT.fmt_cartera(
+                {**cfg, "_book_path": str(BOOK)}).split("\n")[0] + "\nFreno: /trading off")
+        else:
+            T["activo"] = False
+            reply("⏸ Trading apagado. Las posiciones abiertas mantienen su take-profit.")
+    elif cmd in ("/tope", "/topedia", "/edgebot", "/tp", "/perdida"):
+        T = trading_cfg(cfg)
+        try:
+            v = num(arg)
+            if cmd == "/tope":
+                T["max_por_op"] = max(0.1, v)
+            elif cmd == "/topedia":
+                T["max_dia"] = max(T["max_por_op"], v)
+            elif cmd == "/edgebot":
+                T["edge_min"] = max(0.01, v / 100 if v >= 1 else v)
+            elif cmd == "/tp":
+                T["tp"] = max(0.02, v / 100 if v >= 1 else v)
+            else:
+                T["perdida_max_dia"] = max(0.5, v)
+            reply("✅ " + KT.fmt_cartera({**cfg, "_book_path": str(BOOK)}).split("\n")[0])
+        except Exception:
+            reply(f"Usá así: <code>{cmd} 1</code>")
+    elif cmd == "/cartera":
+        client = None
+        try:
+            client = KT.client_from_env()
+        except Exception as e:
+            reply(f"⚠️ Claves de Kalshi con problema: {h(e)}")
+        reply(KT.fmt_cartera({**cfg, "_book_path": str(BOOK)}, client))
+    elif cmd == "/vendertodo":
+        trading_cfg(cfg)["vender_todo"] = True
+        state["force"] = True
+        reply("🧹 Vendo todo lo abierto en esta vuelta (a precio de compra del libro).")
     elif cmd == "/raros":
         cfg["raros"] = arg in ("on", "si", "sí", "1")
         reply("✅ Edges sospechosos 🧪: " + ("incluidos (ojo)" if cfg["raros"] else "filtrados") + ".")
@@ -426,6 +478,36 @@ def handle_command(text, cfg, state, tg, chat_id):
         reply(fmt_stats())
     else:
         reply("No entendí. /ayuda para ver los comandos.")
+
+
+def trading_cfg(cfg):
+    T = cfg.setdefault("trading", {})
+    for k, v in KT.DEFAULT_TRADING.items():
+        T.setdefault(k, v if not isinstance(v, dict) else {})
+    return T
+
+
+def run_trading(cfg, state, tg):
+    """Corre el bot de compras/ventas si esta activo o si hay posiciones que vigilar."""
+    T = trading_cfg(cfg)
+    book = KT.load_book(BOOK)
+    if not (T["activo"] or T.get("vender_todo") or book.get("abiertas")):
+        return
+    try:
+        client = KT.client_from_env()
+    except Exception as e:
+        client = None
+        log(f"Kalshi: claves inválidas ({e})")
+    if client is None:
+        if cfg.get("chat_id") and not cfg.get("aviso_claves"):
+            cfg["aviso_claves"] = True
+            tg.send(cfg["chat_id"], "⚠️ El trading está activo pero faltan o fallan las claves de Kalshi "
+                                    "(secretos KALSHI_KEY_ID y KALSHI_PRIVATE_KEY en GitHub).")
+        return
+    cfg.pop("aviso_claves", None)
+    cfg["_book_path"] = str(BOOK)
+    res = KT.run(state.get("rows") or [], cfg, tg, client, cfg.get("chat_id"))
+    log(f"Trading: {res}")
 
 
 def process_updates(updates, cfg, state, tg):
@@ -533,6 +615,13 @@ def run_once(tg, demo=False):
             log("Escaneando Kalshi + NBM…")
             run_scan(cfg, state, tg, args, demo=demo)
             cfg["last_scan_ts"] = time.time()
+            if not demo:
+                try:
+                    run_trading(cfg, state, tg)
+                except Exception as e:
+                    log(f"Trading: ERROR {e}")
+                    if cfg.get("chat_id"):
+                        tg.send(cfg["chat_id"], f"⚠️ Error en el bot de trading: {h(e)}")
             try:
                 upload_dashboard_ftp(DASH)
             except Exception as e:

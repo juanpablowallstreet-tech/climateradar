@@ -42,6 +42,7 @@ except ImportError:  # Python < 3.9
 KALSHI = "https://api.elections.kalshi.com/trade-api/v2"
 NOMADS = "https://nomads.ncep.noaa.gov/pub/data/nccf/com/blend/prod"
 NWS = "https://api.weather.gov"
+OPEN_METEO = "https://api.open-meteo.com/v1/forecast"
 UA = "RadarClimatico/1.0 (uso personal)"
 UTC = timezone.utc
 INF = float("inf")
@@ -389,10 +390,12 @@ def nbm_diagnostico(text, nbm, stations):
 
 def station_info(sid):
     try:
-        p = get_json(f"{NWS}/stations/{sid}").get("properties", {})
-        return {"tz": p.get("timeZone"), "name": p.get("name")}
+        d = get_json(f"{NWS}/stations/{sid}")
+        p = d.get("properties", {})
+        lon, lat = ((d.get("geometry") or {}).get("coordinates") or [None, None])[:2]
+        return {"tz": p.get("timeZone"), "name": p.get("name"), "lat": lat, "lon": lon}
     except Exception:
-        return {"tz": None, "name": None}
+        return {"tz": None, "name": None, "lat": None, "lon": None}
 
 
 # Respaldo si la API del NWS no responde: offset estandar (sin horario de verano) por estacion
@@ -415,20 +418,87 @@ def std_offset(tzname, sid=None):
     return min(jan, jul)  # hora estandar (sin horario de verano)
 
 
+SIXH_RE = re.compile(r"^([12])([01])(\d{3})$")
+
+
+def metar_6h_groups(raw):
+    """Grupos de remarks del METAR: 1snTTT = maxima de 6 h, 2snTTT = minima de 6 h (decimas de C)."""
+    out = []
+    parts = re.split(r"\sRMK(?:\s|$)", raw or "", maxsplit=1)
+    if len(parts) < 2:
+        return out
+    for tok in parts[1].split():
+        m = SIXH_RE.match(tok)
+        if m:
+            c = int(m.group(3)) / 10 * (-1 if m.group(2) == "1" else 1)
+            out.append(("max6" if m.group(1) == "1" else "min6", round(c * 9 / 5 + 32, 1)))
+    return out
+
+
 def observations(sid, start_utc, end_utc):
+    """Lista [(hora_utc, temp_F, tipo)] con tipo 't' (lectura), 'max6' o 'min6' (extremos de 6 h del METAR)."""
     params = {"start": start_utc.strftime("%Y-%m-%dT%H:%M:%SZ"),
               "end": end_utc.strftime("%Y-%m-%dT%H:%M:%SZ")}
     d = get_json(f"{NWS}/stations/{sid}/observations", params)
     obs = []
     for f in d.get("features") or []:
         p = f.get("properties") or {}
-        t = (p.get("temperature") or {}).get("value")
         ts = p.get("timestamp")
-        if t is None or not ts:
+        if not ts:
             continue
-        obs.append((datetime.fromisoformat(ts.replace("Z", "+00:00")), t * 9 / 5 + 32))
+        when = datetime.fromisoformat(ts.replace("Z", "+00:00"))
+        t = (p.get("temperature") or {}).get("value")
+        if t is not None:
+            obs.append((when, t * 9 / 5 + 32, "t"))
+        for kind, v in metar_6h_groups(p.get("rawMessage") or ""):
+            obs.append((when, v, kind))
     obs.sort()
     return obs
+
+
+def openmeteo(lat, lon, off):
+    """
+    Segunda opinion: varios modelos (americano, europeo, aleman, canadiense, HRRR) via Open-Meteo.
+    Dias calculados en hora estandar fija de la estacion (igual que Kalshi).
+    Devuelve {"max": {fecha: [valores]}, "min": {...}, "hourly": [(hora_utc, mediana)]} o None.
+    """
+    if lat is None or lon is None:
+        return None
+    hrs = int(-off.total_seconds() // 3600)
+    tz = f"Etc/GMT+{hrs}" if hrs >= 0 else f"Etc/GMT{hrs}"
+    base = {"latitude": round(lat, 4), "longitude": round(lon, 4), "temperature_unit": "fahrenheit",
+            "daily": "temperature_2m_max,temperature_2m_min", "hourly": "temperature_2m",
+            "timezone": tz, "past_days": 1, "forecast_days": 3}
+    for models in ("gfs_seamless,ecmwf_ifs025,icon_seamless,gem_seamless,gfs_hrrr",
+                   "gfs_seamless,ecmwf_ifs025,icon_seamless", None):
+        params = dict(base)
+        if models:
+            params["models"] = models
+        try:
+            d = get_json(OPEN_METEO, params)
+        except Exception:
+            continue
+        daily, hourly = d.get("daily") or {}, d.get("hourly") or {}
+        days = daily.get("time") or []
+        if not days:
+            continue
+        out = {"max": {}, "min": {}, "hourly": []}
+        for key, vals in daily.items():
+            kind = "max" if key.startswith("temperature_2m_max") else "min" if key.startswith("temperature_2m_min") else None
+            if not kind or not isinstance(vals, list):
+                continue
+            for day, v in zip(days, vals):
+                if v is not None:
+                    out[kind].setdefault(date.fromisoformat(day), []).append(float(v))
+        times = hourly.get("time") or []
+        cols = [v for k, v in hourly.items() if k.startswith("temperature_2m") and isinstance(v, list)]
+        for i, t in enumerate(times):
+            vals = sorted(c[i] for c in cols if i < len(c) and c[i] is not None)
+            if vals:
+                when = datetime.fromisoformat(t).replace(tzinfo=UTC) - off
+                out["hourly"].append((when, vals[len(vals) // 2]))
+        return out
+    return None
 
 
 # ----------------------------------------------------------------------------- MODELO
@@ -483,7 +553,21 @@ def fee(p, rate):
     return math.ceil(rate * p * (1 - p) * 100 - 1e-9) / 100.0
 
 
-def model_params(kind, ev_date, local_now, nbm_val, obs_ext, args, tmp=None, win=None, now_utc=None):
+def _median(v):
+    v = sorted(v)
+    n = len(v)
+    return None if not n else (v[n // 2] if n % 2 else (v[n // 2 - 1] + v[n // 2]) / 2)
+
+
+def _stdev(v):
+    if len(v) < 2:
+        return 0.0
+    m = sum(v) / len(v)
+    return (sum((x - m) ** 2 for x in v) / (len(v) - 1)) ** 0.5
+
+
+def model_params(kind, ev_date, local_now, nbm_val, obs_ext, args, tmp=None, win=None, now_utc=None,
+                 om=None, bias=None):
     """
     Devuelve (mu, sigma, limite_observado, fase) o None si no hay datos suficientes.
     obs_ext = dict(max, min, last, n) de lo observado desde la medianoche local estandar.
@@ -503,27 +587,65 @@ def model_params(kind, ev_date, local_now, nbm_val, obs_ext, args, tmp=None, win
         sig = min(max(base, args.min_sigma), args.max_sigma)
     have_obs = obs_ext and obs_ext.get("n", 0) > 0
     tmp = tmp or []
-    rem, day, after_noon = [], [], []
+    rem, day, after_noon, om_rem = [], [], [], []
     if win:
         d0, d1 = win
         start = max(d0, now_utc) if now_utc else d0
         rem = [v for t, v, _ in tmp if start <= t <= d1]
         day = [v for t, v, _ in tmp if d0 <= t <= d1]
         after_noon = [v for t, v, _ in tmp if d0 + timedelta(hours=12) <= t <= d1]
+        om_rem = [v for t, v in (om or {}).get("hourly", []) if start <= t <= d1]
+
+    # ---- Segunda opinion (Open-Meteo, varios modelos) ----
+    om_day = ((om or {}).get(kind) or {}).get(ev_date) or []
+    om_med, om_sd = _median(om_day), _stdev(om_day)
+    w = args.om_weight
+
+    def blend(nbm_x, om_x):
+        if nbm_x is None:
+            return om_x
+        if om_x is None:
+            return nbm_x
+        return (1 - w) * nbm_x + w * om_x
+
+    def widen(sig_, nbm_x, om_x):
+        """Si los modelos no coinciden entre si o con el NBM, hay mas incertidumbre."""
+        dis = abs(nbm_x - om_x) if (nbm_x is not None and om_x is not None) else 0.0
+        s2 = (sig_ ** 2 + (0.5 * dis) ** 2 + (0.5 * om_sd) ** 2) ** 0.5
+        if ev_date == today:
+            return min(max(s2, args.min_sigma_hoy), args.max_sigma_hoy + 0.5)
+        return min(max(s2, args.min_sigma), args.max_sigma + 0.5)
+
+    def nudge(mu_):
+        """Correccion por sesgo: si ahora hace mas calor/frio de lo que los modelos esperaban, se ajusta."""
+        if bias is None:
+            return mu_
+        return mu_ + max(-3.0, min(3.0, args.bias_weight * bias))
 
     if kind == "max":
         o = obs_ext.get("max") if have_obs else None
         if ev_date < today:
             return (o, 0.8, o, "cerrado (esperando CLI)") if o is not None else None
         if ev_date > today:
-            if txn is not None:
-                return txn, sig, None, "pronóstico NBM"
-            return (max(day) + 1, sig, None, "pronóstico horario") if day else None
+            nbm_x = txn if txn is not None else (max(day) + 1 if day else None)
+            if nbm_x is None and (om_med is None or len(om_day) < 2):
+                return None
+            return blend(nbm_x, om_med), widen(sig, nbm_x, om_med), None, \
+                ("pronóstico NBM + modelos" if om_med is not None else "pronóstico NBM")
         cands = []
         if txn is not None and h < args.late_hour_max:
             cands.append(txn)
         if rem:
             cands.append(max(rem) + 0.5)  # cada 3 h se pierde el pico
+        if cands and om_rem:
+            nbm_x, om_x = max(cands), max(om_rem) + 0.5
+            mu = nudge(blend(nbm_x, om_x)) if h < args.late_hour_max else blend(nbm_x, om_x)
+            sig = widen(sig, nbm_x, om_x)
+            if h >= args.late_hour_max and o is not None:
+                return max(mu, o), 1.2, o, "tarde · obs + modelos"
+            return mu, sig, o, "en juego · NBM + modelos + obs"
+        if cands and h < args.late_hour_max:
+            cands = [nudge(max(cands))]
         if not cands:
             # Solo confiar en lo observado si de verdad termina el dia; si no, falta el pronostico
             if o is not None and h >= 21:
@@ -543,11 +665,20 @@ def model_params(kind, ev_date, local_now, nbm_val, obs_ext, args, tmp=None, win
                 cands.append(txn)                 # minima de la madrugada
             if after_noon:
                 cands.append(min(after_noon) - 1)  # posible caida a la noche
-            return (min(cands), sig, None, "pronóstico NBM + horario") if cands else None
+            nbm_x = min(cands) if cands else None
+            if nbm_x is None and (om_med is None or len(om_day) < 2):
+                return None
+            return blend(nbm_x, om_med), widen(sig, nbm_x, om_med), None, \
+                ("pronóstico NBM + modelos" if om_med is not None else "pronóstico NBM + horario")
         if txn is not None and h < 12:
             cands.append(txn)
         if rem:
             cands.append(min(rem) - 1)  # cada 3 h se pierde el piso
+        if cands and om_rem:
+            nbm_x, om_x = min(cands), min(om_rem) - 0.5
+            return nudge(blend(nbm_x, om_x)), widen(sig, nbm_x, om_x), o, "en juego · NBM + modelos + obs"
+        if cands:
+            cands = [nudge(min(cands))]
         if not cands:
             # Solo confiar en lo observado si de verdad termina el dia; si no, falta el pronostico
             if o is not None and h >= 21:
@@ -600,9 +731,17 @@ def scan(args):
         except Exception as e:
             log(f"  {sid}: sin observaciones ({e})")
             obs_cache[sid] = []
+    om_cache = {}
+    for sid in stations:
+        try:
+            om_cache[sid] = openmeteo(info[sid].get("lat"), info[sid].get("lon"), info[sid]["off"])
+        except Exception as e:
+            log(f"  {sid}: sin Open-Meteo ({e})")
+            om_cache[sid] = None
+    log(f"Open-Meteo: {sum(1 for v in om_cache.values() if v)}/{len(stations)} estaciones con modelos")
 
-    return build_rows(markets, st_by_series, nbm, info, obs_cache, now, args,
-                      meta={"nbm_cycle": cycle_txt, "nbm_url": nbs_url,
+    return build_rows(markets, st_by_series, nbm, info, obs_cache, now, args, om_cache=om_cache, meta=
+                      {"nbm_cycle": cycle_txt, "nbm_url": nbs_url,
                             "series": series, "demo": False})
 
 
@@ -640,14 +779,41 @@ def load_nbm(now, stations):
 
 
 def obs_extremes(obs, start_utc, end_utc):
-    vals = [(t, v) for t, v in obs if start_utc <= t < end_utc]
-    if not vals:
+    """
+    Extremos observados dentro del dia. Suma los grupos de 6 h del METAR (1snTTT/2snTTT), que capturan
+    picos entre lecturas horarias, siempre que su ventana caiga dentro del dia (tolerancia 10 min).
+    """
+    reg, mx6, mn6 = [], [], []
+    tol = timedelta(minutes=10)
+    for o in obs:
+        t, v = o[0], o[1]
+        tag = o[2] if len(o) > 2 else "t"
+        if tag == "t":
+            if start_utc <= t < end_utc:
+                reg.append((t, v))
+        elif t - timedelta(hours=6) >= start_utc - tol and t <= end_utc + tol:
+            (mx6 if tag == "max6" else mn6).append(v)
+    if not reg:
         return {"n": 0}
-    return {"n": len(vals), "max": max(v for _, v in vals), "min": min(v for _, v in vals),
-            "last": vals[-1][1], "last_t": vals[-1][0].isoformat()}
+    return {"n": len(reg), "max": max([v for _, v in reg] + mx6), "min": min([v for _, v in reg] + mn6),
+            "last": reg[-1][1], "last_dt": reg[-1][0], "last_t": reg[-1][0].isoformat()}
 
 
-def build_rows(markets, st_by_series, nbm, info, obs_cache, now, args, meta):
+def om_bias(om, ext, now):
+    """Diferencia entre la ultima lectura real y lo que los modelos decian para esa hora."""
+    if not om or not ext or not ext.get("n") or not ext.get("last_dt"):
+        return None
+    t = ext["last_dt"]
+    if now - t > timedelta(hours=2):
+        return None
+    near = [(abs((h - t).total_seconds()), v) for h, v in om.get("hourly", [])]
+    near = [x for x in near if x[0] <= 45 * 60]
+    if not near:
+        return None
+    return ext["last"] - min(near)[1]
+
+
+def build_rows(markets, st_by_series, nbm, info, obs_cache, now, args, meta, om_cache=None):
     rows, skipped = [], {}
     events = {}
     for m in markets:
@@ -664,9 +830,12 @@ def build_rows(markets, st_by_series, nbm, info, obs_cache, now, args, meta):
         day_start = datetime(evd.year, evd.month, evd.day, tzinfo=UTC) - off
         ext = obs_extremes(obs_cache.get(sid, []), day_start, min(now, day_start + timedelta(days=1)))
         nbm_val = (nbm.get(sid) or {}).get(kind, {}).get(evd)
+        om = (om_cache or {}).get(sid)
+        is_today = evd == local_now.date()
+        bias = om_bias(om, ext, now) if is_today else None
         mp = model_params(kind, evd, local_now, nbm_val, ext, args,
                           tmp=(nbm.get(sid) or {}).get("tmp"),
-                          win=(day_start, day_start + timedelta(days=1)), now_utc=now)
+                          win=(day_start, day_start + timedelta(days=1)), now_utc=now, om=om, bias=bias)
         if not mp or mp[0] is None:
             skipped["sin datos de modelo"] = skipped.get("sin datos de modelo", 0) + 1
             continue
@@ -705,6 +874,13 @@ def build_rows(markets, st_by_series, nbm, info, obs_cache, now, args, meta):
         # ven el maximo/minimo oficial en vivo; cuando pagan 1-5c casi siempre saben algo que el radar no.
         suspect = bool(best_side and cost is not None and
                        (abs(side_p - cost) > args.max_gap or cost <= args.lotto))
+        # Zona gris: si el borde del rango esta pegado al extremo ya observado, decide el dato oficial
+        # de 1 minuto (que Kalshi ve en vivo y nosotros no). No se opera ni se alerta ahi.
+        gris = bool(lim is not None and any(abs(e - lim) < args.zona_gris for e in (lo, hi) if abs(e) != INF))
+        suspect = suspect or gris
+        nb = px(m, "no_bid")
+        if nb is None and valid_ask(ya):
+            nb = 1 - ya
         label = m.get("yes_sub_title") or m.get("subtitle") or (
             f"{lo + 0.5:.0f}°–{hi - 0.5:.0f}°" if lo > -INF and hi < INF else
             (f"≤ {hi - 0.5:.0f}°" if lo == -INF else f"≥ {lo + 0.5:.0f}°"))
@@ -715,7 +891,8 @@ def build_rows(markets, st_by_series, nbm, info, obs_cache, now, args, meta):
             "p": round(p, 4), "ya": ya, "yb": yb, "na": na, "mid": mid, "spread": spread,
             "ev_yes": ev_yes, "ev_no": ev_no, "side": best_side, "ev": best_ev,
             "roi": (best_ev / cost) if (best_ev is not None and cost) else None,
-            "vol": int(vol), "oi": int(oi), "suspect": suspect,
+            "vol": int(vol), "oi": int(oi), "suspect": suspect, "gris": gris, "nb": nb,
+            "close_time": m.get("close_time"), "bias": round(bias, 1) if bias is not None else None,
             "mu": round(mu, 1), "sigma": round(sig, 2),
             "obs": round(lim, 1) if lim is not None else None,
             "nbm": nbm_val[0] if nbm_val else None, "phase": phase,
@@ -990,6 +1167,10 @@ def build_parser():
                     help="grados que el extremo real pudo pasarse entre lecturas horarias")
     ap.add_argument("--lotto", type=float, default=0.05,
                     help="no alertar compras a este precio o menos (el mercado suele saber algo)")
+    ap.add_argument("--zona-gris", type=float, default=1.5,
+                    help="no operar rangos cuyo borde este a menos de estos grados del extremo observado")
+    ap.add_argument("--om-weight", type=float, default=0.4, help="peso de Open-Meteo frente al NBM")
+    ap.add_argument("--bias-weight", type=float, default=0.5, help="cuanto del sesgo observado se corrige")
     ap.add_argument("--max-gap", type=float, default=0.25,
                     help="si modelo y precio difieren mas que esto, se marca como sospechoso y no se alerta")
     return ap
