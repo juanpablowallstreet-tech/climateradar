@@ -62,7 +62,7 @@ CSV_FIELDS = ["fecha_alerta", "ticker", "evento", "ciudad", "tipo", "fecha_event
               "lado", "precio", "modelo", "edge", "resultado", "pnl"]
 REALERT_STEP = 0.05   # vuelve a avisar del mismo mercado si el edge mejora 5c o mas
 MAX_ALERTS_PER_SCAN = 8
-MODEL_VERSION = 4     # al cambiar el modelo, se archiva el registro viejo para no ensuciar /stats
+MODEL_VERSION = 5     # al cambiar el modelo, se archiva el registro viejo para no ensuciar /stats
 
 try:
     sys.stdout.reconfigure(errors="replace")

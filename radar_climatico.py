@@ -437,26 +437,45 @@ def ncdf(x):
     return 0.5 * (1 + math.erf(x / math.sqrt(2)))
 
 
-def cdf_max(t, mu, s, floor_obs):
-    """P(M <= t) con M = max(observado, X), X ~ N(mu, s)."""
+def _half(x, slack):
+    """P(H <= x) con H ~ |N(0, slack)|: cuanto pudo pasarse el extremo real entre lecturas horarias."""
+    if x <= 0:
+        return 0.0
+    if not slack:
+        return 1.0
+    return 2 * ncdf(x / slack) - 1
+
+
+def cdf_max(t, mu, s, floor_obs, slack=0.0):
+    """
+    P(M <= t) con M = max(maximo_real_hasta_ahora, X), X ~ N(mu, s).
+    El maximo real hasta ahora es >= lo observado: las lecturas son horarias y el pico de 1 minuto
+    (el que usa el reporte oficial) puede haber sido mas alto. `slack` modela ese margen.
+    """
     if t == INF:
         return 1.0
     if t == -INF:
         return 0.0
-    if floor_obs is not None and t < floor_obs:
+    px_ = ncdf((t - mu) / s)
+    if floor_obs is None:
+        return px_
+    if t < floor_obs:
         return 0.0
-    return ncdf((t - mu) / s)
+    return px_ * _half(t - floor_obs, slack)
 
 
-def cdf_min(t, mu, s, ceil_obs):
-    """P(m <= t) con m = min(observado, X), X ~ N(mu, s)."""
+def cdf_min(t, mu, s, ceil_obs, slack=0.0):
+    """P(m <= t) con m = min(minimo_real_hasta_ahora, X). El minimo real es <= lo observado."""
     if t == INF:
         return 1.0
     if t == -INF:
         return 0.0
-    if ceil_obs is not None and t >= ceil_obs:
+    px_ = ncdf((t - mu) / s)
+    if ceil_obs is None:
+        return px_
+    if t >= ceil_obs:
         return 1.0
-    return ncdf((t - mu) / s)
+    return 1 - (1 - px_) * _half(ceil_obs - t, slack)
 
 
 def fee(p, rate):
@@ -477,7 +496,11 @@ def model_params(kind, ev_date, local_now, nbm_val, obs_ext, args, tmp=None, win
     today = local_now.date()
     h = local_now.hour + local_now.minute / 60
     txn, xnd = nbm_val if nbm_val else (None, None)
-    sig = max(args.min_sigma, (xnd or args.default_xnd) * args.sigma_inflate)
+    base = (xnd or args.default_xnd) * args.sigma_inflate
+    if ev_date == today:   # el mismo dia la incertidumbre es menor: el mercado es muy afilado ahi
+        sig = min(max(base, args.min_sigma_hoy), args.max_sigma_hoy)
+    else:
+        sig = min(max(base, args.min_sigma), args.max_sigma)
     have_obs = obs_ext and obs_ext.get("n", 0) > 0
     tmp = tmp or []
     rem, day, after_noon = [], [], []
@@ -650,7 +673,8 @@ def build_rows(markets, st_by_series, nbm, info, obs_cache, now, args, meta):
         mu, sig, lim, phase = mp
         lo, hi = bk
         F = cdf_max if kind == "max" else cdf_min
-        p = max(0.0, min(1.0, F(hi, mu, sig, lim) - F(lo, mu, sig, lim)))
+        slack = args.obs_slack if lim is not None else 0.0
+        p = max(0.0, min(1.0, F(hi, mu, sig, lim, slack) - F(lo, mu, sig, lim, slack)))
 
         ya, yb = px(m, "yes_ask"), px(m, "yes_bid")
         na = px(m, "no_ask")
@@ -677,7 +701,10 @@ def build_rows(markets, st_by_series, nbm, info, obs_cache, now, args, meta):
         # Guardrail: si el modelo y el precio difieren por una barbaridad, casi siempre
         # es el modelo el que no ve algo (frente, dato faltante). Se marca para revisar.
         side_p = (p if best_side == "YES" else 1 - p) if best_side else None
-        suspect = bool(best_side and cost is not None and abs(side_p - cost) > args.max_gap)
+        # Tambien "loteria": comprar algo a 5c o menos que el modelo cree probable. Los traders de Kalshi
+        # ven el maximo/minimo oficial en vivo; cuando pagan 1-5c casi siempre saben algo que el radar no.
+        suspect = bool(best_side and cost is not None and
+                       (abs(side_p - cost) > args.max_gap or cost <= args.lotto))
         label = m.get("yes_sub_title") or m.get("subtitle") or (
             f"{lo + 0.5:.0f}°–{hi - 0.5:.0f}°" if lo > -INF and hi < INF else
             (f"≤ {hi - 0.5:.0f}°" if lo == -INF else f"≥ {lo + 0.5:.0f}°"))
@@ -703,7 +730,7 @@ def build_rows(markets, st_by_series, nbm, info, obs_cache, now, args, meta):
     meta.update({
         "generated": now.isoformat(), "n_markets": len(markets), "n_rows": len(rows),
         "n_events": len(events), "skipped": skipped, "min_edge": args.min_edge,
-        "fee_rate": args.fee_rate, "max_gap": args.max_gap, "sigma_inflate": args.sigma_inflate, "min_sigma": args.min_sigma,
+        "fee_rate": args.fee_rate, "max_gap": args.max_gap, "lotto": args.lotto, "sigma_inflate": args.sigma_inflate, "min_sigma": args.min_sigma,
         "refresh_min": args.loop or 0,
     })
     return rows, meta
@@ -898,7 +925,7 @@ ${rs.map(r=>`<div class="brow"><div class="mono">${esc(r.label)}</div><div class
 function notes(){const sk=Object.entries(META.skipped||{}).map(([k,v])=>`${v} ${k}`).join(" · ")||"ninguno";
 $("#notes").innerHTML=`<b>Cómo leerlo.</b> <b>Modelo</b> = probabilidad de que el rango gane según NBM + lo ya observado. <b>Edge neto</b> = probabilidad del modelo − precio − comisión estimada (${META.fee_rate}·P·(1−P) por contrato). <b>ROI</b> = edge / precio.<br>
 <b>Modelo.</b> Máxima del día = máx(observado desde medianoche hora estándar, X), con X ~ Normal(TXN del NBM, σ). σ = máx(${META.min_sigma}°, XND × ${META.sigma_inflate}). Mínima análoga con mín(). Días cerrados usan lo observado hasta que sale el reporte oficial.<br>
-<b>🧪 revisar</b> = el modelo y el precio difieren más de ${Math.round((META.max_gap||0.4)*100)} puntos: casi siempre falta un dato (frente, pronóstico). No se alerta ni entra en el Top.<br><b>Ojo.</b> La ventana de máximas del NBM es 12Z–06Z y la de mínimas 00Z–18Z: no coinciden exacto con el día de Kalshi (medianoche a medianoche, hora estándar). Las observaciones de la API son horarias y pueden no captar el pico de 1 minuto. Frentes, nubes y redondeo °C→°F mueven todo. Verificá siempre las reglas del mercado. No es consejo de inversión.<br>
+<b>🧪 revisar</b> = el modelo y el precio difieren más de ${Math.round((META.max_gap||0.4)*100)} puntos, o el precio es de lotería (≤ ${Math.round((META.lotto||0.05)*100)}¢): casi siempre el mercado ve un dato que el radar no (pico oficial, frente). No se alerta ni entra en el Top.<br><b>Ojo.</b> La ventana de máximas del NBM es 12Z–06Z y la de mínimas 00Z–18Z: no coinciden exacto con el día de Kalshi (medianoche a medianoche, hora estándar). Las observaciones de la API son horarias y pueden no captar el pico de 1 minuto. Frentes, nubes y redondeo °C→°F mueven todo. Verificá siempre las reglas del mercado. No es consejo de inversión.<br>
 <span class="mono">Series: ${(META.series||[]).join(", ")} · omitidos: ${sk}</span>`}
 function all(){kpis();cards();table();events();notes()}
 $("#gen").textContent="⏱ "+new Date(META.generated).toLocaleString();
@@ -956,7 +983,14 @@ def build_parser():
     ap.add_argument("--late-hour-min", type=float, default=10.0, help="hora local desde la que la minima se toma de lo observado")
     ap.add_argument("--max-spread", type=float, default=0.05, help="spread maximo para considerar liquido")
     ap.add_argument("--min-volume", type=int, default=200, help="volumen minimo para considerar liquido")
-    ap.add_argument("--max-gap", type=float, default=0.40,
+    ap.add_argument("--min-sigma-hoy", type=float, default=1.5, help="sigma minima el mismo dia")
+    ap.add_argument("--max-sigma-hoy", type=float, default=3.0, help="sigma maxima el mismo dia")
+    ap.add_argument("--max-sigma", type=float, default=4.5, help="sigma maxima para dias futuros")
+    ap.add_argument("--obs-slack", type=float, default=0.5,
+                    help="grados que el extremo real pudo pasarse entre lecturas horarias")
+    ap.add_argument("--lotto", type=float, default=0.05,
+                    help="no alertar compras a este precio o menos (el mercado suele saber algo)")
+    ap.add_argument("--max-gap", type=float, default=0.25,
                     help="si modelo y precio difieren mas que esto, se marca como sospechoso y no se alerta")
     return ap
 
