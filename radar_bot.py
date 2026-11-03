@@ -62,7 +62,7 @@ CSV_FIELDS = ["fecha_alerta", "ticker", "evento", "ciudad", "tipo", "fecha_event
               "lado", "precio", "modelo", "edge", "resultado", "pnl"]
 REALERT_STEP = 0.05   # vuelve a avisar del mismo mercado si el edge mejora 5c o mas
 MAX_ALERTS_PER_SCAN = 8
-MODEL_VERSION = 2     # al cambiar el modelo, se archiva el registro viejo para no ensuciar /stats
+MODEL_VERSION = 4     # al cambiar el modelo, se archiva el registro viejo para no ensuciar /stats
 
 try:
     sys.stdout.reconfigure(errors="replace")
@@ -97,8 +97,8 @@ def migrate(cfg, tg=None):
     cfg["model_version"] = MODEL_VERSION
     if tg and cfg.get("chat_id"):
         try:
-            tg.send(cfg["chat_id"], f"🔧 <b>Modelo actualizado a v{MODEL_VERSION}.</b> Corregí la lógica de mínimas "
-                                    "y filtro los edges sospechosos 🧪. Reinicié el registro de /stats.")
+            tg.send(cfg["chat_id"], f"🔧 <b>Modelo actualizado a v{MODEL_VERSION}.</b> Lector del NBM blindado (con respaldo IEM), mínimas corregidas "
+                                    "y filtro de edges sospechosos 🧪. Reinicié el registro de /stats.")
         except Exception:
             pass
 

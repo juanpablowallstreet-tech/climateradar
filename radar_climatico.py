@@ -212,8 +212,10 @@ def city_from_title(title):
 # ----------------------------------------------------------------------------- NBM
 
 NBS_HDR = re.compile(
-    r"^\s*([A-Z0-9]{3,5})\s+NBM\s+V\S+\s+NBS\s+GUIDANCE\s+(\d{1,2})/(\d{1,2})/(\d{4})\s+(\d{2})(\d{2})\s+UTC")
+    r"^\s*([A-Z0-9]{3,5})\s+NBM\s+(?:V\S+\s+)?NBS\s+GUIDANCE\s+(\d{1,2})/(\d{1,2})/(\d{4})\s+(\d{2})(\d{2})\s+UTC")
 NUM_RE = re.compile(r"-?\d+")
+IEM_AFOS = "https://mesonet.agron.iastate.edu/cgi-bin/afos/retrieve.py"
+ROW_LABELS = ("UTC", "FHR", "TXN", "XND", "TMP", "TSD")
 
 
 _NBS_CACHE = {}  # url -> (texto, ciclo): evita bajar el mismo boletin en cada escaneo
@@ -241,91 +243,146 @@ def fetch_latest_nbs(now_utc, max_back=10):
     raise RuntimeError("No encontre un boletin NBS reciente en NOMADS")
 
 
+def fetch_nbs_iem(sid):
+    """Respaldo: el mismo boletin NBS por estacion desde Iowa Environmental Mesonet (producto NBSxxx)."""
+    if len(sid) != 4 or not sid.startswith("K"):
+        return ""
+    raw = http_get(IEM_AFOS, {"pil": "NBS" + sid[1:], "fmt": "text", "limit": 1},
+                   accept="text/plain", timeout=40, retries=2)
+    return re.sub(r"<[^>]+>", "", raw.decode("latin-1"))
+
+
 def _row_values(line, label):
     idx = line.index(label) + len(label)
     return [(mm.end(), int(mm.group())) for mm in NUM_RE.finditer(line, idx)]
 
 
-def parse_nbs(text, wanted=None):
-    """
-    Devuelve {station: {"issue": dt, "max": {date: (txn, xnd)}, "min": {date: (txn, xnd)}}}
-    TXN maxima: ventana 12Z-06Z, informada en la columna de 00Z del dia siguiente.
-    TXN minima: ventana 00Z-18Z, informada en la columna de 12Z del mismo dia.
-    """
-    res = {}
-    cur = issue = fhr = txn = None
-    tmp_line = tsd_line = None
-    wanted = set(wanted) if wanted else None
-
-    def fixed_cols(line):
-        """Lee una fila por columnas fijas de 3 caracteres alineadas con FHR (evita pegar '99100')."""
-        out = {}
-        if not line or not fhr:
-            return out
-        for end, h in fhr:
-            s = line[max(0, end - 3):end].strip()
-            if s and s.lstrip("-").isdigit() and s != "-99":
-                out[h] = int(s)
+def _fixed_values(line, ends):
+    """Fila densa (TMP, TSD): lee columnas fijas de 3 caracteres (evita pegar '99100' o '-5-10')."""
+    out = {}
+    if not line:
         return out
+    for e in ends:
+        s = line[max(0, e - 3):e].strip()
+        if s and s.lstrip("-").isdigit() and s != "-99":
+            out[e] = int(s)
+    return out
 
-    def flush():
-        if not (cur and fhr):
-            return
-        tmp = fixed_cols(tmp_line)
-        tsd = fixed_cols(tsd_line)
-        res[cur]["tmp"] = [(issue + timedelta(hours=h), v, tsd.get(h)) for h, v in sorted(tmp.items())]
-        if not txn:
-            return
-        cols = {end: h for end, h in fhr}
-        ends = sorted(cols)
-        xnd_by_h = {}
-        if cur_xnd:
-            for end, v in cur_xnd:
-                near = min(ends, key=lambda e: abs(e - end))
-                xnd_by_h[cols[near]] = v
-        for end, v in txn:
+
+def _block_columns(rows, issue):
+    """Lista [(posicion_fin, hora_valida_utc)]. Usa FHR; si no esta, la deduce de la fila UTC."""
+    if "FHR" in rows:
+        return [(e, issue + timedelta(hours=h)) for e, h in _row_values(rows["FHR"], "FHR")]
+    if "UTC" in rows:
+        cols, prev = [], issue
+        for e, hh in _row_values(rows["UTC"], "UTC"):
+            cand = prev.replace(hour=hh % 24, minute=0, second=0, microsecond=0)
+            while cand <= prev:
+                cand += timedelta(days=1)
+            cols.append((e, cand))
+            prev = cand
+        return cols
+    return []
+
+
+def _parse_block(issue, lines):
+    rows = {}
+    for ln in lines:
+        lab = ln.strip()[:3]
+        if lab in ROW_LABELS and lab not in rows:
+            rows[lab] = ln
+    cols = _block_columns(rows, issue)
+    data = {"issue": issue, "max": {}, "min": {}, "tmp": []}
+    if not cols:
+        return data
+    ends = [e for e, _ in cols]
+    valid_at = dict(cols)
+
+    def nearest(e):
+        return min(ends, key=lambda c: abs(c - e))
+
+    tmp = _fixed_values(rows.get("TMP"), ends)
+    tsd = _fixed_values(rows.get("TSD"), ends)
+    data["tmp"] = sorted((valid_at[e], v, tsd.get(e)) for e, v in tmp.items())
+    if "TXN" in rows:
+        xnd = {}
+        if "XND" in rows:
+            for e, v in _row_values(rows["XND"], "XND"):
+                xnd[nearest(e)] = v
+        for e, v in _row_values(rows["TXN"], "TXN"):
             if v == -99:
                 continue
-            near = min(ends, key=lambda e: abs(e - end))
-            h = cols[near]
-            valid = issue + timedelta(hours=h)
-            x = xnd_by_h.get(h)
+            c = nearest(e)
+            valid = valid_at[c]
+            x = xnd.get(c)
             x = None if x in (None, -99) else x
             if valid.hour == 0:
-                res[cur]["max"][(valid - timedelta(days=1)).date()] = (v, x)
+                data["max"][(valid - timedelta(days=1)).date()] = (v, x)
             elif valid.hour == 12:
-                res[cur]["min"][valid.date()] = (v, x)
+                data["min"][valid.date()] = (v, x)
+    return data
 
-    cur_xnd = None
-    for line in text.splitlines():
-        m = NBS_HDR.match(line)
-        if m:
-            flush()
-            sid = m.group(1)
-            fhr = txn = cur_xnd = tmp_line = tsd_line = None
-            if wanted is None or sid in wanted:
-                cur = sid
-                issue = datetime(int(m.group(4)), int(m.group(2)), int(m.group(3)),
-                                 int(m.group(5)), int(m.group(6)), tzinfo=UTC)
-                res[cur] = {"issue": issue, "max": {}, "min": {}, "tmp": []}
-            else:
-                cur = None
+
+def _has_data(d):
+    return bool(d and (d.get("max") or d.get("min") or d.get("tmp")))
+
+
+def parse_nbs(text, wanted=None):
+    """
+    Devuelve {station: {"issue": dt, "max": {date: (txn, xnd)}, "min": {date: (txn, xnd)},
+                        "tmp": [(hora_utc, temp, sd)]}}
+    Acepta el formato de NOMADS ("NBM V5.0 NBS") y el de NOAAPORT/IEM ("NBM  NBS", sin sangria),
+    saltos de linea CR/LF, bloques repetidos de una misma estacion y filas sin FHR.
+    TXN maxima: ventana 12Z-06Z, en la columna de 00Z del dia siguiente.
+    TXN minima: ventana 00Z-18Z, en la columna de 12Z del mismo dia.
+    """
+    wanted = set(wanted) if wanted else None
+    lines = text.replace("\r", "").split("\n")
+    heads = [(i, NBS_HDR.match(ln)) for i, ln in enumerate(lines)]
+    heads = [(i, m) for i, m in heads if m]
+    res = {}
+    for k, (i, m) in enumerate(heads):
+        sid = m.group(1)
+        if wanted is not None and sid not in wanted:
             continue
-        if not cur:
-            continue
-        s = line.strip()
-        if s.startswith("FHR"):
-            fhr = _row_values(line, "FHR")
-        elif s.startswith("TXN"):
-            txn = _row_values(line, "TXN")
-        elif s.startswith("XND"):
-            cur_xnd = _row_values(line, "XND")
-        elif s.startswith("TMP"):
-            tmp_line = line
-        elif s.startswith("TSD"):
-            tsd_line = line
-    flush()
+        stop = heads[k + 1][0] if k + 1 < len(heads) else len(lines)
+        issue = datetime(int(m.group(4)), int(m.group(2)), int(m.group(3)),
+                         int(m.group(5)), int(m.group(6)), tzinfo=UTC)
+        data = _parse_block(issue, lines[i + 1:stop])
+        old = res.get(sid)
+        if not _has_data(old):
+            res[sid] = data
+        elif _has_data(data):  # bloque repetido: completa lo que falte, no pisa
+            for kind in ("max", "min"):
+                for d, v in data[kind].items():
+                    old[kind].setdefault(d, v)
+            if not old["tmp"]:
+                old["tmp"] = data["tmp"]
     return res
+
+
+def nbm_diagnostico(text, nbm, stations):
+    """Muestra en el log cuantos datos se leyeron por estacion y, si una viene vacia, sus primeras lineas."""
+    vacias = []
+    for sid in stations:
+        d = nbm.get(sid) or {}
+        nmax, nmin, ntmp = len(d.get("max", {})), len(d.get("min", {})), len(d.get("tmp", []))
+        log(f"  NBM {sid}: maximas {nmax} · minimas {nmin} · horario {ntmp}")
+        if nmax == 0 and ntmp == 0:
+            vacias.append(sid)
+    if vacias:
+        sid = vacias[0]
+        lines = text.splitlines()
+        for i, line in enumerate(lines):
+            if NBS_HDR.match(line) and NBS_HDR.match(line).group(1) == sid:
+                log(f"  DIAGNOSTICO bloque crudo de {sid} (entre | |):")
+                for raw in lines[i:i + 12]:
+                    log("  |" + raw.replace("\t", "<TAB>") + "|")
+                break
+        else:
+            log(f"  DIAGNOSTICO: no encontre el encabezado de {sid}. Primeras lineas del archivo:")
+            for raw in lines[:12]:
+                log("  |" + raw.replace("\t", "<TAB>") + "|")
 
 
 # ----------------------------------------------------------------------------- NWS (observaciones)
@@ -338,9 +395,20 @@ def station_info(sid):
         return {"tz": None, "name": None}
 
 
-def std_offset(tzname):
+# Respaldo si la API del NWS no responde: offset estandar (sin horario de verano) por estacion
+STATION_STD_OFFSET = {
+    **{k: -5 for k in ("KNYC", "KLGA", "KJFK", "KEWR", "KBOS", "KPHL", "KDCA", "KIAD", "KBWI", "KATL",
+                       "KMIA", "KMCO", "KTPA", "KCLT", "KRDU", "KDTW", "KCLE", "KPIT", "KCVG", "KIND")},
+    **{k: -6 for k in ("KMDW", "KORD", "KAUS", "KDFW", "KDAL", "KHOU", "KIAH", "KSAT", "KMSP", "KOKC",
+                       "KMSY", "KSTL", "KMCI", "KMKE", "KMEM", "KBNA", "KOMA")},
+    **{k: -7 for k in ("KDEN", "KPHX", "KSLC", "KABQ", "KELP", "KBOI")},
+    **{k: -8 for k in ("KLAX", "KSFO", "KSEA", "KLAS", "KPDX", "KSAN", "KSJC", "KSMF")},
+}
+
+
+def std_offset(tzname, sid=None):
     if not tzname or ZoneInfo is None:
-        return timedelta(hours=-6)
+        return timedelta(hours=STATION_STD_OFFSET.get(sid, -6))
     z = ZoneInfo(tzname)
     jan = datetime(2026, 1, 15, 12, tzinfo=z).utcoffset()
     jul = datetime(2026, 7, 15, 12, tzinfo=z).utcoffset()
@@ -434,7 +502,10 @@ def model_params(kind, ev_date, local_now, nbm_val, obs_ext, args, tmp=None, win
         if rem:
             cands.append(max(rem) + 0.5)  # cada 3 h se pierde el pico
         if not cands:
-            return (o, 1.0, o, "observado (fin del día)") if o is not None else None
+            # Solo confiar en lo observado si de verdad termina el dia; si no, falta el pronostico
+            if o is not None and h >= 21:
+                return o, 1.0, o, "observado (fin del día)"
+            return None
         mu = max(cands)
         if h >= args.late_hour_max and o is not None:
             return max(mu, o), 1.2, o, "tarde · obs + horario"
@@ -455,7 +526,10 @@ def model_params(kind, ev_date, local_now, nbm_val, obs_ext, args, tmp=None, win
         if rem:
             cands.append(min(rem) - 1)  # cada 3 h se pierde el piso
         if not cands:
-            return (o, 1.0, o, "observado (fin del día)") if o is not None else None
+            # Solo confiar en lo observado si de verdad termina el dia; si no, falta el pronostico
+            if o is not None and h >= 21:
+                return o, 1.0, o, "observado (fin del día)"
+            return None
         return min(cands), sig, o, "en juego · NBM horario + obs"
 
 
@@ -490,15 +564,12 @@ def scan(args):
     stations = sorted(set(st_by_series.values()))
     log(f"Estaciones: {', '.join(stations)}")
 
-    log("Bajando boletin NBM (NBS) mas reciente de NOMADS...")
-    nbs_text, cycle, nbs_url = fetch_latest_nbs(now)
-    nbm = parse_nbs(nbs_text, stations)
-    log(f"  ciclo {cycle:%Y-%m-%d %HZ} · {len(nbm)}/{len(stations)} estaciones con datos")
+    nbm, nbs_text, cycle_txt, nbs_url = load_nbm(now, stations)
 
     info, obs_cache = {}, {}
     for sid in stations:
         info[sid] = station_info(sid)
-        off = std_offset(info[sid]["tz"])
+        off = std_offset(info[sid]["tz"], sid)
         info[sid]["off"] = off
         start = (now + off).replace(hour=0, minute=0, second=0, microsecond=0) - off - timedelta(days=1)
         try:
@@ -508,8 +579,41 @@ def scan(args):
             obs_cache[sid] = []
 
     return build_rows(markets, st_by_series, nbm, info, obs_cache, now, args,
-                      meta={"nbm_cycle": f"{cycle:%Y-%m-%d %H}Z", "nbm_url": nbs_url,
+                      meta={"nbm_cycle": cycle_txt, "nbm_url": nbs_url,
                             "series": series, "demo": False})
+
+
+def load_nbm(now, stations):
+    """Baja el NBM de NOMADS y completa por estacion desde IEM lo que falte. Nunca corta el escaneo."""
+    nbs_text, cycle_txt, nbs_url, nbm = "", "sin NOMADS", "", {}
+    log("Bajando boletin NBM (NBS) mas reciente de NOMADS...")
+    try:
+        nbs_text, cycle, nbs_url = fetch_latest_nbs(now)
+        cycle_txt = f"{cycle:%Y-%m-%d %H}Z"
+        nbm = parse_nbs(nbs_text, stations)
+        log(f"  ciclo {cycle_txt} · {sum(_has_data(nbm.get(s)) for s in stations)}/{len(stations)} con datos")
+    except Exception as e:
+        log(f"  NOMADS fallo: {e}")
+    faltan = [s for s in stations if not _has_data(nbm.get(s))]
+    if faltan:
+        log(f"  Completando {len(faltan)} estaciones desde IEM: {', '.join(faltan)}")
+        recuperadas = 0
+        for sid in faltan:
+            try:
+                txt = fetch_nbs_iem(sid)
+                d = parse_nbs(txt, [sid]).get(sid)
+                if _has_data(d):
+                    nbm[sid] = d
+                    recuperadas += 1
+                elif txt:
+                    nbs_text += "\n" + txt
+            except Exception as e:
+                log(f"  IEM {sid}: {e}")
+        log(f"  IEM recupero {recuperadas}/{len(faltan)}")
+        if recuperadas:
+            cycle_txt += " + IEM"
+    nbm_diagnostico(nbs_text, nbm, stations)
+    return nbm, nbs_text, cycle_txt, nbs_url
 
 
 def obs_extremes(obs, start_utc, end_utc):
@@ -845,7 +949,7 @@ def build_parser():
     ap.add_argument("--no-open", action="store_true", help="no abrir el navegador")
     ap.add_argument("--min-edge", type=float, default=0.05, help="edge minimo destacado (0.05 = 5c)")
     ap.add_argument("--fee-rate", type=float, default=0.07, help="tasa de comision taker")
-    ap.add_argument("--sigma-inflate", type=float, default=1.3, help="multiplica el XND del NBM")
+    ap.add_argument("--sigma-inflate", type=float, default=1.1, help="multiplica el XND del NBM")
     ap.add_argument("--min-sigma", type=float, default=2.0, help="sigma minima en grados F")
     ap.add_argument("--default-xnd", type=float, default=2.5, help="XND si el NBM no lo trae")
     ap.add_argument("--late-hour-max", type=float, default=17.0, help="hora local desde la que la maxima se toma de lo observado")
