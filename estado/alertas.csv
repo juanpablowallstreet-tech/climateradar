@@ -61,3 +61,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-03T20:50+00:00,KXLOWTATL-26NOV04-B65.5,KXLOWTATL-26NOV04,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-04,65° to 66°,NO,0.46,0.3182,0.2018,,
 2026-11-03T20:50+00:00,KXLOWTMIN-26NOV04-B50.5,KXLOWTMIN-26NOV04,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-04,50° to 51°,NO,0.50,0.3070,0.1730,,
 2026-11-03T20:50+00:00,KXLOWTDC-26NOV04-B54.5,KXLOWTDC-26NOV04,"Washington/Reagan National Airport, DC",min,2026-11-04,54° to 55°,NO,0.56,0.2495,0.1705,,
+2026-11-03T21:28+00:00,KXLOWTSFO-26NOV04-B51.5,KXLOWTSFO-26NOV04,"San Francisco, San Francisco International Airport",min,2026-11-04,51° to 52°,YES,0.08,0.2998,0.2098,,
+2026-11-03T21:28+00:00,KXLOWTPHIL-26NOV04-T52,KXLOWTPHIL-26NOV04,"Philadelphia, Philadelphia International Airport",min,2026-11-04,53° or above,NO,0.63,0.1736,0.1764,,
+2026-11-03T21:28+00:00,KXHIGHTLV-26NOV04-B69.5,KXHIGHTLV-26NOV04,Harry Reid International Airport,max,2026-11-04,69° to 70°,NO,0.46,0.3441,0.1759,,
