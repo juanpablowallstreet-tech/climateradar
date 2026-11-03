@@ -56,12 +56,13 @@ UTC = timezone.utc
 
 DEFAULT_CFG = {
     "token": None, "chat_id": None, "edge": 0.17, "roi": None, "solo_liquidos": False,
-    "tipo": "todas", "pausado": False, "intervalo_min": 10, "offset": 0, "enviadas": {},
+    "tipo": "todas", "pausado": False, "raros": False, "intervalo_min": 10, "offset": 0, "enviadas": {},
 }
 CSV_FIELDS = ["fecha_alerta", "ticker", "evento", "ciudad", "tipo", "fecha_evento", "rango",
               "lado", "precio", "modelo", "edge", "resultado", "pnl"]
 REALERT_STEP = 0.05   # vuelve a avisar del mismo mercado si el edge mejora 5c o mas
 MAX_ALERTS_PER_SCAN = 8
+MODEL_VERSION = 2     # al cambiar el modelo, se archiva el registro viejo para no ensuciar /stats
 
 try:
     sys.stdout.reconfigure(errors="replace")
@@ -83,6 +84,23 @@ def load_cfg():
         except Exception:
             log("aviso: radar_config.json danado, uso valores por defecto")
     return cfg
+
+
+def migrate(cfg, tg=None):
+    """Si cambió el modelo, archiva alertas viejas y resetea las ya enviadas."""
+    if cfg.get("model_version") == MODEL_VERSION:
+        return
+    old = cfg.get("model_version", 1)
+    if ALERTS.exists():
+        ALERTS.replace(ALERTS.with_name(f"alertas_v{old}.csv"))
+    cfg["enviadas"] = {}
+    cfg["model_version"] = MODEL_VERSION
+    if tg and cfg.get("chat_id"):
+        try:
+            tg.send(cfg["chat_id"], f"🔧 <b>Modelo actualizado a v{MODEL_VERSION}.</b> Corregí la lógica de mínimas "
+                                    "y filtro los edges sospechosos 🧪. Reinicié el registro de /stats.")
+        except Exception:
+            pass
 
 
 def save_cfg(cfg, keep_token=True):
@@ -166,6 +184,8 @@ def fmt_alert(r, title="🚨 EDGE"):
     pm = r["p"] if r["side"] == "YES" else 1 - r["p"]
     kind = "🔺 Máxima" if r["kind"] == "max" else "🔻 Mínima"
     liq = "" if r["liquid"] else "\n⚠️ Poco líquido: mirá el libro antes de entrar"
+    if r.get("suspect"):
+        liq += "\n🧪 Diferencia enorme con el mercado: probablemente al modelo le falta un dato"
     roi = f" · ROI {r['roi'] * 100:.0f}%" if r.get("roi") is not None else ""
     obs = f" · obs {r['obs']}°" if r.get("obs") is not None else ""
     spread = f"{r['spread'] * 100:.0f}¢" if r.get("spread") is not None else "—"
@@ -188,6 +208,7 @@ HELP = (
     "/dashboard — dashboard completo\n"
     "/stats — resultados de alertas liquidadas\n"
     "/escanear — escanear ya\n"
+    "/raros on|off — incluir edges sospechosos (🧪)\n"
     "/pausa · /seguir · /estado"
 )
 
@@ -207,6 +228,8 @@ def fmt_estado(cfg, state):
 
 def passes(r, cfg):
     if r.get("ev") is None or r["ev"] < cfg["edge"]:
+        return False
+    if r.get("suspect") and not cfg.get("raros"):
         return False
     if cfg.get("roi") is not None and (r.get("roi") is None or r["roi"] < cfg["roi"]):
         return False
@@ -369,6 +392,9 @@ def handle_command(text, cfg, state, tg, chat_id):
             reply(f"✅ Escaneo cada {cfg['intervalo_min']} min.")
         except Exception:
             reply("Usá así: <code>/intervalo 10</code>")
+    elif cmd == "/raros":
+        cfg["raros"] = arg in ("on", "si", "sí", "1")
+        reply("✅ Edges sospechosos 🧪: " + ("incluidos (ojo)" if cfg["raros"] else "filtrados") + ".")
     elif cmd == "/pausa":
         cfg["pausado"] = True
         reply("⏸ Alertas en pausa. /seguir para volver.")
@@ -386,7 +412,7 @@ def handle_command(text, cfg, state, tg, chat_id):
         state["force"] = True
         reply("⏳ Escaneando y te lo mando en un toque…")
     elif cmd == "/top":
-        top = [r for r in (state.get("rows") or []) if r.get("ev") is not None][:5]
+        top = [r for r in (state.get("rows") or []) if r.get("ev") is not None and not r.get("suspect")][:5]
         if not top:
             reply("Todavía no hay datos. Probá /escanear.")
         else:
@@ -492,6 +518,7 @@ def upload_dashboard_ftp(path):
 def run_once(tg, demo=False):
     """Modo nube (GitHub Actions): lee comandos pendientes, escanea, avisa y termina."""
     cfg = load_cfg()
+    migrate(cfg, tg)
     args = R.build_parser().parse_args([])
     args.loop = cfg["intervalo_min"]  # el dashboard publicado se recarga solo cada X minutos
     state = {"rows": [], "force": False, "once": True, "after_scan": set()}
@@ -563,6 +590,7 @@ def main():
         log(f"ERROR: el token no funciona ({e}). Borra radar_config.json y volve a probar.")
         sys.exit(1)
 
+    migrate(cfg, tg)
     args = R.build_parser().parse_args([])
     state = {"rows": [], "force": True, "last_scan": 0.0, "last_err": 0.0}
     if cfg.get("chat_id"):

@@ -138,6 +138,17 @@ def px(m, key):
         return None
 
 
+def num_field(m, *keys):
+    for k in keys:
+        v = m.get(k)
+        if v not in (None, ""):
+            try:
+                return float(v)
+            except (TypeError, ValueError):
+                pass
+    return 0.0
+
+
 def valid_ask(p):
     return p is not None and 0.0 < p < 1.0
 
@@ -243,10 +254,27 @@ def parse_nbs(text, wanted=None):
     """
     res = {}
     cur = issue = fhr = txn = None
+    tmp_line = tsd_line = None
     wanted = set(wanted) if wanted else None
 
+    def fixed_cols(line):
+        """Lee una fila por columnas fijas de 3 caracteres alineadas con FHR (evita pegar '99100')."""
+        out = {}
+        if not line or not fhr:
+            return out
+        for end, h in fhr:
+            s = line[max(0, end - 3):end].strip()
+            if s and s.lstrip("-").isdigit() and s != "-99":
+                out[h] = int(s)
+        return out
+
     def flush():
-        if not (cur and fhr and txn):
+        if not (cur and fhr):
+            return
+        tmp = fixed_cols(tmp_line)
+        tsd = fixed_cols(tsd_line)
+        res[cur]["tmp"] = [(issue + timedelta(hours=h), v, tsd.get(h)) for h, v in sorted(tmp.items())]
+        if not txn:
             return
         cols = {end: h for end, h in fhr}
         ends = sorted(cols)
@@ -274,12 +302,12 @@ def parse_nbs(text, wanted=None):
         if m:
             flush()
             sid = m.group(1)
-            fhr = txn = cur_xnd = None
+            fhr = txn = cur_xnd = tmp_line = tsd_line = None
             if wanted is None or sid in wanted:
                 cur = sid
                 issue = datetime(int(m.group(4)), int(m.group(2)), int(m.group(3)),
                                  int(m.group(5)), int(m.group(6)), tzinfo=UTC)
-                res[cur] = {"issue": issue, "max": {}, "min": {}}
+                res[cur] = {"issue": issue, "max": {}, "min": {}, "tmp": []}
             else:
                 cur = None
             continue
@@ -292,6 +320,10 @@ def parse_nbs(text, wanted=None):
             txn = _row_values(line, "TXN")
         elif s.startswith("XND"):
             cur_xnd = _row_values(line, "XND")
+        elif s.startswith("TMP"):
+            tmp_line = line
+        elif s.startswith("TSD"):
+            tsd_line = line
     flush()
     return res
 
@@ -364,40 +396,67 @@ def fee(p, rate):
     return math.ceil(rate * p * (1 - p) * 100 - 1e-9) / 100.0
 
 
-def model_params(kind, ev_date, local_now, nbm_val, obs_ext, args):
+def model_params(kind, ev_date, local_now, nbm_val, obs_ext, args, tmp=None, win=None, now_utc=None):
     """
     Devuelve (mu, sigma, limite_observado, fase) o None si no hay datos suficientes.
     obs_ext = dict(max, min, last, n) de lo observado desde la medianoche local estandar.
+    tmp = pronostico de temperatura cada 3 h del NBM [(hora_utc, temp, sd)].
+    win = (inicio_utc, fin_utc) del dia de Kalshi (medianoche a medianoche, hora estandar).
+
+    Clave: la minima del dia NO siempre es a la madrugada. Con un frente frio puede ser
+    a las 23:59. Por eso miramos el pronostico horario de TODO lo que falta del dia.
     """
     today = local_now.date()
     h = local_now.hour + local_now.minute / 60
     txn, xnd = nbm_val if nbm_val else (None, None)
     sig = max(args.min_sigma, (xnd or args.default_xnd) * args.sigma_inflate)
     have_obs = obs_ext and obs_ext.get("n", 0) > 0
+    tmp = tmp or []
+    rem, day, after_noon = [], [], []
+    if win:
+        d0, d1 = win
+        start = max(d0, now_utc) if now_utc else d0
+        rem = [v for t, v, _ in tmp if start <= t <= d1]
+        day = [v for t, v, _ in tmp if d0 <= t <= d1]
+        after_noon = [v for t, v, _ in tmp if d0 + timedelta(hours=12) <= t <= d1]
 
     if kind == "max":
         o = obs_ext.get("max") if have_obs else None
         if ev_date < today:
             return (o, 0.8, o, "cerrado (esperando CLI)") if o is not None else None
         if ev_date > today:
-            return (txn, sig, None, "pronóstico") if txn is not None else None
+            if txn is not None:
+                return txn, sig, None, "pronóstico NBM"
+            return (max(day) + 1, sig, None, "pronóstico horario") if day else None
+        cands = []
+        if txn is not None and h < args.late_hour_max:
+            cands.append(txn)
+        if rem:
+            cands.append(max(rem) + 0.5)  # cada 3 h se pierde el pico
+        if not cands:
+            return (o, 1.0, o, "observado (fin del día)") if o is not None else None
+        mu = max(cands)
         if h >= args.late_hour_max and o is not None:
-            mu = max(o, obs_ext.get("last") or o)
-            return mu, 1.0, o, "tarde · observado"
-        if txn is None:
-            return (o, 2.5, o, "solo observado") if o is not None else None
-        return txn, sig, o, "en juego · NBM + obs"
+            return max(mu, o), 1.2, o, "tarde · obs + horario"
+        return mu, sig, o, "en juego · NBM + obs"
     else:
         o = obs_ext.get("min") if have_obs else None
         if ev_date < today:
             return (o, 0.8, o, "cerrado (esperando CLI)") if o is not None else None
+        cands = []
         if ev_date > today:
-            return (txn, sig, None, "pronóstico") if txn is not None else None
-        if h >= args.late_hour_min and o is not None:
-            return o, 1.2, o, "post-madrugada · observado"
-        if txn is None:
-            return (o, 2.5, o, "solo observado") if o is not None else None
-        return txn, sig, o, "en juego · NBM + obs"
+            if txn is not None:
+                cands.append(txn)                 # minima de la madrugada
+            if after_noon:
+                cands.append(min(after_noon) - 1)  # posible caida a la noche
+            return (min(cands), sig, None, "pronóstico NBM + horario") if cands else None
+        if txn is not None and h < 12:
+            cands.append(txn)
+        if rem:
+            cands.append(min(rem) - 1)  # cada 3 h se pierde el piso
+        if not cands:
+            return (o, 1.0, o, "observado (fin del día)") if o is not None else None
+        return min(cands), sig, o, "en juego · NBM horario + obs"
 
 
 # ----------------------------------------------------------------------------- ESCANEO
@@ -478,7 +537,9 @@ def build_rows(markets, st_by_series, nbm, info, obs_cache, now, args, meta):
         day_start = datetime(evd.year, evd.month, evd.day, tzinfo=UTC) - off
         ext = obs_extremes(obs_cache.get(sid, []), day_start, min(now, day_start + timedelta(days=1)))
         nbm_val = (nbm.get(sid) or {}).get(kind, {}).get(evd)
-        mp = model_params(kind, evd, local_now, nbm_val, ext, args)
+        mp = model_params(kind, evd, local_now, nbm_val, ext, args,
+                          tmp=(nbm.get(sid) or {}).get("tmp"),
+                          win=(day_start, day_start + timedelta(days=1)), now_utc=now)
         if not mp or mp[0] is None:
             skipped["sin datos de modelo"] = skipped.get("sin datos de modelo", 0) + 1
             continue
@@ -504,7 +565,15 @@ def build_rows(markets, st_by_series, nbm, info, obs_cache, now, args, meta):
             mid = ya
         spread = (ya - yb) if (valid_ask(ya) and yb is not None) else None
 
-        city = city_from_title(m.get("title")) or info.get(sid, {}).get("name") or sid
+        cs = re.search(r"City:\s*([^;]+)", str(m.get("custom_strike") or ""))
+        city = (cs.group(1).strip() if cs else None) or city_from_title(m.get("title")) \
+            or info.get(sid, {}).get("name") or sid
+        vol = num_field(m, "volume", "volume_fp", "volume_24h_fp")
+        oi = num_field(m, "open_interest", "open_interest_fp")
+        # Guardrail: si el modelo y el precio difieren por una barbaridad, casi siempre
+        # es el modelo el que no ve algo (frente, dato faltante). Se marca para revisar.
+        side_p = (p if best_side == "YES" else 1 - p) if best_side else None
+        suspect = bool(best_side and cost is not None and abs(side_p - cost) > args.max_gap)
         label = m.get("yes_sub_title") or m.get("subtitle") or (
             f"{lo + 0.5:.0f}°–{hi - 0.5:.0f}°" if lo > -INF and hi < INF else
             (f"≤ {hi - 0.5:.0f}°" if lo == -INF else f"≥ {lo + 0.5:.0f}°"))
@@ -515,11 +584,11 @@ def build_rows(markets, st_by_series, nbm, info, obs_cache, now, args, meta):
             "p": round(p, 4), "ya": ya, "yb": yb, "na": na, "mid": mid, "spread": spread,
             "ev_yes": ev_yes, "ev_no": ev_no, "side": best_side, "ev": best_ev,
             "roi": (best_ev / cost) if (best_ev is not None and cost) else None,
-            "vol": m.get("volume") or 0, "oi": m.get("open_interest") or 0,
+            "vol": int(vol), "oi": int(oi), "suspect": suspect,
             "mu": round(mu, 1), "sigma": round(sig, 2),
             "obs": round(lim, 1) if lim is not None else None,
             "nbm": nbm_val[0] if nbm_val else None, "phase": phase,
-            "liquid": bool(spread is not None and spread <= args.max_spread and (m.get("volume") or 0) >= args.min_volume),
+            "liquid": bool(spread is not None and spread <= args.max_spread and vol >= args.min_volume),
             "url": f"https://kalshi.com/markets/{series.lower()}",
         }
         rows.append(row)
@@ -530,7 +599,7 @@ def build_rows(markets, st_by_series, nbm, info, obs_cache, now, args, meta):
     meta.update({
         "generated": now.isoformat(), "n_markets": len(markets), "n_rows": len(rows),
         "n_events": len(events), "skipped": skipped, "min_edge": args.min_edge,
-        "fee_rate": args.fee_rate, "sigma_inflate": args.sigma_inflate, "min_sigma": args.min_sigma,
+        "fee_rate": args.fee_rate, "max_gap": args.max_gap, "sigma_inflate": args.sigma_inflate, "min_sigma": args.min_sigma,
         "refresh_min": args.loop or 0,
     })
     return rows, meta
@@ -696,7 +765,7 @@ const k=[["Mercados escaneados",META.n_markets],["Eventos",META.n_events],["Ciud
 ["Edges ≥ "+Math.round((META.min_edge||0)*100)+"¢",`<span class="pos">${pos.length}</span>`],
 ["Mejor edge",best?ed(best.ev):"—"],["Líquidos con edge",pos.filter(r=>r.liquid).length]];
 $("#kpis").innerHTML=k.map(([l,v])=>`<div class="kpi"><div class="l">${l}</div><div class="v mono">${v}</div></div>`).join("")}
-function cards(){const top=DATA.filter(r=>r.ev!=null&&r.ev>0&&(!S.liq||r.liquid)&&(S.kind==="all"||r.kind===S.kind)).slice(0,9);
+function cards(){const top=DATA.filter(r=>r.ev!=null&&r.ev>0&&!r.suspect&&(!S.liq||r.liquid)&&(S.kind==="all"||r.kind===S.kind)).slice(0,9);
 if(!top.length){$("#cards").innerHTML='<div class="empty">Sin edges positivos ahora mismo. El mercado está eficiente 😎</div>';return}
 $("#cards").innerHTML=top.map((r,i)=>{const pm=r.side==="YES"?r.p:1-r.p;return `<a class="card" href="${r.url}" target="_blank" rel="noopener">
 <div class="rank mono">#${i+1}</div><div class="city">${esc(r.city)} <span class="sub mono">${r.station}</span></div>
@@ -709,7 +778,7 @@ $("#cards").innerHTML=top.map((r,i)=>{const pm=r.side==="YES"?r.p:1-r.p;return `
 function table(){let rows=filt();const k=S.k,d=S.dir;rows.sort((a,b)=>{let x=a[k],y=b[k];if(x==null)return 1;if(y==null)return -1;return (x>y?1:x<y?-1:0)*d});
 $("#count").textContent=rows.length+" de "+DATA.length+" mercados";
 $("#tb").innerHTML=rows.length?rows.map(r=>`<tr><td><a href="${r.url}" target="_blank" rel="noopener">${esc(r.city)}</a> <span class="sub mono">${r.kind==="max"?"▲":"▼"} ${r.station}</span></td>
-<td><b>${esc(r.label)}</b></td><td class="mono">${fdate(r.date)}</td><td class="mono">${pc(r.p)}</td><td class="mono">${pc(r.mid)}</td>
+<td><b>${esc(r.label)}</b>${r.suspect?' <span class="amb" title="Modelo y precio difieren demasiado: revisar">🧪 revisar</span>':""}</td><td class="mono">${fdate(r.date)}</td><td class="mono">${pc(r.p)}</td><td class="mono">${pc(r.mid)}</td>
 <td>${r.side?`<span class="side ${r.side}">${r.side}</span>`:"—"}</td><td class="mono">${c(r.cost)}</td><td class="mono">${ed(r.ev)}</td>
 <td class="mono">${r.roi==null?"—":`<span class="${r.roi>0?"pos":"neg"}">${(r.roi*100).toFixed(0)}%</span>`}</td>
 <td class="mono">${r.vol.toLocaleString()}</td><td class="mono ${r.spread!=null&&r.spread>0.05?"amb":""}">${c(r.spread)}</td><td class="sub">${esc(r.phase)}</td></tr>`).join("")
@@ -725,7 +794,7 @@ ${rs.map(r=>`<div class="brow"><div class="mono">${esc(r.label)}</div><div class
 function notes(){const sk=Object.entries(META.skipped||{}).map(([k,v])=>`${v} ${k}`).join(" · ")||"ninguno";
 $("#notes").innerHTML=`<b>Cómo leerlo.</b> <b>Modelo</b> = probabilidad de que el rango gane según NBM + lo ya observado. <b>Edge neto</b> = probabilidad del modelo − precio − comisión estimada (${META.fee_rate}·P·(1−P) por contrato). <b>ROI</b> = edge / precio.<br>
 <b>Modelo.</b> Máxima del día = máx(observado desde medianoche hora estándar, X), con X ~ Normal(TXN del NBM, σ). σ = máx(${META.min_sigma}°, XND × ${META.sigma_inflate}). Mínima análoga con mín(). Días cerrados usan lo observado hasta que sale el reporte oficial.<br>
-<b>Ojo.</b> La ventana de máximas del NBM es 12Z–06Z y la de mínimas 00Z–18Z: no coinciden exacto con el día de Kalshi (medianoche a medianoche, hora estándar). Las observaciones de la API son horarias y pueden no captar el pico de 1 minuto. Frentes, nubes y redondeo °C→°F mueven todo. Verificá siempre las reglas del mercado. No es consejo de inversión.<br>
+<b>🧪 revisar</b> = el modelo y el precio difieren más de ${Math.round((META.max_gap||0.4)*100)} puntos: casi siempre falta un dato (frente, pronóstico). No se alerta ni entra en el Top.<br><b>Ojo.</b> La ventana de máximas del NBM es 12Z–06Z y la de mínimas 00Z–18Z: no coinciden exacto con el día de Kalshi (medianoche a medianoche, hora estándar). Las observaciones de la API son horarias y pueden no captar el pico de 1 minuto. Frentes, nubes y redondeo °C→°F mueven todo. Verificá siempre las reglas del mercado. No es consejo de inversión.<br>
 <span class="mono">Series: ${(META.series||[]).join(", ")} · omitidos: ${sk}</span>`}
 function all(){kpis();cards();table();events();notes()}
 $("#gen").textContent="⏱ "+new Date(META.generated).toLocaleString();
@@ -783,6 +852,8 @@ def build_parser():
     ap.add_argument("--late-hour-min", type=float, default=10.0, help="hora local desde la que la minima se toma de lo observado")
     ap.add_argument("--max-spread", type=float, default=0.05, help="spread maximo para considerar liquido")
     ap.add_argument("--min-volume", type=int, default=200, help="volumen minimo para considerar liquido")
+    ap.add_argument("--max-gap", type=float, default=0.40,
+                    help="si modelo y precio difieren mas que esto, se marca como sospechoso y no se alerta")
     return ap
 
 
