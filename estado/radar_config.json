@@ -9,51 +9,52 @@
   "intervalo_min": 10,
   "offset": 553973439,
   "enviadas": {
-    "KXHIGHTDAL-26NOV03-T77|YES": [
-      0.22037504821784573,
+    "KXHIGHNY-26NOV03-B66.5|NO": [
+      0.22729280997448711,
       "2026-11-03"
     ],
-    "KXHIGHTDAL-26NOV03-B76.5|NO": [
-      0.22037504821784573,
+    "KXHIGHCHI-26NOV03-B73.5|NO": [
+      0.21978151649660063,
       "2026-11-03"
     ],
-    "KXHIGHDEN-26NOV03-T55|YES": [
-      0.21989416063577363,
+    "KXHIGHPHIL-26NOV03-B71.5|NO": [
+      0.21551888742509132,
       "2026-11-03"
     ],
-    "KXHIGHTSFO-26NOV03-B64.5|NO": [
-      0.20779636462408194,
+    "KXLOWTOKC-26NOV03-B50.5|NO": [
+      0.20260131746123825,
       "2026-11-03"
     ],
-    "KXHIGHAUS-26NOV03-B77.5|YES": [
-      0.2035614471072995,
+    "KXHIGHTBOS-26NOV03-T75|YES": [
+      0.1901584002536834,
       "2026-11-03"
     ],
-    "KXHIGHTEWR-26NOV03-B72.5|NO": [
-      0.19779636462408182,
+    "KXHIGHTHOU-26NOV03-B84.5|NO": [
+      0.18085793876839854,
       "2026-11-03"
     ],
-    "KXHIGHTSDF-26NOV03-B78.5|NO": [
-      0.19121121972586788,
-      "2026-11-03"
-    ],
-    "KXHIGHNY-26NOV03-B68.5|NO": [
-      0.17943628372675466,
-      "2026-11-03"
-    ],
-    "KXHIGHAUS-26NOV03-B79.5|NO": [
-      0.1785120737555385,
-      "2026-11-03"
-    ],
-    "KXHIGHTSAN-26NOV03-B75.5|NO": [
-      0.17809659411322074,
-      "2026-11-03"
-    ],
-    "KXHIGHTSEA-26NOV03-B60.5|YES": [
-      0.17165098790894895,
+    "KXLOWTAUS-26NOV03-T54|YES": [
+      0.17375608834548412,
       "2026-11-03"
     ]
   },
-  "last_scan_ts": 1793713223.2914693,
-  "model_version": 5
+  "last_scan_ts": 1793715838.2854269,
+  "model_version": 6,
+  "trading": {
+    "activo": false,
+    "max_por_op": 1.0,
+    "max_dia": 10.0,
+    "max_posiciones": 8,
+    "edge_min": 0.06,
+    "tp": 0.3,
+    "margen_salida": 0.02,
+    "min_precio": 0.1,
+    "max_precio": 0.85,
+    "max_spread": 0.04,
+    "min_vol": 50,
+    "perdida_max_dia": 5.0,
+    "vender_todo": false,
+    "gasto": {},
+    "pnl_dia": {}
+  }
 }
