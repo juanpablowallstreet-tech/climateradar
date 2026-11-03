@@ -70,3 +70,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-03T22:15+00:00,KXLOWTAUS-26NOV03-T61,KXLOWTAUS-26NOV03,Austin-Bergstrom International Airport,min,2026-11-03,62° or above,YES,0.23,0.4524,0.2024,,
 2026-11-03T22:15+00:00,KXHIGHTEWR-26NOV04-T73,KXHIGHTEWR-26NOV04,"Newark, Newark International Airport",max,2026-11-04,72° or below,YES,0.11,0.3073,0.1873,,
 2026-11-03T22:15+00:00,KXHIGHTMIN-26NOV04-B55.5,KXHIGHTMIN-26NOV04,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-04,55° to 56°,NO,0.57,0.2306,0.1794,,
+2026-11-03T23:00+00:00,KXHIGHTEWR-26NOV04-B73.5,KXHIGHTEWR-26NOV04,"Newark, Newark International Airport",max,2026-11-04,73° to 74°,NO,0.42,0.3611,0.1989,,
+2026-11-03T23:00+00:00,KXLOWTAUS-26NOV04-B49.5,KXLOWTAUS-26NOV04,Austin-Bergstrom International Airport,min,2026-11-04,49° to 50°,NO,0.66,0.1459,0.1741,,
