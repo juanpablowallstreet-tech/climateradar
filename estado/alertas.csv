@@ -56,3 +56,8 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-03T20:05+00:00,KXHIGHTATL-26NOV04-T71,KXHIGHTATL-26NOV04,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-04,70° or below,YES,0.37,0.5970,0.2070,,
 2026-11-03T20:05+00:00,KXLOWTBOS-26NOV04-B57.5,KXLOWTBOS-26NOV04,"Boston, Logan International Airport",min,2026-11-04,57° to 58°,NO,0.61,0.1895,0.1805,,
 2026-11-03T20:05+00:00,KXLOWTDAL-26NOV04-B52.5,KXLOWTDAL-26NOV04,Dallas/Fort Worth International Airport,min,2026-11-04,52° to 53°,NO,0.53,0.2747,0.1753,,
+2026-11-03T20:50+00:00,KXHIGHTDAL-26NOV04-B71.5,KXHIGHTDAL-26NOV04,Dallas/Fort Worth International Airport,max,2026-11-04,71° to 72°,YES,0.08,0.3244,0.2344,,
+2026-11-03T20:50+00:00,KXHIGHTLV-26NOV03-B68.5,KXHIGHTLV-26NOV03,Harry Reid International Airport,max,2026-11-03,68° to 69°,NO,0.56,0.2052,0.2148,,
+2026-11-03T20:50+00:00,KXLOWTATL-26NOV04-B65.5,KXLOWTATL-26NOV04,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-04,65° to 66°,NO,0.46,0.3182,0.2018,,
+2026-11-03T20:50+00:00,KXLOWTMIN-26NOV04-B50.5,KXLOWTMIN-26NOV04,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-04,50° to 51°,NO,0.50,0.3070,0.1730,,
+2026-11-03T20:50+00:00,KXLOWTDC-26NOV04-B54.5,KXLOWTDC-26NOV04,"Washington/Reagan National Airport, DC",min,2026-11-04,54° to 55°,NO,0.56,0.2495,0.1705,,
