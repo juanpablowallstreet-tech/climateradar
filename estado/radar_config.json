@@ -1,0 +1,12 @@
+{
+  "chat_id": null,
+  "edge": 0.17,
+  "roi": null,
+  "solo_liquidos": false,
+  "tipo": "todas",
+  "pausado": false,
+  "intervalo_min": 10,
+  "offset": 0,
+  "enviadas": {},
+  "last_scan_ts": 1793709915.9008358
+}
