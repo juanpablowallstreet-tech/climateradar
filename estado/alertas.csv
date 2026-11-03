@@ -49,3 +49,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-03T18:14+00:00,KXHIGHTPHX-26NOV04-B75.5,KXHIGHTPHX-26NOV04,"Phoenix, Phoenix Sky Harbor International Airport",max,2026-11-04,75° to 76°,YES,0.11,0.3008,0.1808,,
 2026-11-03T18:14+00:00,KXLOWTTTN-26NOV04-T48,KXLOWTTTN-26NOV04,Trenton-Mercer Airport,min,2026-11-04,49° or above,YES,0.17,0.3560,0.1760,,
 2026-11-03T18:14+00:00,KXHIGHTSEA-26NOV03-B56.5,KXHIGHTSEA-26NOV03,"Seattle, Seattle-Tacoma International Airport",max,2026-11-03,56° to 57°,NO,0.54,0.2687,0.1713,,
+2026-11-03T19:11+00:00,KXLOWTDEN-26NOV03-T35,KXLOWTDEN-26NOV03,"Denver, Denver International Airport",min,2026-11-03,34° or below,YES,0.07,0.2976,0.2176,,
+2026-11-03T19:11+00:00,KXHIGHTSFO-26NOV04-B67.5,KXHIGHTSFO-26NOV04,"San Francisco, San Francisco International Airport",max,2026-11-04,67° to 68°,NO,0.51,0.2848,0.1852,,
+2026-11-03T19:11+00:00,KXHIGHTOKC-26NOV04-B66.5,KXHIGHTOKC-26NOV04,"Oklahoma City, Will Rogers World Airport",max,2026-11-04,66° to 67°,YES,0.14,0.3320,0.1820,,
