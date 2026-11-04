@@ -110,3 +110,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-04T08:00+00:00,KXLOWTLAX-26NOV04-T58,KXLOWTLAX-26NOV04,"Los Angeles, Los Angeles International Airport",min,2026-11-04,59° or above,YES,0.34,0.5398,0.1798,,
 2026-11-04T08:00+00:00,KXLOWTMIN-26NOV04-B48.5,KXLOWTMIN-26NOV04,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-04,48° to 49°,NO,0.54,0.2635,0.1765,,
 2026-11-04T08:00+00:00,KXHIGHTBOS-26NOV04-T77,KXHIGHTBOS-26NOV04,"Boston, Logan International Airport",max,2026-11-04,78° or above,YES,0.33,0.5227,0.1727,,
+2026-11-04T08:54+00:00,KXLOWTSAN-26NOV04-T63,KXLOWTSAN-26NOV04,San Diego International Airport,min,2026-11-04,64° or above,YES,0.08,0.2844,0.1944,,
+2026-11-04T08:54+00:00,KXLOWTHOU-26NOV04-B60.5,KXLOWTHOU-26NOV04,"Houston, Houston Hobby Airport",min,2026-11-04,60° to 61°,NO,0.55,0.2364,0.1936,,
+2026-11-04T08:54+00:00,KXHIGHTNOLA-26NOV04-T79,KXHIGHTNOLA-26NOV04,"New Orleans, New Orleans International Airport",max,2026-11-04,78° or below,YES,0.14,0.3349,0.1849,,
+2026-11-04T08:54+00:00,KXHIGHAUS-26NOV04-B77.5,KXHIGHAUS-26NOV04,Austin-Bergstrom International Airport,max,2026-11-04,77° to 78°,NO,0.65,0.1472,0.1828,,
