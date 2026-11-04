@@ -107,3 +107,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-04T04:46+00:00,KXHIGHTPHX-26NOV04-B79.5,KXHIGHTPHX-26NOV04,"Phoenix, Phoenix Sky Harbor International Airport",max,2026-11-04,79° to 80°,NO,0.61,0.1954,0.1746,,
 2026-11-04T04:46+00:00,KXLOWTDC-26NOV04-B52.5,KXLOWTDC-26NOV04,"Washington/Reagan National Airport, DC",min,2026-11-04,52° to 53°,NO,0.73,0.0790,0.1710,,
 2026-11-04T05:42+00:00,KXLOWTBOS-26NOV04-T58,KXLOWTBOS-26NOV04,"Boston, Logan International Airport",min,2026-11-04,59° or above,YES,0.14,0.3397,0.1897,,
+2026-11-04T08:00+00:00,KXLOWTLAX-26NOV04-T58,KXLOWTLAX-26NOV04,"Los Angeles, Los Angeles International Airport",min,2026-11-04,59° or above,YES,0.34,0.5398,0.1798,,
+2026-11-04T08:00+00:00,KXLOWTMIN-26NOV04-B48.5,KXLOWTMIN-26NOV04,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-04,48° to 49°,NO,0.54,0.2635,0.1765,,
+2026-11-04T08:00+00:00,KXHIGHTBOS-26NOV04-T77,KXHIGHTBOS-26NOV04,"Boston, Logan International Airport",max,2026-11-04,78° or above,YES,0.33,0.5227,0.1727,,
