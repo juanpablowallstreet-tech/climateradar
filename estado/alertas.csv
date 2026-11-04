@@ -175,3 +175,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-04T21:53+00:00,KXHIGHTNOLA-26NOV05-B78.5,KXHIGHTNOLA-26NOV05,"New Orleans, New Orleans International Airport",max,2026-11-05,78° to 79°,NO,0.48,0.3019,0.1981,,
 2026-11-04T21:53+00:00,KXLOWTAUS-26NOV05-B49.5,KXLOWTAUS-26NOV05,Austin-Bergstrom International Airport,min,2026-11-05,49° to 50°,NO,0.63,0.1589,0.1911,,
 2026-11-04T21:53+00:00,KXLOWTLV-26NOV05-T52,KXLOWTLV-26NOV05,Harry Reid International Airport,min,2026-11-05,53° or above,NO,0.49,0.3029,0.1871,,
+2026-11-04T22:40+00:00,KXLOWTDAL-26NOV05-B54.5,KXLOWTDAL-26NOV05,Dallas/Fort Worth International Airport,min,2026-11-05,54° to 55°,NO,0.50,0.2526,0.2274,,
+2026-11-04T22:40+00:00,KXHIGHAUS-26NOV05-B84.5,KXHIGHAUS-26NOV05,Austin-Bergstrom International Airport,max,2026-11-05,84° to 85°,NO,0.68,0.1128,0.1872,,
