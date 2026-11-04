@@ -117,3 +117,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-04T10:54+00:00,KXHIGHTHOU-26NOV04-B77.5,KXHIGHTHOU-26NOV04,"Houston, Houston Hobby Airport",max,2026-11-04,77° to 78°,NO,0.55,0.2268,0.2032,,
 2026-11-04T10:54+00:00,KXLOWTBOS-26NOV04-B53.5,KXLOWTBOS-26NOV04,"Boston, Logan International Airport",min,2026-11-04,53° to 54°,NO,0.74,0.0546,0.1854,,
 2026-11-04T10:54+00:00,KXHIGHAUS-26NOV04-B75.5,KXHIGHAUS-26NOV04,Austin-Bergstrom International Airport,max,2026-11-04,75° to 76°,YES,0.07,0.2513,0.1713,,
+2026-11-04T11:47+00:00,KXHIGHTSEA-26NOV04-B55.5,KXHIGHTSEA-26NOV04,"Seattle, Seattle-Tacoma International Airport",max,2026-11-04,55° to 56°,NO,0.65,0.1180,0.2120,,
