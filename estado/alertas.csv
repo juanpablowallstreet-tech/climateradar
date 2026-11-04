@@ -167,3 +167,8 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-04T20:17+00:00,KXLOWTMIN-26NOV05-B35.5,KXLOWTMIN-26NOV05,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-05,35° to 36°,YES,0.06,0.2518,0.1818,,
 2026-11-04T20:17+00:00,KXHIGHTHOU-26NOV05-B79.5,KXHIGHTHOU-26NOV05,"Houston, Houston Hobby Airport",max,2026-11-05,79° to 80°,YES,0.09,0.2781,0.1781,,
 2026-11-04T20:17+00:00,KXHIGHTMIN-26NOV05-B48.5,KXHIGHTMIN-26NOV05,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-05,48° to 49°,YES,0.14,0.3247,0.1747,,
+2026-11-04T21:08+00:00,KXLOWTLV-26NOV05-B51.5,KXLOWTLV-26NOV05,Harry Reid International Airport,min,2026-11-05,51° to 52°,NO,0.59,0.1732,0.2168,,
+2026-11-04T21:08+00:00,KXLOWTSDF-26NOV05-B52.5,KXLOWTSDF-26NOV05,Louisville Muhammad Ali International Airport,min,2026-11-05,52° to 53°,NO,0.57,0.2170,0.1930,,
+2026-11-04T21:08+00:00,KXLOWTMIN-26NOV05-B39.5,KXLOWTMIN-26NOV05,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-05,39° to 40°,NO,0.58,0.2088,0.1912,,
+2026-11-04T21:08+00:00,KXHIGHCHI-26NOV05-T55,KXHIGHCHI-26NOV05,"Chicago, Chicago Midway Airport",max,2026-11-05,54° or below,NO,0.22,0.5880,0.1720,,
+2026-11-04T21:08+00:00,KXHIGHTDC-26NOV05-B73.5,KXHIGHTDC-26NOV05,"Washington/Reagan National Airport, DC",max,2026-11-05,73° to 74°,NO,0.57,0.2395,0.1705,,
