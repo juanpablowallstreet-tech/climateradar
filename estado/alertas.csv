@@ -208,3 +208,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-05T05:46+00:00,KXHIGHTBOS-26NOV05-B76.5,KXHIGHTBOS-26NOV05,"Boston, Logan International Airport",max,2026-11-05,76° to 77°,YES,0.07,0.2601,0.1801,,
 2026-11-05T06:45+00:00,KXLOWTSAN-26NOV05-B57.5,KXLOWTSAN-26NOV05,San Diego International Airport,min,2026-11-05,57° to 58°,NO,0.64,0.1230,0.2170,,
 2026-11-05T06:45+00:00,KXHIGHTDAL-26NOV05-B79.5,KXHIGHTDAL-26NOV05,Dallas/Fort Worth International Airport,max,2026-11-05,79° to 80°,NO,0.46,0.3165,0.2035,,
+2026-11-05T08:00+00:00,KXLOWTOKC-26NOV05-B47.5,KXLOWTOKC-26NOV05,"Oklahoma City, Will Rogers World Airport",min,2026-11-05,47° to 48°,NO,0.50,0.2618,0.2182,,
