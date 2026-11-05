@@ -860,9 +860,13 @@
     "KXLOWTMIN-26NOV05-T35|YES": [
       0.17601307338424516,
       "2026-11-05"
+    ],
+    "KXHIGHTHOU-26NOV05-T84|YES": [
+      0.1758699078790858,
+      "2026-11-05"
     ]
   },
-  "last_scan_ts": 1793868974.6142328,
+  "last_scan_ts": 1793872251.335372,
   "model_version": 6,
   "trading": {
     "activo": false,
