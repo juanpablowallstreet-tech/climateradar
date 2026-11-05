@@ -204,3 +204,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-05T04:50+00:00,KXLOWTLAX-26NOV05-B58.5,KXLOWTLAX-26NOV05,"Los Angeles, Los Angeles International Airport",min,2026-11-05,58° to 59°,NO,0.63,0.1545,0.1955,,
 2026-11-05T04:50+00:00,KXLOWTDEN-26NOV05-B33.5,KXLOWTDEN-26NOV05,"Denver, Denver International Airport",min,2026-11-05,33° to 34°,NO,0.66,0.1431,0.1769,,
 2026-11-05T04:50+00:00,KXHIGHTTTN-26NOV05-B74.5,KXHIGHTTTN-26NOV05,Trenton-Mercer Airport,max,2026-11-05,74° to 75°,YES,0.10,0.2825,0.1725,,
+2026-11-05T05:46+00:00,KXHIGHPHIL-26NOV05-B76.5,KXHIGHPHIL-26NOV05,"Philadelphia, Philadelphia International Airport",max,2026-11-05,76° to 77°,YES,0.11,0.3117,0.1917,,
+2026-11-05T05:46+00:00,KXHIGHTBOS-26NOV05-B76.5,KXHIGHTBOS-26NOV05,"Boston, Logan International Airport",max,2026-11-05,76° to 77°,YES,0.07,0.2601,0.1801,,
