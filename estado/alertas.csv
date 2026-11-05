@@ -192,3 +192,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-05T02:13+00:00,KXLOWTDC-26NOV05-B63.5,KXLOWTDC-26NOV05,"Washington/Reagan National Airport, DC",min,2026-11-05,63° to 64°,NO,0.60,0.1931,0.1869,,
 2026-11-05T02:13+00:00,KXHIGHTSEA-26NOV05-B55.5,KXHIGHTSEA-26NOV05,"Seattle, Seattle-Tacoma International Airport",max,2026-11-05,55° to 56°,YES,0.13,0.3266,0.1866,,
 2026-11-05T02:13+00:00,KXLOWTSATX-26NOV05-B54.5,KXLOWTSATX-26NOV05,"San Antonio, San Antonio International Airport",min,2026-11-05,54° to 55°,NO,0.76,0.0492,0.1708,,
+2026-11-05T03:05+00:00,KXLOWTAUS-26NOV05-B51.5,KXLOWTAUS-26NOV05,Austin-Bergstrom International Airport,min,2026-11-05,51° to 52°,NO,0.75,0.0305,0.1995,,
+2026-11-05T03:05+00:00,KXLOWTNYC-26NOV05-B61.5,KXLOWTNYC-26NOV05,"New York City, Central Park",min,2026-11-05,61° to 62°,NO,0.65,0.1493,0.1807,,
+2026-11-05T03:05+00:00,KXHIGHTSDF-26NOV05-B69.5,KXHIGHTSDF-26NOV05,Louisville Muhammad Ali International Airport,max,2026-11-05,69° to 70°,NO,0.71,0.0904,0.1796,,
