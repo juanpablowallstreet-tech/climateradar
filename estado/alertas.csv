@@ -251,3 +251,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-05T19:28+00:00,KXHIGHTEWR-26NOV06-T68,KXHIGHTEWR-26NOV06,"Newark, Newark International Airport",max,2026-11-06,67° or below,YES,0.21,0.4194,0.1894,,
 2026-11-05T19:28+00:00,KXLOWTOKC-26NOV06-T44,KXLOWTOKC-26NOV06,"Oklahoma City, Will Rogers World Airport",min,2026-11-06,45° or above,YES,0.18,0.3864,0.1864,,
 2026-11-05T19:28+00:00,KXHIGHTSAN-26NOV05-B77.5,KXHIGHTSAN-26NOV05,San Diego International Airport,max,2026-11-05,77° to 78°,NO,0.67,0.1375,0.1725,,
+2026-11-05T20:17+00:00,KXLOWTSATX-26NOV06-B58.5,KXLOWTSATX-26NOV06,"San Antonio, San Antonio International Airport",min,2026-11-06,58° to 59°,NO,0.58,0.1717,0.2283,,
+2026-11-05T20:17+00:00,KXLOWTSDF-26NOV06-T46,KXLOWTSDF-26NOV06,Louisville Muhammad Ali International Airport,min,2026-11-06,47° or above,NO,0.62,0.1605,0.1995,,
+2026-11-05T20:17+00:00,KXHIGHTSFO-26NOV05-B66.5,KXHIGHTSFO-26NOV05,"San Francisco, San Francisco International Airport",max,2026-11-05,66° to 67°,YES,0.07,0.2695,0.1895,,
+2026-11-05T20:17+00:00,KXLOWTMIN-26NOV06-B31.5,KXLOWTMIN-26NOV06,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-06,31° to 32°,NO,0.62,0.1714,0.1886,,
