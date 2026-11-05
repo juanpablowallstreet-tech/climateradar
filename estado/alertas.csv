@@ -213,3 +213,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-05T08:56+00:00,KXLOWTSEA-26NOV05-B47.5,KXLOWTSEA-26NOV05,"Seattle, Seattle-Tacoma International Airport",min,2026-11-05,47° to 48°,NO,0.52,0.2679,0.1921,,
 2026-11-05T08:56+00:00,KXLOWTMIN-26NOV05-T35,KXLOWTMIN-26NOV05,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-05,34° or below,YES,0.07,0.2560,0.1760,,
 2026-11-05T09:50+00:00,KXHIGHTHOU-26NOV05-T84,KXHIGHTHOU-26NOV05,"Houston, Houston Hobby Airport",max,2026-11-05,85° or above,YES,0.06,0.2459,0.1759,,
+2026-11-05T10:48+00:00,KXLOWTDAL-26NOV05-B52.5,KXLOWTDAL-26NOV05,Dallas/Fort Worth International Airport,min,2026-11-05,52° to 53°,NO,0.68,0.0926,0.2074,,
+2026-11-05T10:48+00:00,KXLOWTAUS-26NOV05-B47.5,KXLOWTAUS-26NOV05,Austin-Bergstrom International Airport,min,2026-11-05,47° to 48°,NO,0.78,0.0028,0.1972,,
+2026-11-05T10:48+00:00,KXHIGHTLV-26NOV05-B71.5,KXHIGHTLV-26NOV05,Harry Reid International Airport,max,2026-11-05,71° to 72°,YES,0.11,0.3170,0.1970,,
