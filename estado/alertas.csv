@@ -278,3 +278,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-06T03:55+00:00,KXLOWTNYC-26NOV06-B58.5,KXLOWTNYC-26NOV06,"New York City, Central Park",min,2026-11-06,58° to 59°,NO,0.55,0.2237,0.2063,,
 2026-11-06T03:55+00:00,KXLOWTAUS-26NOV06-B53.5,KXLOWTAUS-26NOV06,Austin-Bergstrom International Airport,min,2026-11-06,53° to 54°,NO,0.73,0.0483,0.2017,,
 2026-11-06T03:55+00:00,KXLOWTNOLA-26NOV06-B60.5,KXLOWTNOLA-26NOV06,"New Orleans, New Orleans International Airport",min,2026-11-06,60° to 61°,NO,0.65,0.1541,0.1759,,
+2026-11-06T04:48+00:00,KXLOWTMIA-26NOV06-B72.5,KXLOWTMIA-26NOV06,"Miami, Miami International Airport",min,2026-11-06,72° to 73°,NO,0.56,0.2296,0.1904,,
+2026-11-06T04:48+00:00,KXLOWTAUS-26NOV06-B55.5,KXLOWTAUS-26NOV06,Austin-Bergstrom International Airport,min,2026-11-06,55° to 56°,NO,0.68,0.1165,0.1835,,
+2026-11-06T04:48+00:00,KXLOWTATL-26NOV06-B55.5,KXLOWTATL-26NOV06,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-06,55° to 56°,NO,0.61,0.1992,0.1708,,
