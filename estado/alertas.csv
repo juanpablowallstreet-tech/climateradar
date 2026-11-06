@@ -309,3 +309,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-06T16:16+00:00,KXLOWTDAL-26NOV07-B52.5,KXLOWTDAL-26NOV07,Dallas/Fort Worth International Airport,min,2026-11-07,52° to 53°,NO,0.57,0.2280,0.1820,,
 2026-11-06T16:16+00:00,KXHIGHTMIN-26NOV07-T50,KXHIGHTMIN-26NOV07,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-07,49° or below,YES,0.16,0.3489,0.1789,,
 2026-11-06T16:16+00:00,KXHIGHTSEA-26NOV07-B61.5,KXHIGHTSEA-26NOV07,"Seattle, Seattle-Tacoma International Airport",max,2026-11-07,61° to 62°,NO,0.58,0.2224,0.1776,,
+2026-11-06T17:07+00:00,KXLOWTEWR-26NOV06-T61,KXLOWTEWR-26NOV06,"Newark, Newark International Airport",min,2026-11-06,62° or above,YES,0.10,0.3453,0.2353,,
+2026-11-06T17:07+00:00,KXLOWTPHIL-26NOV07-T49,KXLOWTPHIL-26NOV07,"Philadelphia, Philadelphia International Airport",min,2026-11-07,50° or above,NO,0.60,0.1695,0.2105,,
+2026-11-06T17:07+00:00,KXLOWTSDF-26NOV06-B43.5,KXLOWTSDF-26NOV06,Louisville Muhammad Ali International Airport,min,2026-11-06,43° to 44°,NO,0.56,0.2242,0.1958,,
+2026-11-06T17:07+00:00,KXHIGHTSATX-26NOV07-T70,KXHIGHTSATX-26NOV07,"San Antonio, San Antonio International Airport",max,2026-11-07,69° or below,NO,0.53,0.2552,0.1948,,
