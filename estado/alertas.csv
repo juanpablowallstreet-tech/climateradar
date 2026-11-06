@@ -290,3 +290,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-06T08:49+00:00,KXHIGHTOKC-26NOV06-T56,KXHIGHTOKC-26NOV06,"Oklahoma City, Will Rogers World Airport",max,2026-11-06,55° or below,NO,0.55,0.2510,0.1790,,
 2026-11-06T09:47+00:00,KXHIGHTLV-26NOV06-B71.5,KXHIGHTLV-26NOV06,Harry Reid International Airport,max,2026-11-06,71° to 72°,NO,0.54,0.2141,0.2259,,
 2026-11-06T09:47+00:00,KXHIGHTDAL-26NOV06-B68.5,KXHIGHTDAL-26NOV06,Dallas/Fort Worth International Airport,max,2026-11-06,68° to 69°,YES,0.06,0.2666,0.1966,,
+2026-11-06T10:45+00:00,KXHIGHAUS-26NOV06-B75.5,KXHIGHAUS-26NOV06,Austin-Bergstrom International Airport,max,2026-11-06,75° to 76°,NO,0.57,0.2272,0.1828,,
