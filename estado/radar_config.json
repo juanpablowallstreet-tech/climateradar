@@ -1176,9 +1176,13 @@
     "KXHIGHAUS-26NOV06-B75.5|NO": [
       0.18278398907190532,
       "2026-11-06"
+    ],
+    "KXHIGHTSAN-26NOV06-B80.5|NO": [
+      0.171604957661209,
+      "2026-11-06"
     ]
   },
-  "last_scan_ts": 1793961930.335451,
+  "last_scan_ts": 1793964991.7726607,
   "model_version": 6,
   "trading": {
     "activo": false,

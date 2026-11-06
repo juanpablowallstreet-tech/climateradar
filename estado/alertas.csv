@@ -291,3 +291,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-06T09:47+00:00,KXHIGHTLV-26NOV06-B71.5,KXHIGHTLV-26NOV06,Harry Reid International Airport,max,2026-11-06,71° to 72°,NO,0.54,0.2141,0.2259,,
 2026-11-06T09:47+00:00,KXHIGHTDAL-26NOV06-B68.5,KXHIGHTDAL-26NOV06,Dallas/Fort Worth International Airport,max,2026-11-06,68° to 69°,YES,0.06,0.2666,0.1966,,
 2026-11-06T10:45+00:00,KXHIGHAUS-26NOV06-B75.5,KXHIGHAUS-26NOV06,Austin-Bergstrom International Airport,max,2026-11-06,75° to 76°,NO,0.57,0.2272,0.1828,,
+2026-11-06T11:36+00:00,KXHIGHTSAN-26NOV06-B80.5,KXHIGHTSAN-26NOV06,San Diego International Airport,max,2026-11-06,80° to 81°,NO,0.59,0.2184,0.1716,,
