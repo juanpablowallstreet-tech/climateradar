@@ -323,3 +323,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-06T19:37+00:00,KXLOWTPHIL-26NOV06-B55.5,KXLOWTPHIL-26NOV06,"Philadelphia, Philadelphia International Airport",min,2026-11-06,55° to 56°,YES,0.08,0.2623,0.1723,,
 2026-11-06T21:08+00:00,KXLOWTLV-26NOV07-B53.5,KXLOWTLV-26NOV07,Harry Reid International Airport,min,2026-11-07,53° to 54°,NO,0.56,0.2204,0.1996,,
 2026-11-06T21:08+00:00,KXHIGHTPHX-26NOV07-B79.5,KXHIGHTPHX-26NOV07,"Phoenix, Phoenix Sky Harbor International Airport",max,2026-11-07,79° to 80°,YES,0.06,0.2427,0.1727,,
+2026-11-06T21:45+00:00,KXLOWTSATX-26NOV07-B57.5,KXLOWTSATX-26NOV07,"San Antonio, San Antonio International Airport",min,2026-11-07,57° to 58°,NO,0.56,0.2168,0.2032,,
