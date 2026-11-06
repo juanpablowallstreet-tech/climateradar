@@ -264,3 +264,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-06T00:05+00:00,KXHIGHTATL-26NOV06-B76.5,KXHIGHTATL-26NOV06,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-06,76° to 77°,NO,0.71,0.0706,0.1994,,
 2026-11-06T00:05+00:00,KXLOWTLAX-26NOV06-B60.5,KXLOWTLAX-26NOV06,"Los Angeles, Los Angeles International Airport",min,2026-11-06,60° to 61°,NO,0.67,0.1112,0.1988,,
 2026-11-06T00:05+00:00,KXHIGHTSFO-26NOV06-B69.5,KXHIGHTSFO-26NOV06,"San Francisco, San Francisco International Airport",max,2026-11-06,69° to 70°,NO,0.44,0.3479,0.1921,,
+2026-11-06T01:07+00:00,KXLOWTHOU-26NOV06-B63.5,KXLOWTHOU-26NOV06,"Houston, Houston Hobby Airport",min,2026-11-06,63° to 64°,NO,0.48,0.3037,0.1963,,
+2026-11-06T01:07+00:00,KXHIGHTHOU-26NOV06-B83.5,KXHIGHTHOU-26NOV06,"Houston, Houston Hobby Airport",max,2026-11-06,83° to 84°,NO,0.60,0.1926,0.1874,,
+2026-11-06T01:07+00:00,KXLOWTATL-26NOV06-B51.5,KXLOWTATL-26NOV06,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-06,51° to 52°,YES,0.06,0.2507,0.1807,,
+2026-11-06T01:07+00:00,KXHIGHTDAL-26NOV06-B72.5,KXHIGHTDAL-26NOV06,Dallas/Fort Worth International Airport,max,2026-11-06,72° to 73°,NO,0.61,0.1979,0.1721,,
