@@ -1180,9 +1180,13 @@
     "KXHIGHTSAN-26NOV06-B80.5|NO": [
       0.22469466766296012,
       "2026-11-06"
+    ],
+    "KXHIGHTNOLA-26NOV06-B78.5|NO": [
+      0.18007503210412537,
+      "2026-11-06"
     ]
   },
-  "last_scan_ts": 1793968244.9330904,
+  "last_scan_ts": 1793975934.6929526,
   "model_version": 6,
   "trading": {
     "activo": false,
