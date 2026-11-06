@@ -285,3 +285,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-06T05:43+00:00,KXLOWTSAN-26NOV06-B56.5,KXLOWTSAN-26NOV06,San Diego International Airport,min,2026-11-06,56° to 57°,NO,0.70,0.0941,0.1859,,
 2026-11-06T05:43+00:00,KXHIGHLAX-26NOV06-B83.5,KXHIGHLAX-26NOV06,"Los Angeles, Los Angeles International Airport",max,2026-11-06,83° to 84°,NO,0.51,0.2899,0.1801,,
 2026-11-06T06:47+00:00,KXHIGHTLV-26NOV06-B73.5,KXHIGHTLV-26NOV06,Harry Reid International Airport,max,2026-11-06,73° to 74°,NO,0.48,0.3079,0.1921,,
+2026-11-06T07:58+00:00,KXHIGHTNOLA-26NOV06-B78.5,KXHIGHTNOLA-26NOV06,"New Orleans, New Orleans International Airport",max,2026-11-06,78° to 79°,YES,0.17,0.3758,0.1958,,
