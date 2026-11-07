@@ -340,3 +340,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-06T23:42+00:00,KXLOWTMIN-26NOV07-B33.5,KXLOWTMIN-26NOV07,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-07,33° to 34°,NO,0.55,0.2082,0.2218,,
 2026-11-06T23:42+00:00,KXLOWTTTN-26NOV06-B53.5,KXLOWTTTN-26NOV06,Trenton-Mercer Airport,min,2026-11-06,53° to 54°,NO,0.50,0.2735,0.2065,,
 2026-11-06T23:42+00:00,KXHIGHTEWR-26NOV07-T62,KXHIGHTEWR-26NOV07,"Newark, Newark International Airport",max,2026-11-07,61° or below,YES,0.31,0.5025,0.1725,,
+2026-11-07T00:22+00:00,KXHIGHDEN-26NOV07-B65.5,KXHIGHDEN-26NOV07,"Denver, Denver International Airport",max,2026-11-07,65° to 66°,NO,0.71,0.0556,0.2144,,
+2026-11-07T00:22+00:00,KXLOWTBOS-26NOV07-B51.5,KXLOWTBOS-26NOV07,"Boston, Logan International Airport",min,2026-11-07,51° to 52°,NO,0.50,0.2944,0.1856,,
