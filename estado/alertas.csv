@@ -385,3 +385,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-07T14:12+00:00,KXHIGHTOKC-26NOV07-B61.5,KXHIGHTOKC-26NOV07,"Oklahoma City, Will Rogers World Airport",max,2026-11-07,61° to 62°,NO,0.76,0.0439,0.1761,,
 2026-11-07T14:12+00:00,KXHIGHAUS-26NOV07-B72.5,KXHIGHAUS-26NOV07,Austin-Bergstrom International Airport,max,2026-11-07,72° to 73°,NO,0.54,0.2686,0.1714,,
 2026-11-07T14:12+00:00,KXHIGHTMIN-26NOV07-B50.5,KXHIGHTMIN-26NOV07,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-07,50° to 51°,YES,0.08,0.2607,0.1707,,
+2026-11-07T14:54+00:00,KXHIGHTSFO-26NOV07-B71.5,KXHIGHTSFO-26NOV07,"San Francisco, San Francisco International Airport",max,2026-11-07,71° to 72°,NO,0.54,0.2546,0.1854,,
