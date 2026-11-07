@@ -377,3 +377,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-07T09:05+00:00,KXHIGHTSFO-26NOV07-B73.5,KXHIGHTSFO-26NOV07,"San Francisco, San Francisco International Airport",max,2026-11-07,73° to 74°,YES,0.11,0.3221,0.2021,,
 2026-11-07T09:05+00:00,KXHIGHTSDF-26NOV07-B54.5,KXHIGHTSDF-26NOV07,Louisville Muhammad Ali International Airport,max,2026-11-07,54° to 55°,YES,0.13,0.3183,0.1783,,
 2026-11-07T10:26+00:00,KXHIGHTSAN-26NOV07-B85.5,KXHIGHTSAN-26NOV07,San Diego International Airport,max,2026-11-07,85° to 86°,YES,0.19,0.3806,0.1706,,
+2026-11-07T11:44+00:00,KXHIGHTSFO-26NOV07-B69.5,KXHIGHTSFO-26NOV07,"San Francisco, San Francisco International Airport",max,2026-11-07,69° to 70°,NO,0.66,0.1193,0.2007,,
+2026-11-07T11:44+00:00,KXHIGHCHI-26NOV07-B49.5,KXHIGHCHI-26NOV07,"Chicago, Chicago Midway Airport",max,2026-11-07,49° to 50°,NO,0.69,0.0925,0.1975,,
+2026-11-07T11:44+00:00,KXLOWTLAX-26NOV07-T56,KXLOWTLAX-26NOV07,"Los Angeles, Los Angeles International Airport",min,2026-11-07,55° or below,YES,0.06,0.2653,0.1953,,
+2026-11-07T11:44+00:00,KXHIGHTSAN-26NOV07-T83,KXHIGHTSAN-26NOV07,San Diego International Airport,max,2026-11-07,82° or below,YES,0.11,0.2901,0.1701,,
