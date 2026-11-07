@@ -363,3 +363,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-07T05:29+00:00,KXLOWTDAL-26NOV07-B50.5,KXLOWTDAL-26NOV07,Dallas/Fort Worth International Airport,min,2026-11-07,50° to 51°,NO,0.63,0.1406,0.2094,,
 2026-11-07T05:29+00:00,KXLOWTLV-26NOV07-B55.5,KXLOWTLV-26NOV07,Harry Reid International Airport,min,2026-11-07,55° to 56°,NO,0.65,0.1550,0.1750,,
 2026-11-07T05:29+00:00,KXLOWTBOS-26NOV07-B49.5,KXLOWTBOS-26NOV07,"Boston, Logan International Airport",min,2026-11-07,49° to 50°,NO,0.72,0.0886,0.1714,,
+2026-11-07T06:14+00:00,KXLOWTDEN-26NOV07-B33.5,KXLOWTDEN-26NOV07,"Denver, Denver International Airport",min,2026-11-07,33° to 34°,NO,0.67,0.1262,0.1838,,
+2026-11-07T06:14+00:00,KXLOWTCHI-26NOV07-B33.5,KXLOWTCHI-26NOV07,"Chicago, Chicago Midway Airport",min,2026-11-07,33° to 34°,NO,0.57,0.2307,0.1793,,
