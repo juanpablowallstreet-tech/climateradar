@@ -365,3 +365,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-07T05:29+00:00,KXLOWTBOS-26NOV07-B49.5,KXLOWTBOS-26NOV07,"Boston, Logan International Airport",min,2026-11-07,49° to 50°,NO,0.72,0.0886,0.1714,,
 2026-11-07T06:14+00:00,KXLOWTDEN-26NOV07-B33.5,KXLOWTDEN-26NOV07,"Denver, Denver International Airport",min,2026-11-07,33° to 34°,NO,0.67,0.1262,0.1838,,
 2026-11-07T06:14+00:00,KXLOWTCHI-26NOV07-B33.5,KXLOWTCHI-26NOV07,"Chicago, Chicago Midway Airport",min,2026-11-07,33° to 34°,NO,0.57,0.2307,0.1793,,
+2026-11-07T07:18+00:00,KXLOWTSEA-26NOV07-B46.5,KXLOWTSEA-26NOV07,"Seattle, Seattle-Tacoma International Airport",min,2026-11-07,46° to 47°,NO,0.71,0.0761,0.1939,,
+2026-11-07T07:18+00:00,KXHIGHMIA-26NOV07-B89.5,KXHIGHMIA-26NOV07,"Miami, Miami International Airport",max,2026-11-07,89° to 90°,YES,0.09,0.2846,0.1846,,
+2026-11-07T07:18+00:00,KXHIGHTOKC-26NOV07-B61.5,KXHIGHTOKC-26NOV07,"Oklahoma City, Will Rogers World Airport",max,2026-11-07,61° to 62°,YES,0.11,0.2929,0.1729,,
