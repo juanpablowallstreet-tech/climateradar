@@ -1600,9 +1600,13 @@
     "KXHIGHMIA-26NOV08-B83.5|YES": [
       0.17148464139312242,
       "2026-11-08"
+    ],
+    "KXHIGHAUS-26NOV08-T64|NO": [
+      0.17862412410166453,
+      "2026-11-08"
     ]
   },
-  "last_scan_ts": 1794079022.5599089,
+  "last_scan_ts": 1794081373.3817332,
   "model_version": 6,
   "trading": {
     "activo": false,
