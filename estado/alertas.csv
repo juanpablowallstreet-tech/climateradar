@@ -432,3 +432,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-07T19:17+00:00,KXLOWTDC-26NOV08-B46.5,KXLOWTDC-26NOV08,"Washington/Reagan National Airport, DC",min,2026-11-08,46° to 47°,NO,0.54,0.2522,0.1878,,
 2026-11-07T19:17+00:00,KXHIGHMIA-26NOV08-B83.5,KXHIGHMIA-26NOV08,"Miami, Miami International Airport",max,2026-11-08,83° to 84°,YES,0.06,0.2415,0.1715,,
 2026-11-07T19:56+00:00,KXHIGHAUS-26NOV08-T64,KXHIGHAUS-26NOV08,Austin-Bergstrom International Airport,max,2026-11-08,63° or below,NO,0.48,0.3214,0.1786,,
+2026-11-07T20:26+00:00,KXHIGHTMIN-26NOV08-T58,KXHIGHTMIN-26NOV08,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-08,59° or above,NO,0.76,0.0463,0.1737,,
