@@ -373,3 +373,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-07T08:17+00:00,KXLOWTNYC-26NOV07-B50.5,KXLOWTNYC-26NOV07,"New York City, Central Park",min,2026-11-07,50° to 51°,NO,0.60,0.1749,0.2051,,
 2026-11-07T08:17+00:00,KXHIGHCHI-26NOV07-B53.5,KXHIGHCHI-26NOV07,"Chicago, Chicago Midway Airport",max,2026-11-07,53° to 54°,YES,0.10,0.3106,0.2006,,
 2026-11-07T08:17+00:00,KXLOWTNOLA-26NOV07-T61,KXLOWTNOLA-26NOV07,"New Orleans, New Orleans International Airport",min,2026-11-07,62° or above,YES,0.33,0.5240,0.1740,,
+2026-11-07T09:05+00:00,KXHIGHLAX-26NOV07-T86,KXHIGHLAX-26NOV07,"Los Angeles, Los Angeles International Airport",max,2026-11-07,87° or above,YES,0.13,0.3647,0.2247,,
+2026-11-07T09:05+00:00,KXHIGHTSFO-26NOV07-B73.5,KXHIGHTSFO-26NOV07,"San Francisco, San Francisco International Airport",max,2026-11-07,73° to 74°,YES,0.11,0.3221,0.2021,,
+2026-11-07T09:05+00:00,KXHIGHTSDF-26NOV07-B54.5,KXHIGHTSDF-26NOV07,Louisville Muhammad Ali International Airport,max,2026-11-07,54° to 55°,YES,0.13,0.3183,0.1783,,
