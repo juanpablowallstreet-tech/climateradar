@@ -433,3 +433,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-07T19:17+00:00,KXHIGHMIA-26NOV08-B83.5,KXHIGHMIA-26NOV08,"Miami, Miami International Airport",max,2026-11-08,83° to 84°,YES,0.06,0.2415,0.1715,,
 2026-11-07T19:56+00:00,KXHIGHAUS-26NOV08-T64,KXHIGHAUS-26NOV08,Austin-Bergstrom International Airport,max,2026-11-08,63° or below,NO,0.48,0.3214,0.1786,,
 2026-11-07T20:26+00:00,KXHIGHTMIN-26NOV08-T58,KXHIGHTMIN-26NOV08,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-08,59° or above,NO,0.76,0.0463,0.1737,,
+2026-11-07T21:04+00:00,KXLOWTEWR-26NOV08-B47.5,KXLOWTEWR-26NOV08,"Newark, Newark International Airport",min,2026-11-08,47° to 48°,NO,0.60,0.1857,0.1943,,
+2026-11-07T21:04+00:00,KXHIGHTSATX-26NOV08-T63,KXHIGHTSATX-26NOV08,"San Antonio, San Antonio International Airport",max,2026-11-08,62° or below,NO,0.48,0.3264,0.1736,,
