@@ -1640,9 +1640,13 @@
     "KXHIGHTSEA-26NOV07-T61|NO": [
       0.17603813192400497,
       "2026-11-07"
+    ],
+    "KXHIGHTTTN-26NOV08-T59|YES": [
+      0.21154146533171853,
+      "2026-11-08"
     ]
   },
-  "last_scan_ts": 1794089751.1583378,
+  "last_scan_ts": 1794091971.0535429,
   "model_version": 6,
   "trading": {
     "activo": false,
