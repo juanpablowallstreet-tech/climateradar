@@ -437,3 +437,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-07T21:04+00:00,KXHIGHTSATX-26NOV08-T63,KXHIGHTSATX-26NOV08,"San Antonio, San Antonio International Airport",max,2026-11-08,62° or below,NO,0.48,0.3264,0.1736,,
 2026-11-07T21:40+00:00,KXHIGHTSAN-26NOV08-B85.5,KXHIGHTSAN-26NOV08,San Diego International Airport,max,2026-11-08,85° to 86°,NO,0.49,0.2880,0.2020,,
 2026-11-07T21:40+00:00,KXLOWTOKC-26NOV08-B37.5,KXLOWTOKC-26NOV08,"Oklahoma City, Will Rogers World Airport",min,2026-11-08,37° to 38°,NO,0.63,0.1673,0.1827,,
+2026-11-07T22:15+00:00,KXLOWTCHI-26NOV08-B39.5,KXLOWTCHI-26NOV08,"Chicago, Chicago Midway Airport",min,2026-11-08,39° to 40°,NO,0.47,0.2861,0.2239,,
+2026-11-07T22:15+00:00,KXHIGHMIA-26NOV08-B85.5,KXHIGHMIA-26NOV08,"Miami, Miami International Airport",max,2026-11-08,85° to 86°,NO,0.45,0.3186,0.2114,,
+2026-11-07T22:15+00:00,KXLOWTDAL-26NOV08-T54,KXLOWTDAL-26NOV08,Dallas/Fort Worth International Airport,min,2026-11-08,55° or above,NO,0.35,0.4383,0.1917,,
+2026-11-07T22:15+00:00,KXHIGHTSEA-26NOV07-T61,KXHIGHTSEA-26NOV07,"Seattle, Seattle-Tacoma International Airport",max,2026-11-07,60° or below,NO,0.13,0.6840,0.1760,,
