@@ -398,3 +398,8 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-07T15:27+00:00,KXHIGHTOKC-26NOV07-B59.5,KXHIGHTOKC-26NOV07,"Oklahoma City, Will Rogers World Airport",max,2026-11-07,59° to 60°,NO,0.60,0.1952,0.1848,,
 2026-11-07T15:27+00:00,KXLOWTDAL-26NOV08-B53.5,KXLOWTDAL-26NOV08,Dallas/Fort Worth International Airport,min,2026-11-08,53° to 54°,NO,0.60,0.1987,0.1813,,
 2026-11-07T15:27+00:00,KXHIGHMIA-26NOV07-B85.5,KXHIGHMIA-26NOV07,"Miami, Miami International Airport",max,2026-11-07,85° to 86°,YES,0.06,0.2407,0.1707,,
+2026-11-07T16:05+00:00,KXHIGHPHIL-26NOV08-T60,KXHIGHPHIL-26NOV08,"Philadelphia, Philadelphia International Airport",max,2026-11-08,59° or below,YES,0.22,0.4536,0.2136,,
+2026-11-07T16:05+00:00,KXHIGHAUS-26NOV08-B64.5,KXHIGHAUS-26NOV08,Austin-Bergstrom International Airport,max,2026-11-08,64° to 65°,NO,0.61,0.1703,0.1997,,
+2026-11-07T16:05+00:00,KXHIGHLAX-26NOV07-B83.5,KXHIGHLAX-26NOV07,"Los Angeles, Los Angeles International Airport",max,2026-11-07,83° to 84°,NO,0.59,0.2118,0.1782,,
+2026-11-07T16:05+00:00,KXLOWTLV-26NOV08-T55,KXLOWTLV-26NOV08,Harry Reid International Airport,min,2026-11-08,56° or above,YES,0.14,0.3245,0.1745,,
+2026-11-07T16:05+00:00,KXHIGHTPHX-26NOV08-B80.5,KXHIGHTPHX-26NOV08,"Phoenix, Phoenix Sky Harbor International Airport",max,2026-11-08,80° to 81°,YES,0.11,0.2935,0.1735,,
