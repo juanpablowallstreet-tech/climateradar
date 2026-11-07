@@ -342,3 +342,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-06T23:42+00:00,KXHIGHTEWR-26NOV07-T62,KXHIGHTEWR-26NOV07,"Newark, Newark International Airport",max,2026-11-07,61° or below,YES,0.31,0.5025,0.1725,,
 2026-11-07T00:22+00:00,KXHIGHDEN-26NOV07-B65.5,KXHIGHDEN-26NOV07,"Denver, Denver International Airport",max,2026-11-07,65° to 66°,NO,0.71,0.0556,0.2144,,
 2026-11-07T00:22+00:00,KXLOWTBOS-26NOV07-B51.5,KXLOWTBOS-26NOV07,"Boston, Logan International Airport",min,2026-11-07,51° to 52°,NO,0.50,0.2944,0.1856,,
+2026-11-07T01:32+00:00,KXHIGHAUS-26NOV07-T70,KXHIGHAUS-26NOV07,Austin-Bergstrom International Airport,max,2026-11-07,69° or below,NO,0.61,0.1746,0.1954,,
+2026-11-07T01:32+00:00,KXLOWTNOLA-26NOV07-B60.5,KXLOWTNOLA-26NOV07,"New Orleans, New Orleans International Airport",min,2026-11-07,60° to 61°,NO,0.50,0.3010,0.1790,,
