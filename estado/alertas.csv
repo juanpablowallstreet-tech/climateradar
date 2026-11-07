@@ -350,3 +350,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-07T02:20+00:00,KXLOWTSFO-26NOV07-B51.5,KXLOWTSFO-26NOV07,"San Francisco, San Francisco International Airport",min,2026-11-07,51° to 52°,NO,0.67,0.1085,0.2015,,
 2026-11-07T02:20+00:00,KXLOWTMIA-26NOV07-B71.5,KXLOWTMIA-26NOV07,"Miami, Miami International Airport",min,2026-11-07,71° to 72°,NO,0.62,0.1681,0.1919,,
 2026-11-07T02:20+00:00,KXHIGHTMIN-26NOV07-B52.5,KXHIGHTMIN-26NOV07,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-07,52° to 53°,NO,0.63,0.1731,0.1769,,
+2026-11-07T03:10+00:00,KXHIGHTHOU-26NOV07-B79.5,KXHIGHTHOU-26NOV07,"Houston, Houston Hobby Airport",max,2026-11-07,79° to 80°,NO,0.46,0.3170,0.2030,,
+2026-11-07T03:10+00:00,KXHIGHTOKC-26NOV07-T57,KXHIGHTOKC-26NOV07,"Oklahoma City, Will Rogers World Airport",max,2026-11-07,56° or below,YES,0.14,0.3405,0.1905,,
+2026-11-07T03:10+00:00,KXHIGHLAX-26NOV07-B85.5,KXHIGHLAX-26NOV07,"Los Angeles, Los Angeles International Airport",max,2026-11-07,85° to 86°,NO,0.52,0.2887,0.1713,,
