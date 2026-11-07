@@ -415,3 +415,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-07T17:21+00:00,KXLOWTTTN-26NOV08-B41.5,KXLOWTTTN-26NOV08,Trenton-Mercer Airport,min,2026-11-08,41° to 42°,YES,0.12,0.3090,0.1790,,
 2026-11-07T17:21+00:00,KXLOWTEWR-26NOV08-T48,KXLOWTEWR-26NOV08,"Newark, Newark International Airport",min,2026-11-08,49° or above,NO,0.71,0.0925,0.1775,,
 2026-11-07T17:21+00:00,KXLOWTPHIL-26NOV08-B45.5,KXLOWTPHIL-26NOV08,"Philadelphia, Philadelphia International Airport",min,2026-11-08,45° to 46°,YES,0.12,0.3006,0.1706,,
+2026-11-07T17:54+00:00,KXLOWTLV-26NOV08-B52.5,KXLOWTLV-26NOV08,Harry Reid International Airport,min,2026-11-08,52° to 53°,NO,0.57,0.1890,0.2210,,
+2026-11-07T17:54+00:00,KXHIGHTMIN-26NOV08-B53.5,KXHIGHTMIN-26NOV08,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-08,53° to 54°,YES,0.06,0.2430,0.1730,,
