@@ -518,3 +518,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-08T17:26+00:00,KXHIGHTSAN-26NOV09-B83.5,KXHIGHTSAN-26NOV09,San Diego International Airport,max,2026-11-09,83° to 84°,NO,0.57,0.2239,0.1861,,
 2026-11-08T17:26+00:00,KXLOWTATL-26NOV09-T46,KXLOWTATL-26NOV09,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-09,47° or above,NO,0.50,0.3013,0.1787,,
 2026-11-08T17:58+00:00,KXHIGHTNOLA-26NOV08-T68,KXHIGHTNOLA-26NOV08,"New Orleans, New Orleans International Airport",max,2026-11-08,67° or below,YES,0.27,0.4782,0.1882,,
+2026-11-08T18:32+00:00,KXHIGHTSEA-26NOV09-B56.5,KXHIGHTSEA-26NOV09,"Seattle, Seattle-Tacoma International Airport",max,2026-11-09,56° to 57°,NO,0.48,0.3166,0.1834,,
+2026-11-08T18:32+00:00,KXHIGHTNOLA-26NOV09-B72.5,KXHIGHTNOLA-26NOV09,"New Orleans, New Orleans International Airport",max,2026-11-09,72° to 73°,NO,0.56,0.2416,0.1784,,
