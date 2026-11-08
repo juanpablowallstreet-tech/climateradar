@@ -1612,9 +1612,13 @@
     "KXLOWTSAN-26NOV09-B59.5|NO": [
       0.1779794074753869,
       "2026-11-09"
+    ],
+    "KXLOWTSFO-26NOV09-B55.5|NO": [
+      0.1982767340604257,
+      "2026-11-09"
     ]
   },
-  "last_scan_ts": 1794174918.0601797,
+  "last_scan_ts": 1794176789.6561623,
   "model_version": 6,
   "trading": {
     "activo": false,

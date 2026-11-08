@@ -535,3 +535,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-08T21:55+00:00,KXLOWTHOU-26NOV09-B59.5,KXLOWTHOU-26NOV09,"Houston, Houston Hobby Airport",min,2026-11-09,59° to 60°,NO,0.61,0.1778,0.1922,,
 2026-11-08T21:55+00:00,KXLOWTBOS-26NOV09-B44.5,KXLOWTBOS-26NOV09,"Boston, Logan International Airport",min,2026-11-09,44° to 45°,YES,0.14,0.3412,0.1912,,
 2026-11-08T21:55+00:00,KXLOWTSAN-26NOV09-B59.5,KXLOWTSAN-26NOV09,San Diego International Airport,min,2026-11-09,59° to 60°,NO,0.67,0.1320,0.1780,,
+2026-11-08T22:26+00:00,KXLOWTSFO-26NOV09-B55.5,KXLOWTSFO-26NOV09,"San Francisco, San Francisco International Airport",min,2026-11-09,55° to 56°,NO,0.47,0.3117,0.1983,,
