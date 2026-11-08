@@ -466,3 +466,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-08T06:59+00:00,KXHIGHTDAL-26NOV08-B73.5,KXHIGHTDAL-26NOV08,Dallas/Fort Worth International Airport,max,2026-11-08,73° to 74°,YES,0.06,0.2719,0.2019,,
 2026-11-08T07:56+00:00,KXHIGHTMIN-26NOV08-B55.5,KXHIGHTMIN-26NOV08,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-08,55° to 56°,YES,0.10,0.2914,0.1814,,
 2026-11-08T07:56+00:00,KXLOWTPHX-26NOV08-T60,KXLOWTPHX-26NOV08,"Phoenix, Phoenix Sky Harbor International Airport",min,2026-11-08,61° or above,NO,0.30,0.5068,0.1732,,
+2026-11-08T08:41+00:00,KXHIGHTSEA-26NOV08-B56.5,KXHIGHTSEA-26NOV08,"Seattle, Seattle-Tacoma International Airport",max,2026-11-08,56° to 57°,NO,0.47,0.2859,0.2241,,
+2026-11-08T08:41+00:00,KXHIGHTMIN-26NOV08-B57.5,KXHIGHTMIN-26NOV08,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-08,57° to 58°,NO,0.44,0.3193,0.2207,,
+2026-11-08T08:41+00:00,KXLOWTMIN-26NOV08-T41,KXLOWTMIN-26NOV08,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-08,42° or above,YES,0.34,0.5490,0.1890,,
