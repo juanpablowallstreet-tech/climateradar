@@ -446,3 +446,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-08T00:45+00:00,KXLOWTNYC-26NOV07-B46.5,KXLOWTNYC-26NOV07,"New York City, Central Park",min,2026-11-07,46° to 47°,NO,0.61,0.1784,0.1916,,
 2026-11-08T00:45+00:00,KXLOWTHOU-26NOV08-T62,KXLOWTHOU-26NOV08,"Houston, Houston Hobby Airport",min,2026-11-08,63° or above,YES,0.23,0.4304,0.1804,,
 2026-11-08T00:45+00:00,KXLOWTATL-26NOV08-B45.5,KXLOWTATL-26NOV08,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-08,45° to 46°,NO,0.49,0.3188,0.1712,,
+2026-11-08T01:49+00:00,KXHIGHTOKC-26NOV08-B70.5,KXHIGHTOKC-26NOV08,"Oklahoma City, Will Rogers World Airport",max,2026-11-08,70° to 71°,NO,0.59,0.1716,0.2184,,

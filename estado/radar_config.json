@@ -1256,9 +1256,13 @@
     "KXLOWTATL-26NOV08-B45.5|NO": [
       0.1711822847461373,
       "2026-11-08"
+    ],
+    "KXHIGHTOKC-26NOV08-B70.5|NO": [
+      0.2184165128147101,
+      "2026-11-08"
     ]
   },
-  "last_scan_ts": 1794098711.7212753,
+  "last_scan_ts": 1794102592.8014731,
   "model_version": 6,
   "trading": {
     "activo": false,
