@@ -513,3 +513,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-08T16:54+00:00,KXHIGHTDC-26NOV09-B61.5,KXHIGHTDC-26NOV09,"Washington/Reagan National Airport, DC",max,2026-11-09,61° to 62°,YES,0.12,0.3335,0.2035,,
 2026-11-08T16:54+00:00,KXHIGHLAX-26NOV09-B84.5,KXHIGHLAX-26NOV09,"Los Angeles, Los Angeles International Airport",max,2026-11-09,84° to 85°,NO,0.49,0.2986,0.1914,,
 2026-11-08T16:54+00:00,KXHIGHNY-26NOV09-T57,KXHIGHNY-26NOV09,"New York City, Central Park",max,2026-11-09,56° or below,YES,0.14,0.3391,0.1891,,
+2026-11-08T17:26+00:00,KXLOWTPHIL-26NOV09-T47,KXLOWTPHIL-26NOV09,"Philadelphia, Philadelphia International Airport",min,2026-11-09,48° or above,NO,0.46,0.3102,0.2098,,
+2026-11-08T17:26+00:00,KXLOWTTTN-26NOV09-B37.5,KXLOWTTTN-26NOV09,Trenton-Mercer Airport,min,2026-11-09,37° to 38°,NO,0.72,0.0659,0.1941,,
+2026-11-08T17:26+00:00,KXHIGHTSAN-26NOV09-B83.5,KXHIGHTSAN-26NOV09,San Diego International Airport,max,2026-11-09,83° to 84°,NO,0.57,0.2239,0.1861,,
+2026-11-08T17:26+00:00,KXLOWTATL-26NOV09-T46,KXLOWTATL-26NOV09,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-09,47° or above,NO,0.50,0.3013,0.1787,,
