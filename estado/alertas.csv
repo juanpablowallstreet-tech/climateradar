@@ -459,3 +459,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-08T04:23+00:00,KXLOWTNOLA-26NOV08-T56,KXLOWTNOLA-26NOV08,"New Orleans, New Orleans International Airport",min,2026-11-08,57° or above,YES,0.27,0.5121,0.2221,,
 2026-11-08T04:23+00:00,KXHIGHTHOU-26NOV08-B70.5,KXHIGHTHOU-26NOV08,"Houston, Houston Hobby Airport",max,2026-11-08,70° to 71°,NO,0.61,0.1582,0.2118,,
 2026-11-08T04:23+00:00,KXHIGHTSATX-26NOV08-T63,KXHIGHTSATX-26NOV08,"San Antonio, San Antonio International Airport",max,2026-11-08,62° or below,YES,0.16,0.3530,0.1830,,
+2026-11-08T06:05+00:00,KXHIGHTSATX-26NOV08-B65.5,KXHIGHTSATX-26NOV08,"San Antonio, San Antonio International Airport",max,2026-11-08,65° to 66°,NO,0.53,0.2287,0.2213,,
+2026-11-08T06:05+00:00,KXHIGHTSEA-26NOV08-B58.5,KXHIGHTSEA-26NOV08,"Seattle, Seattle-Tacoma International Airport",max,2026-11-08,58° to 59°,NO,0.60,0.1636,0.2164,,
+2026-11-08T06:05+00:00,KXHIGHPHIL-26NOV08-B62.5,KXHIGHPHIL-26NOV08,"Philadelphia, Philadelphia International Airport",max,2026-11-08,62° to 63°,YES,0.13,0.3443,0.2043,,
+2026-11-08T06:05+00:00,KXHIGHTDC-26NOV08-B64.5,KXHIGHTDC-26NOV08,"Washington/Reagan National Airport, DC",max,2026-11-08,64° to 65°,YES,0.22,0.4208,0.1808,,
