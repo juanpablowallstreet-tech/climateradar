@@ -473,3 +473,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-08T09:28+00:00,KXHIGHTATL-26NOV08-B68.5,KXHIGHTATL-26NOV08,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-08,68° to 69°,YES,0.07,0.2737,0.1937,,
 2026-11-08T09:28+00:00,KXLOWTAUS-26NOV08-T57,KXLOWTAUS-26NOV08,Austin-Bergstrom International Airport,min,2026-11-08,58° or above,NO,0.31,0.4868,0.1832,,
 2026-11-08T09:28+00:00,KXLOWTATL-26NOV08-B43.5,KXLOWTATL-26NOV08,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-08,43° to 44°,NO,0.55,0.2476,0.1824,,
+2026-11-08T10:15+00:00,KXLOWTSDF-26NOV08-T35,KXLOWTSDF-26NOV08,Louisville Muhammad Ali International Airport,min,2026-11-08,36° or above,YES,0.74,0.9674,0.2074,,
+2026-11-08T10:15+00:00,KXHIGHMIA-26NOV08-B87.5,KXHIGHMIA-26NOV08,"Miami, Miami International Airport",max,2026-11-08,87° to 88°,YES,0.21,0.4143,0.1843,,
+2026-11-08T10:15+00:00,KXHIGHLAX-26NOV08-B85.5,KXHIGHLAX-26NOV08,"Los Angeles, Los Angeles International Airport",max,2026-11-08,85° to 86°,NO,0.72,0.0820,0.1780,,
