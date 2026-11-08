@@ -1384,9 +1384,13 @@
     "KXHIGHTSDF-26NOV08-B59.5|NO": [
       0.17443295828655173,
       "2026-11-08"
+    ],
+    "KXHIGHTTTN-26NOV08-B61.5|YES": [
+      0.17018413513804306,
+      "2026-11-08"
     ]
   },
-  "last_scan_ts": 1794135499.9381845,
+  "last_scan_ts": 1794137386.1845808,
   "model_version": 6,
   "trading": {
     "activo": false,
