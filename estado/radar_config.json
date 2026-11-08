@@ -1540,9 +1540,13 @@
     "KXLOWTATL-26NOV09-T46|NO": [
       0.17874143443721527,
       "2026-11-09"
+    ],
+    "KXHIGHTNOLA-26NOV08-T68|YES": [
+      0.18822019234556073,
+      "2026-11-08"
     ]
   },
-  "last_scan_ts": 1794158776.842591,
+  "last_scan_ts": 1794160713.5397377,
   "model_version": 6,
   "trading": {
     "activo": false,
