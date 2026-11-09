@@ -579,3 +579,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-09T09:00+00:00,KXLOWTLAX-26NOV09-T62,KXLOWTLAX-26NOV09,"Los Angeles, Los Angeles International Airport",min,2026-11-09,63° or above,NO,0.49,0.3055,0.1845,,
 2026-11-09T09:00+00:00,KXHIGHTDAL-26NOV09-B71.5,KXHIGHTDAL-26NOV09,Dallas/Fort Worth International Airport,max,2026-11-09,71° to 72°,NO,0.60,0.1970,0.1830,,
 2026-11-09T09:00+00:00,KXHIGHDEN-26NOV09-B72.5,KXHIGHDEN-26NOV09,"Denver, Denver International Airport",max,2026-11-09,72° to 73°,YES,0.12,0.3072,0.1772,,
+2026-11-09T10:46+00:00,KXHIGHTMIN-26NOV09-T62,KXHIGHTMIN-26NOV09,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-09,63° or above,NO,0.30,0.4677,0.2123,,
+2026-11-09T10:46+00:00,KXHIGHTATL-26NOV09-B73.5,KXHIGHTATL-26NOV09,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-09,73° to 74°,NO,0.42,0.3888,0.1712,,
