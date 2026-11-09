@@ -612,3 +612,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-09T17:44+00:00,KXLOWTLV-26NOV10-T56,KXLOWTLV-26NOV10,Harry Reid International Airport,min,2026-11-10,57° or above,YES,0.10,0.2923,0.1823,,
 2026-11-09T17:44+00:00,KXHIGHTSATX-26NOV10-T68,KXHIGHTSATX-26NOV10,"San Antonio, San Antonio International Airport",max,2026-11-10,67° or below,NO,0.32,0.4851,0.1749,,
 2026-11-09T17:44+00:00,KXHIGHTTTN-26NOV10-B63.5,KXHIGHTTTN-26NOV10,Trenton-Mercer Airport,max,2026-11-10,63° to 64°,NO,0.45,0.3594,0.1706,,
+2026-11-09T18:34+00:00,KXHIGHTDC-26NOV10-B66.5,KXHIGHTDC-26NOV10,"Washington/Reagan National Airport, DC",max,2026-11-10,66° to 67°,YES,0.09,0.2968,0.1968,,
+2026-11-09T18:34+00:00,KXHIGHTDAL-26NOV10-T76,KXHIGHTDAL-26NOV10,Dallas/Fort Worth International Airport,max,2026-11-10,75° or below,NO,0.38,0.4256,0.1744,,
