@@ -1444,9 +1444,13 @@
     "KXHIGHNY-26NOV09-T57|NO": [
       0.1771103884376122,
       "2026-11-09"
+    ],
+    "KXHIGHTHOU-26NOV09-B66.5|NO": [
+      0.17812207623578238,
+      "2026-11-09"
     ]
   },
-  "last_scan_ts": 1794227940.7467606,
+  "last_scan_ts": 1794232414.0524118,
   "model_version": 6,
   "trading": {
     "activo": false,
