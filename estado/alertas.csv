@@ -539,3 +539,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-08T23:40+00:00,KXHIGHTSFO-26NOV09-B70.5,KXHIGHTSFO-26NOV09,"San Francisco, San Francisco International Airport",max,2026-11-09,70° to 71°,NO,0.44,0.3298,0.2102,,
 2026-11-08T23:40+00:00,KXHIGHLAX-26NOV09-B86.5,KXHIGHLAX-26NOV09,"Los Angeles, Los Angeles International Airport",max,2026-11-09,86° to 87°,NO,0.51,0.2952,0.1748,,
 2026-11-09T00:13+00:00,KXHIGHAUS-26NOV09-B64.5,KXHIGHAUS-26NOV09,Austin-Bergstrom International Airport,max,2026-11-09,64° to 65°,NO,0.61,0.1703,0.1997,,
+2026-11-09T01:28+00:00,KXHIGHTDC-26NOV09-B63.5,KXHIGHTDC-26NOV09,"Washington/Reagan National Airport, DC",max,2026-11-09,63° to 64°,NO,0.46,0.3073,0.2127,,
+2026-11-09T01:28+00:00,KXLOWTMIN-26NOV09-B37.5,KXLOWTMIN-26NOV09,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-09,37° to 38°,NO,0.47,0.3260,0.1840,,
+2026-11-09T01:28+00:00,KXHIGHTATL-26NOV09-B71.5,KXHIGHTATL-26NOV09,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-09,71° to 72°,YES,0.14,0.3295,0.1795,,
+2026-11-09T01:28+00:00,KXHIGHTBOS-26NOV09-B59.5,KXHIGHTBOS-26NOV09,"Boston, Logan International Airport",max,2026-11-09,59° to 60°,NO,0.58,0.2216,0.1784,,
