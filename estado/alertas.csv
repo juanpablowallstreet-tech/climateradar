@@ -621,3 +621,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-09T20:29+00:00,KXHIGHTSAN-26NOV10-B82.5,KXHIGHTSAN-26NOV10,San Diego International Airport,max,2026-11-10,82° to 83°,NO,0.51,0.2983,0.1717,,
 2026-11-09T21:22+00:00,KXLOWTSAN-26NOV10-B59.5,KXLOWTSAN-26NOV10,San Diego International Airport,min,2026-11-10,59° to 60°,NO,0.64,0.1373,0.2027,,
 2026-11-09T21:22+00:00,KXLOWTSEA-26NOV10-B47.5,KXLOWTSEA-26NOV10,"Seattle, Seattle-Tacoma International Airport",min,2026-11-10,47° to 48°,YES,0.11,0.3090,0.1890,,
+2026-11-09T22:13+00:00,KXHIGHTMIN-26NOV10-B59.5,KXHIGHTMIN-26NOV10,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-10,59° to 60°,NO,0.68,0.1009,0.1991,,
+2026-11-09T22:13+00:00,KXLOWTDC-26NOV10-B42.5,KXLOWTDC-26NOV10,"Washington/Reagan National Airport, DC",min,2026-11-10,42° to 43°,NO,0.54,0.2631,0.1769,,
+2026-11-09T22:13+00:00,KXLOWTSAN-26NOV10-B57.5,KXLOWTSAN-26NOV10,San Diego International Airport,min,2026-11-10,57° to 58°,NO,0.73,0.0739,0.1761,,
