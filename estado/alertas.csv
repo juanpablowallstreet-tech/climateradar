@@ -538,3 +538,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-08T22:26+00:00,KXLOWTSFO-26NOV09-B55.5,KXLOWTSFO-26NOV09,"San Francisco, San Francisco International Airport",min,2026-11-09,55° to 56°,NO,0.47,0.3117,0.1983,,
 2026-11-08T23:40+00:00,KXHIGHTSFO-26NOV09-B70.5,KXHIGHTSFO-26NOV09,"San Francisco, San Francisco International Airport",max,2026-11-09,70° to 71°,NO,0.44,0.3298,0.2102,,
 2026-11-08T23:40+00:00,KXHIGHLAX-26NOV09-B86.5,KXHIGHLAX-26NOV09,"Los Angeles, Los Angeles International Airport",max,2026-11-09,86° to 87°,NO,0.51,0.2952,0.1748,,
+2026-11-09T00:13+00:00,KXHIGHAUS-26NOV09-B64.5,KXHIGHAUS-26NOV09,Austin-Bergstrom International Airport,max,2026-11-09,64° to 65°,NO,0.61,0.1703,0.1997,,
