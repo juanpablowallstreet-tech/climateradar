@@ -556,3 +556,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-09T03:16+00:00,KXLOWTATL-26NOV09-T46,KXLOWTATL-26NOV09,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-09,47° or above,YES,0.57,0.7916,0.2016,,
 2026-11-09T03:16+00:00,KXLOWTCHI-26NOV09-B37.5,KXLOWTCHI-26NOV09,"Chicago, Chicago Midway Airport",min,2026-11-09,37° to 38°,NO,0.72,0.0746,0.1854,,
 2026-11-09T03:16+00:00,KXLOWTPHIL-26NOV09-B46.5,KXLOWTPHIL-26NOV09,"Philadelphia, Philadelphia International Airport",min,2026-11-09,46° to 47°,NO,0.57,0.2373,0.1727,,
+2026-11-09T04:15+00:00,KXLOWTEWR-26NOV09-T47,KXLOWTEWR-26NOV09,"Newark, Newark International Airport",min,2026-11-09,48° or above,YES,0.25,0.4978,0.2278,,
+2026-11-09T04:15+00:00,KXHIGHTBOS-26NOV09-B57.5,KXHIGHTBOS-26NOV09,"Boston, Logan International Airport",max,2026-11-09,57° to 58°,NO,0.48,0.2998,0.2002,,
+2026-11-09T04:15+00:00,KXHIGHTOKC-26NOV09-B69.5,KXHIGHTOKC-26NOV09,"Oklahoma City, Will Rogers World Airport",max,2026-11-09,69° to 70°,YES,0.09,0.2758,0.1758,,
