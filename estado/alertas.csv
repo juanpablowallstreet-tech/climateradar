@@ -619,3 +619,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-09T20:29+00:00,KXHIGHLAX-26NOV10-B84.5,KXHIGHLAX-26NOV10,"Los Angeles, Los Angeles International Airport",max,2026-11-10,84° to 85°,NO,0.47,0.3203,0.1897,,
 2026-11-09T20:29+00:00,KXLOWTLAX-26NOV10-B61.5,KXLOWTLAX-26NOV10,"Los Angeles, Los Angeles International Airport",min,2026-11-10,61° to 62°,NO,0.63,0.1604,0.1896,,
 2026-11-09T20:29+00:00,KXHIGHTSAN-26NOV10-B82.5,KXHIGHTSAN-26NOV10,San Diego International Airport,max,2026-11-10,82° to 83°,NO,0.51,0.2983,0.1717,,
+2026-11-09T21:22+00:00,KXLOWTSAN-26NOV10-B59.5,KXLOWTSAN-26NOV10,San Diego International Airport,min,2026-11-10,59° to 60°,NO,0.64,0.1373,0.2027,,
+2026-11-09T21:22+00:00,KXLOWTSEA-26NOV10-B47.5,KXLOWTSEA-26NOV10,"Seattle, Seattle-Tacoma International Airport",min,2026-11-10,47° to 48°,YES,0.11,0.3090,0.1890,,
