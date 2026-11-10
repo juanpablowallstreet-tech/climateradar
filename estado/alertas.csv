@@ -720,3 +720,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-10T20:16+00:00,KXLOWTLV-26NOV11-T56,KXLOWTLV-26NOV11,Harry Reid International Airport,min,2026-11-11,57° or above,YES,0.06,0.2521,0.1821,,
 2026-11-10T20:16+00:00,KXHIGHTDAL-26NOV11-B78.5,KXHIGHTDAL-26NOV11,Dallas/Fort Worth International Airport,max,2026-11-11,78° to 79°,YES,0.15,0.3358,0.1758,,
 2026-11-10T20:16+00:00,KXHIGHDEN-26NOV11-B63.5,KXHIGHDEN-26NOV11,"Denver, Denver International Airport",max,2026-11-11,63° to 64°,YES,0.13,0.3127,0.1727,,
+2026-11-10T21:00+00:00,KXHIGHTSFO-26NOV11-B70.5,KXHIGHTSFO-26NOV11,"San Francisco, San Francisco International Airport",max,2026-11-11,70° to 71°,NO,0.56,0.2122,0.2078,,
