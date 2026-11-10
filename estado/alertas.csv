@@ -687,3 +687,8 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-10T16:04+00:00,KXHIGHTBOS-26NOV11-B58.5,KXHIGHTBOS-26NOV11,"Boston, Logan International Airport",max,2026-11-11,58° to 59°,NO,0.70,0.0972,0.1828,,
 2026-11-10T16:04+00:00,KXHIGHTNOLA-26NOV11-B75.5,KXHIGHTNOLA-26NOV11,"New Orleans, New Orleans International Airport",max,2026-11-11,75° to 76°,NO,0.58,0.2177,0.1823,,
 2026-11-10T16:04+00:00,KXHIGHDEN-26NOV10-B67.5,KXHIGHDEN-26NOV10,"Denver, Denver International Airport",max,2026-11-10,67° to 68°,NO,0.59,0.2105,0.1795,,
+2026-11-10T16:55+00:00,KXLOWTPHX-26NOV11-T60,KXLOWTPHX-26NOV11,"Phoenix, Phoenix Sky Harbor International Airport",min,2026-11-11,61° or above,NO,0.56,0.2031,0.2169,,
+2026-11-10T16:55+00:00,KXHIGHTSDF-26NOV11-B71.5,KXHIGHTSDF-26NOV11,Louisville Muhammad Ali International Airport,max,2026-11-11,71° to 72°,NO,0.67,0.1179,0.1921,,
+2026-11-10T16:55+00:00,KXHIGHAUS-26NOV11-B77.5,KXHIGHAUS-26NOV11,Austin-Bergstrom International Airport,max,2026-11-11,77° to 78°,NO,0.55,0.2476,0.1824,,
+2026-11-10T16:55+00:00,KXHIGHPHIL-26NOV11-B66.5,KXHIGHPHIL-26NOV11,"Philadelphia, Philadelphia International Airport",max,2026-11-11,66° to 67°,NO,0.67,0.1356,0.1744,,
+2026-11-10T16:55+00:00,KXHIGHDEN-26NOV10-B69.5,KXHIGHDEN-26NOV10,"Denver, Denver International Airport",max,2026-11-10,69° to 70°,NO,0.55,0.2593,0.1707,,
