@@ -721,3 +721,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-10T20:16+00:00,KXHIGHTDAL-26NOV11-B78.5,KXHIGHTDAL-26NOV11,Dallas/Fort Worth International Airport,max,2026-11-11,78° to 79°,YES,0.15,0.3358,0.1758,,
 2026-11-10T20:16+00:00,KXHIGHDEN-26NOV11-B63.5,KXHIGHDEN-26NOV11,"Denver, Denver International Airport",max,2026-11-11,63° to 64°,YES,0.13,0.3127,0.1727,,
 2026-11-10T21:00+00:00,KXHIGHTSFO-26NOV11-B70.5,KXHIGHTSFO-26NOV11,"San Francisco, San Francisco International Airport",max,2026-11-11,70° to 71°,NO,0.56,0.2122,0.2078,,
+2026-11-10T21:38+00:00,KXHIGHTSFO-26NOV10-B75.5,KXHIGHTSFO-26NOV10,"San Francisco, San Francisco International Airport",max,2026-11-10,75° to 76°,NO,0.74,0.0331,0.2069,,
+2026-11-10T21:38+00:00,KXLOWTSAN-26NOV11-B57.5,KXLOWTSAN-26NOV11,San Diego International Airport,min,2026-11-11,57° to 58°,NO,0.67,0.1054,0.2046,,
+2026-11-10T21:38+00:00,KXHIGHTMIN-26NOV11-T55,KXHIGHTMIN-26NOV11,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-11,56° or above,NO,0.68,0.0991,0.2009,,
+2026-11-10T21:38+00:00,KXHIGHTEWR-26NOV11-B62.5,KXHIGHTEWR-26NOV11,"Newark, Newark International Airport",max,2026-11-11,62° to 63°,YES,0.15,0.3376,0.1776,,
