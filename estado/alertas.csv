@@ -643,3 +643,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-10T03:13+00:00,KXHIGHCHI-26NOV10-B62.5,KXHIGHCHI-26NOV10,"Chicago, Chicago Midway Airport",max,2026-11-10,62° to 63°,YES,0.07,0.2831,0.2031,,
 2026-11-10T04:07+00:00,KXLOWTOKC-26NOV10-B48.5,KXLOWTOKC-26NOV10,"Oklahoma City, Will Rogers World Airport",min,2026-11-10,48° to 49°,NO,0.74,0.0603,0.1797,,
 2026-11-10T04:07+00:00,KXLOWTNOLA-26NOV10-T59,KXLOWTNOLA-26NOV10,"New Orleans, New Orleans International Airport",min,2026-11-10,60° or above,YES,0.36,0.5502,0.1702,,
+2026-11-10T04:57+00:00,KXLOWTBOS-26NOV10-T45,KXLOWTBOS-26NOV10,"Boston, Logan International Airport",min,2026-11-10,46° or above,YES,0.44,0.6451,0.1851,,
+2026-11-10T04:57+00:00,KXHIGHTHOU-26NOV10-T73,KXHIGHTHOU-26NOV10,"Houston, Houston Hobby Airport",max,2026-11-10,72° or below,NO,0.46,0.3375,0.1825,,
+2026-11-10T04:57+00:00,KXLOWTDEN-26NOV10-B37.5,KXLOWTDEN-26NOV10,"Denver, Denver International Airport",min,2026-11-10,37° to 38°,NO,0.67,0.1288,0.1812,,
+2026-11-10T04:57+00:00,KXHIGHPHIL-26NOV10-B64.5,KXHIGHPHIL-26NOV10,"Philadelphia, Philadelphia International Airport",max,2026-11-10,64° to 65°,NO,0.53,0.2753,0.1747,,
