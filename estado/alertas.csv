@@ -652,3 +652,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-10T05:45+00:00,KXHIGHTBOS-26NOV10-B56.5,KXHIGHTBOS-26NOV10,"Boston, Logan International Airport",max,2026-11-10,56° to 57°,NO,0.37,0.4036,0.2064,,
 2026-11-10T05:45+00:00,KXLOWTATL-26NOV10-B45.5,KXLOWTATL-26NOV10,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-10,45° to 46°,YES,0.06,0.2499,0.1799,,
 2026-11-10T05:45+00:00,KXHIGHMIA-26NOV10-B84.5,KXHIGHMIA-26NOV10,"Miami, Miami International Airport",max,2026-11-10,84° to 85°,NO,0.36,0.4499,0.1701,,
+2026-11-10T07:57+00:00,KXHIGHTPHX-26NOV10-B85.5,KXHIGHTPHX-26NOV10,"Phoenix, Phoenix Sky Harbor International Airport",max,2026-11-10,85° to 86°,YES,0.14,0.3209,0.1709,,

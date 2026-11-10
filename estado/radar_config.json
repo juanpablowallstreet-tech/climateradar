@@ -1408,9 +1408,13 @@
     "KXHIGHMIA-26NOV10-B84.5|NO": [
       0.1700670128455898,
       "2026-11-10"
+    ],
+    "KXHIGHTPHX-26NOV10-B85.5|YES": [
+      0.17091399072721558,
+      "2026-11-10"
     ]
   },
-  "last_scan_ts": 1794292905.7228346,
+  "last_scan_ts": 1794297454.8749733,
   "model_version": 6,
   "trading": {
     "activo": false,
