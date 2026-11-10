@@ -632,3 +632,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-09T23:35+00:00,KXLOWTATL-26NOV10-B47.5,KXLOWTATL-26NOV10,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-10,47° to 48°,NO,0.50,0.3057,0.1743,,
 2026-11-09T23:35+00:00,KXLOWTNOLA-26NOV10-B56.5,KXLOWTNOLA-26NOV10,"New Orleans, New Orleans International Airport",min,2026-11-10,56° to 57°,NO,0.65,0.1564,0.1736,,
 2026-11-09T23:35+00:00,KXHIGHTPHX-26NOV10-B81.5,KXHIGHTPHX-26NOV10,"Phoenix, Phoenix Sky Harbor International Airport",max,2026-11-10,81° to 82°,YES,0.06,0.2419,0.1719,,
+2026-11-10T00:12+00:00,KXLOWTSEA-26NOV10-T50,KXLOWTSEA-26NOV10,"Seattle, Seattle-Tacoma International Airport",min,2026-11-10,51° or above,NO,0.56,0.2275,0.1925,,
