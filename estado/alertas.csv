@@ -662,3 +662,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-10T09:40+00:00,KXHIGHAUS-26NOV10-T70,KXHIGHAUS-26NOV10,Austin-Bergstrom International Airport,max,2026-11-10,69° or below,NO,0.35,0.4353,0.1947,,
 2026-11-10T10:37+00:00,KXLOWTCHI-26NOV10-B43.5,KXLOWTCHI-26NOV10,"Chicago, Chicago Midway Airport",min,2026-11-10,43° to 44°,NO,0.50,0.2536,0.2264,,
 2026-11-10T10:37+00:00,KXHIGHTATL-26NOV10-B75.5,KXHIGHTATL-26NOV10,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-10,75° to 76°,NO,0.60,0.1736,0.2064,,
+2026-11-10T11:27+00:00,KXHIGHNY-26NOV10-T61,KXHIGHNY-26NOV10,"New York City, Central Park",max,2026-11-10,60° or below,NO,0.75,0.0199,0.2101,,
