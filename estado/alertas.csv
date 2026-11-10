@@ -655,3 +655,8 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-10T07:57+00:00,KXHIGHTPHX-26NOV10-B85.5,KXHIGHTPHX-26NOV10,"Phoenix, Phoenix Sky Harbor International Airport",max,2026-11-10,85° to 86°,YES,0.14,0.3209,0.1709,,
 2026-11-10T08:50+00:00,KXHIGHLAX-26NOV10-B88.5,KXHIGHLAX-26NOV10,"Los Angeles, Los Angeles International Airport",max,2026-11-10,88° to 89°,YES,0.06,0.2494,0.1794,,
 2026-11-10T08:50+00:00,KXHIGHTATL-26NOV10-B73.5,KXHIGHTATL-26NOV10,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-10,73° to 74°,NO,0.49,0.3176,0.1724,,
+2026-11-10T09:40+00:00,KXHIGHTATL-26NOV10-B71.5,KXHIGHTATL-26NOV10,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-10,71° to 72°,YES,0.07,0.3021,0.2221,,
+2026-11-10T09:40+00:00,KXLOWTNYC-26NOV10-T48,KXLOWTNYC-26NOV10,"New York City, Central Park",min,2026-11-10,49° or above,NO,0.72,0.0549,0.2051,,
+2026-11-10T09:40+00:00,KXHIGHTTTN-26NOV10-B65.5,KXHIGHTTTN-26NOV10,Trenton-Mercer Airport,max,2026-11-10,65° to 66°,NO,0.58,0.2000,0.2000,,
+2026-11-10T09:40+00:00,KXLOWTTTN-26NOV10-T39,KXLOWTTTN-26NOV10,Trenton-Mercer Airport,min,2026-11-10,40° or above,NO,0.36,0.4241,0.1959,,
+2026-11-10T09:40+00:00,KXHIGHAUS-26NOV10-T70,KXHIGHAUS-26NOV10,Austin-Bergstrom International Airport,max,2026-11-10,69° or below,NO,0.35,0.4353,0.1947,,
