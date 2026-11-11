@@ -811,3 +811,8 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-11T21:52+00:00,KXHIGHTSFO-26NOV11-T70,KXHIGHTSFO-26NOV11,"San Francisco, San Francisco International Airport",max,2026-11-11,69° or below,YES,0.17,0.3637,0.1837,,
 2026-11-11T21:52+00:00,KXHIGHCHI-26NOV12-B44.5,KXHIGHCHI-26NOV12,"Chicago, Chicago Midway Airport",max,2026-11-12,44° to 45°,YES,0.13,0.3137,0.1737,,
 2026-11-11T21:52+00:00,KXLOWTAUS-26NOV11-T57,KXLOWTAUS-26NOV11,Austin-Bergstrom International Airport,min,2026-11-11,58° or above,NO,0.10,0.7167,0.1733,,
+2026-11-11T22:42+00:00,KXHIGHTSATX-26NOV12-B79.5,KXHIGHTSATX-26NOV12,"San Antonio, San Antonio International Airport",max,2026-11-12,79° to 80°,NO,0.73,0.0383,0.2117,,
+2026-11-11T22:42+00:00,KXLOWTLV-26NOV12-B52.5,KXLOWTLV-26NOV12,Harry Reid International Airport,min,2026-11-12,52° to 53°,NO,0.63,0.1545,0.1955,,
+2026-11-11T22:42+00:00,KXHIGHPHIL-26NOV12-T61,KXHIGHPHIL-26NOV12,"Philadelphia, Philadelphia International Airport",max,2026-11-12,60° or below,NO,0.55,0.2479,0.1821,,
+2026-11-11T22:42+00:00,KXLOWTSAN-26NOV12-B57.5,KXLOWTSAN-26NOV12,San Diego International Airport,min,2026-11-12,57° to 58°,NO,0.64,0.1632,0.1768,,
+2026-11-11T22:42+00:00,KXLOWTPHX-26NOV12-T61,KXLOWTPHX-26NOV12,"Phoenix, Phoenix Sky Harbor International Airport",min,2026-11-12,62° or above,NO,0.60,0.2083,0.1717,,
