@@ -733,3 +733,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-10T23:00+00:00,KXLOWTTTN-26NOV11-B39.5,KXLOWTTTN-26NOV11,Trenton-Mercer Airport,min,2026-11-11,39° to 40°,NO,0.57,0.2116,0.1984,,
 2026-11-10T23:00+00:00,KXHIGHTOKC-26NOV11-B70.5,KXHIGHTOKC-26NOV11,"Oklahoma City, Will Rogers World Airport",max,2026-11-11,70° to 71°,YES,0.15,0.3329,0.1729,,
 2026-11-10T23:00+00:00,KXHIGHTATL-26NOV11-B71.5,KXHIGHTATL-26NOV11,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-11,71° to 72°,NO,0.48,0.3273,0.1727,,
+2026-11-11T01:10+00:00,KXLOWTNYC-26NOV11-B46.5,KXLOWTNYC-26NOV11,"New York City, Central Park",min,2026-11-11,46° to 47°,YES,0.07,0.2824,0.2024,,
+2026-11-11T01:10+00:00,KXLOWTMIA-26NOV11-B74.5,KXLOWTMIA-26NOV11,"Miami, Miami International Airport",min,2026-11-11,74° to 75°,NO,0.49,0.3175,0.1725,,
