@@ -757,3 +757,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-11T08:51+00:00,KXHIGHMIA-26NOV11-B83.5,KXHIGHMIA-26NOV11,"Miami, Miami International Airport",max,2026-11-11,83° to 84°,YES,0.09,0.2934,0.1934,,
 2026-11-11T09:48+00:00,KXHIGHTLV-26NOV11-B76.5,KXHIGHTLV-26NOV11,Harry Reid International Airport,max,2026-11-11,76° to 77°,NO,0.42,0.3320,0.2280,,
 2026-11-11T09:48+00:00,KXHIGHTSATX-26NOV11-T74,KXHIGHTSATX-26NOV11,"San Antonio, San Antonio International Airport",max,2026-11-11,73° or below,NO,0.66,0.1304,0.1896,,
+2026-11-11T10:46+00:00,KXLOWTSDF-26NOV11-B44.5,KXLOWTSDF-26NOV11,Louisville Muhammad Ali International Airport,min,2026-11-11,44° to 45°,NO,0.72,0.0378,0.2222,,
+2026-11-11T10:46+00:00,KXHIGHAUS-26NOV11-B75.5,KXHIGHAUS-26NOV11,Austin-Bergstrom International Airport,max,2026-11-11,75° to 76°,NO,0.65,0.1516,0.1784,,
