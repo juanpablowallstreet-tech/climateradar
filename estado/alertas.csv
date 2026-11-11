@@ -743,3 +743,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-11T02:08+00:00,KXHIGHLAX-26NOV11-B85.5,KXHIGHLAX-26NOV11,"Los Angeles, Los Angeles International Airport",max,2026-11-11,85° to 86°,YES,0.07,0.2503,0.1703,,
 2026-11-11T02:55+00:00,KXHIGHTHOU-26NOV11-T76,KXHIGHTHOU-26NOV11,"Houston, Houston Hobby Airport",max,2026-11-11,75° or below,NO,0.18,0.5721,0.2279,,
 2026-11-11T02:55+00:00,KXLOWTSFO-26NOV11-B53.5,KXLOWTSFO-26NOV11,"San Francisco, San Francisco International Airport",min,2026-11-11,53° to 54°,NO,0.64,0.1466,0.1934,,
+2026-11-11T03:44+00:00,KXLOWTSDF-26NOV11-B42.5,KXLOWTSDF-26NOV11,Louisville Muhammad Ali International Airport,min,2026-11-11,42° to 43°,NO,0.76,0.0480,0.1720,,
