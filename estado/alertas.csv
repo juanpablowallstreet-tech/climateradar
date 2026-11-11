@@ -753,3 +753,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-11T06:45+00:00,KXHIGHTNOLA-26NOV11-T75,KXHIGHTNOLA-26NOV11,"New Orleans, New Orleans International Airport",max,2026-11-11,74° or below,NO,0.46,0.3419,0.1781,,
 2026-11-11T08:00+00:00,KXLOWTSATX-26NOV11-B58.5,KXLOWTSATX-26NOV11,"San Antonio, San Antonio International Airport",min,2026-11-11,58° to 59°,NO,0.50,0.2739,0.2061,,
 2026-11-11T08:00+00:00,KXLOWTMIN-26NOV11-T37,KXLOWTMIN-26NOV11,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-11,38° or above,NO,0.15,0.6691,0.1709,,
+2026-11-11T08:51+00:00,KXHIGHAUS-26NOV11-B79.5,KXHIGHAUS-26NOV11,Austin-Bergstrom International Airport,max,2026-11-11,79° to 80°,YES,0.08,0.3018,0.2118,,
+2026-11-11T08:51+00:00,KXHIGHMIA-26NOV11-B83.5,KXHIGHMIA-26NOV11,"Miami, Miami International Airport",max,2026-11-11,83° to 84°,YES,0.09,0.2934,0.1934,,
