@@ -794,3 +794,8 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-11T16:28+00:00,KXHIGHTSFO-26NOV12-B72.5,KXHIGHTSFO-26NOV12,"San Francisco, San Francisco International Airport",max,2026-11-12,72° to 73°,YES,0.08,0.2704,0.1804,,
 2026-11-11T16:28+00:00,KXLOWTMIN-26NOV12-T31,KXLOWTMIN-26NOV12,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-12,32° or above,NO,0.48,0.3206,0.1794,,
 2026-11-11T16:28+00:00,KXLOWTAUS-26NOV12-T56,KXLOWTAUS-26NOV12,Austin-Bergstrom International Airport,min,2026-11-12,57° or above,YES,0.10,0.2805,0.1705,,
+2026-11-11T17:28+00:00,KXLOWTLV-26NOV12-T55,KXLOWTLV-26NOV12,Harry Reid International Airport,min,2026-11-12,56° or above,YES,0.17,0.4192,0.2392,,
+2026-11-11T17:28+00:00,KXHIGHCHI-26NOV12-B46.5,KXHIGHCHI-26NOV12,"Chicago, Chicago Midway Airport",max,2026-11-12,46° to 47°,NO,0.43,0.3250,0.2250,,
+2026-11-11T17:28+00:00,KXHIGHDEN-26NOV12-B66.5,KXHIGHDEN-26NOV12,"Denver, Denver International Airport",max,2026-11-12,66° to 67°,NO,0.54,0.2259,0.2141,,
+2026-11-11T17:28+00:00,KXLOWTPHX-26NOV12-B60.5,KXLOWTPHX-26NOV12,"Phoenix, Phoenix Sky Harbor International Airport",min,2026-11-12,60° to 61°,NO,0.64,0.1434,0.1966,,
+2026-11-11T17:28+00:00,KXLOWTLAX-26NOV12-B61.5,KXLOWTLAX-26NOV12,"Los Angeles, Los Angeles International Airport",min,2026-11-12,61° to 62°,NO,0.58,0.2043,0.1957,,
