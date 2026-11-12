@@ -859,3 +859,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-12T09:42+00:00,KXHIGHTOKC-26NOV12-B66.5,KXHIGHTOKC-26NOV12,"Oklahoma City, Will Rogers World Airport",max,2026-11-12,66° to 67°,YES,0.06,0.3069,0.2369,,
 2026-11-12T09:42+00:00,KXHIGHTSAN-26NOV12-B77.5,KXHIGHTSAN-26NOV12,San Diego International Airport,max,2026-11-12,77° to 78°,NO,0.38,0.3915,0.2085,,
 2026-11-12T09:42+00:00,KXHIGHAUS-26NOV12-T80,KXHIGHAUS-26NOV12,Austin-Bergstrom International Airport,max,2026-11-12,81° or above,YES,0.12,0.3173,0.1873,,
+2026-11-12T10:45+00:00,KXHIGHTEWR-26NOV12-B62.5,KXHIGHTEWR-26NOV12,"Newark, Newark International Airport",max,2026-11-12,62° to 63°,YES,0.07,0.3113,0.2313,,
+2026-11-12T10:45+00:00,KXHIGHTLV-26NOV12-B74.5,KXHIGHTLV-26NOV12,Harry Reid International Airport,max,2026-11-12,74° to 75°,NO,0.39,0.3787,0.2113,,
