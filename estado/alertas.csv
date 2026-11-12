@@ -915,3 +915,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-12T21:09+00:00,KXLOWTAUS-26NOV13-B46.5,KXLOWTAUS-26NOV13,Austin-Bergstrom International Airport,min,2026-11-13,46° to 47°,NO,0.68,0.1279,0.1721,,
 2026-11-12T21:52+00:00,KXLOWTDEN-26NOV13-T40,KXLOWTDEN-26NOV13,"Denver, Denver International Airport",min,2026-11-13,41° or above,YES,0.09,0.3348,0.2348,,
 2026-11-12T21:52+00:00,KXHIGHTHOU-26NOV13-T80,KXHIGHTHOU-26NOV13,"Houston, Houston Hobby Airport",max,2026-11-13,81° or above,NO,0.72,0.0684,0.1916,,
+2026-11-12T23:19+00:00,KXHIGHTNOLA-26NOV13-B70.5,KXHIGHTNOLA-26NOV13,"New Orleans, New Orleans International Airport",max,2026-11-13,70° to 71°,NO,0.62,0.1883,0.1717,,
