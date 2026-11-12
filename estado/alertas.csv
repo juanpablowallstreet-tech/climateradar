@@ -842,3 +842,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-12T03:27+00:00,KXHIGHTLV-26NOV12-B72.5,KXHIGHTLV-26NOV12,Harry Reid International Airport,max,2026-11-12,72° to 73°,YES,0.11,0.3315,0.2115,,
 2026-11-12T03:27+00:00,KXLOWTBOS-26NOV12-B45.5,KXLOWTBOS-26NOV12,"Boston, Logan International Airport",min,2026-11-12,45° to 46°,NO,0.56,0.2274,0.1926,,
 2026-11-12T03:27+00:00,KXLOWTPHX-26NOV12-T61,KXLOWTPHX-26NOV12,"Phoenix, Phoenix Sky Harbor International Airport",min,2026-11-12,62° or above,YES,0.47,0.6715,0.1815,,
+2026-11-12T04:27+00:00,KXLOWTSFO-26NOV12-B56.5,KXLOWTSFO-26NOV12,"San Francisco, San Francisco International Airport",min,2026-11-12,56° to 57°,NO,0.64,0.1462,0.1938,,
