@@ -897,3 +897,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-12T17:38+00:00,KXLOWTNYC-26NOV12-T46,KXLOWTNYC-26NOV12,"New York City, Central Park",min,2026-11-12,45° or below,YES,0.11,0.2995,0.1795,,
 2026-11-12T17:38+00:00,KXHIGHTOKC-26NOV13-T55,KXHIGHTOKC-26NOV13,"Oklahoma City, Will Rogers World Airport",max,2026-11-13,54° or below,YES,0.21,0.4014,0.1714,,
 2026-11-12T17:38+00:00,KXLOWTSDF-26NOV13-T37,KXLOWTSDF-26NOV13,Louisville Muhammad Ali International Airport,min,2026-11-13,38° or above,NO,0.36,0.4488,0.1712,,
+2026-11-12T18:29+00:00,KXLOWTHOU-26NOV13-B53.5,KXLOWTHOU-26NOV13,"Houston, Houston Hobby Airport",min,2026-11-13,53° to 54°,NO,0.55,0.2012,0.2288,,
+2026-11-12T18:29+00:00,KXHIGHTDAL-26NOV13-T67,KXHIGHTDAL-26NOV13,Dallas/Fort Worth International Airport,max,2026-11-13,66° or below,YES,0.15,0.3714,0.2114,,
+2026-11-12T18:29+00:00,KXLOWTSDF-26NOV12-T41,KXLOWTSDF-26NOV12,Louisville Muhammad Ali International Airport,min,2026-11-12,42° or above,NO,0.44,0.3670,0.1730,,
