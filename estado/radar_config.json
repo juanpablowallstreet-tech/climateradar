@@ -1460,9 +1460,13 @@
     "KXHIGHTBOS-26NOV12-B56.5|YES": [
       0.1772697724339955,
       "2026-11-12"
+    ],
+    "KXLOWTLAX-26NOV12-B59.5|NO": [
+      0.19637014451260085,
+      "2026-11-12"
     ]
   },
-  "last_scan_ts": 1794465080.0682929,
+  "last_scan_ts": 1794469859.5745075,
   "model_version": 6,
   "trading": {
     "activo": false,
