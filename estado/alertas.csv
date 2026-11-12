@@ -913,3 +913,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-12T21:09+00:00,KXHIGHTTTN-26NOV13-T50,KXHIGHTTTN-26NOV13,Trenton-Mercer Airport,max,2026-11-13,51° or above,NO,0.64,0.1351,0.2049,,
 2026-11-12T21:09+00:00,KXHIGHNY-26NOV13-B52.5,KXHIGHNY-26NOV13,"New York City, Central Park",max,2026-11-13,52° to 53°,NO,0.73,0.0615,0.1885,,
 2026-11-12T21:09+00:00,KXLOWTAUS-26NOV13-B46.5,KXLOWTAUS-26NOV13,Austin-Bergstrom International Airport,min,2026-11-13,46° to 47°,NO,0.68,0.1279,0.1721,,
+2026-11-12T21:52+00:00,KXLOWTDEN-26NOV13-T40,KXLOWTDEN-26NOV13,"Denver, Denver International Airport",min,2026-11-13,41° or above,YES,0.09,0.3348,0.2348,,
+2026-11-12T21:52+00:00,KXHIGHTHOU-26NOV13-T80,KXHIGHTHOU-26NOV13,"Houston, Houston Hobby Airport",max,2026-11-13,81° or above,NO,0.72,0.0684,0.1916,,
