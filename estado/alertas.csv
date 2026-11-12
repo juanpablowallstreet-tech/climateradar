@@ -861,3 +861,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-12T09:42+00:00,KXHIGHAUS-26NOV12-T80,KXHIGHAUS-26NOV12,Austin-Bergstrom International Airport,max,2026-11-12,81° or above,YES,0.12,0.3173,0.1873,,
 2026-11-12T10:45+00:00,KXHIGHTEWR-26NOV12-B62.5,KXHIGHTEWR-26NOV12,"Newark, Newark International Airport",max,2026-11-12,62° to 63°,YES,0.07,0.3113,0.2313,,
 2026-11-12T10:45+00:00,KXHIGHTLV-26NOV12-B74.5,KXHIGHTLV-26NOV12,Harry Reid International Airport,max,2026-11-12,74° to 75°,NO,0.39,0.3787,0.2113,,
+2026-11-12T11:40+00:00,KXHIGHTDC-26NOV12-B67.5,KXHIGHTDC-26NOV12,"Washington/Reagan National Airport, DC",max,2026-11-12,67° to 68°,YES,0.08,0.3221,0.2321,,
+2026-11-12T11:40+00:00,KXHIGHTATL-26NOV12-B62.5,KXHIGHTATL-26NOV12,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-12,62° to 63°,YES,0.06,0.2774,0.2074,,
+2026-11-12T11:40+00:00,KXHIGHMIA-26NOV12-B87.5,KXHIGHMIA-26NOV12,"Miami, Miami International Airport",max,2026-11-12,87° to 88°,YES,0.09,0.2932,0.1932,,
