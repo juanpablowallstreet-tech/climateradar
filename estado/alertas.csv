@@ -926,3 +926,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-13T02:50+00:00,KXLOWTSATX-26NOV13-B48.5,KXLOWTSATX-26NOV13,"San Antonio, San Antonio International Airport",min,2026-11-13,48° to 49°,NO,0.72,0.0658,0.1942,,
 2026-11-13T02:50+00:00,KXHIGHTSFO-26NOV13-B61.5,KXHIGHTSFO-26NOV13,"San Francisco, San Francisco International Airport",max,2026-11-13,61° to 62°,YES,0.13,0.3230,0.1830,,
 2026-11-13T02:50+00:00,KXLOWTLAX-26NOV13-T62,KXLOWTLAX-26NOV13,"Los Angeles, Los Angeles International Airport",min,2026-11-13,63° or above,YES,0.08,0.2676,0.1776,,
+2026-11-13T03:39+00:00,KXLOWTDEN-26NOV13-B35.5,KXLOWTDEN-26NOV13,"Denver, Denver International Airport",min,2026-11-13,35° to 36°,NO,0.66,0.0949,0.2251,,
+2026-11-13T03:39+00:00,KXHIGHTATL-26NOV13-B52.5,KXHIGHTATL-26NOV13,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-13,52° to 53°,NO,0.50,0.2996,0.1804,,
