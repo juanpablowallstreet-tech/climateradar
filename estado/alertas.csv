@@ -942,3 +942,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-13T06:39+00:00,KXLOWTPERIOD-26NOV15PHL-T34,KXLOWTPERIOD-26NOV15PHL,"Newark, Newark International Airport",min,2026-11-15,Below 34°F,NO,0.66,0.1401,0.1799,,
 2026-11-13T06:39+00:00,KXHIGHTLV-26NOV13-B73.5,KXHIGHTLV-26NOV13,Harry Reid International Airport,max,2026-11-13,73° to 74°,NO,0.50,0.3041,0.1759,,
 2026-11-13T06:39+00:00,KXHIGHTMIN-26NOV13-B37.5,KXHIGHTMIN-26NOV13,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-13,37° to 38°,YES,0.09,0.2701,0.1701,,
+2026-11-13T07:58+00:00,KXLOWTPERIOD-26NOV15PHL-T32,KXLOWTPERIOD-26NOV15PHL,"Newark, Newark International Airport",min,2026-11-15,Below 32°F,NO,0.76,0.0407,0.1793,,
