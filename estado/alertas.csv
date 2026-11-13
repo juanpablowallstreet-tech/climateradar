@@ -954,3 +954,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-13T10:49+00:00,KXLOWTOKC-26NOV13-T40,KXLOWTOKC-26NOV13,"Oklahoma City, Will Rogers World Airport",min,2026-11-13,41° or above,YES,0.32,0.5260,0.1860,,
 2026-11-13T10:49+00:00,KXHIGHAUS-26NOV13-B77.5,KXHIGHAUS-26NOV13,Austin-Bergstrom International Airport,max,2026-11-13,77° to 78°,YES,0.06,0.2488,0.1788,,
 2026-11-13T10:49+00:00,KXLOWTPERIOD-26NOV15BOS-T32,KXLOWTPERIOD-26NOV15BOS,"Newark, Newark International Airport",min,2026-11-15,Below 32°F,NO,0.79,0.0193,0.1707,,
+2026-11-13T11:39+00:00,KXLOWTMIA-26NOV13-T68,KXLOWTMIA-26NOV13,"Miami, Miami International Airport",min,2026-11-13,69° or above,YES,0.24,0.4868,0.2268,,
+2026-11-13T11:39+00:00,KXHIGHTMIN-26NOV13-B41.5,KXHIGHTMIN-26NOV13,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-13,41° to 42°,YES,0.14,0.3734,0.2234,,
