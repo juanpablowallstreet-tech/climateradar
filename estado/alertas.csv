@@ -993,3 +993,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-13T18:57+00:00,KXHIGHTSFO-26NOV14-B62.5,KXHIGHTSFO-26NOV14,"San Francisco, San Francisco International Airport",max,2026-11-14,62° to 63°,YES,0.06,0.2564,0.1864,,
 2026-11-13T18:57+00:00,KXHIGHNY-26NOV14-T46,KXHIGHNY-26NOV14,"New York City, Central Park",max,2026-11-14,45° or below,YES,0.39,0.5963,0.1863,,
 2026-11-13T18:57+00:00,KXLOWTAUS-26NOV14-T51,KXLOWTAUS-26NOV14,Austin-Bergstrom International Airport,min,2026-11-14,52° or above,YES,0.10,0.2807,0.1707,,
+2026-11-13T19:44+00:00,KXLOWTDC-26NOV13-T42,KXLOWTDC-26NOV13,"Washington/Reagan National Airport, DC",min,2026-11-13,43° or above,NO,0.56,0.2091,0.2109,,
+2026-11-13T19:44+00:00,KXHIGHTMIN-26NOV13-B41.5,KXHIGHTMIN-26NOV13,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-13,41° to 42°,NO,0.71,0.0610,0.2090,,
