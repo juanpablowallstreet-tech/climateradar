@@ -948,3 +948,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-13T08:47+00:00,KXHIGHTLV-26NOV13-B75.5,KXHIGHTLV-26NOV13,Harry Reid International Airport,max,2026-11-13,75° to 76°,YES,0.08,0.2960,0.2060,,
 2026-11-13T08:47+00:00,KXLOWTPERIOD-26NOV15BOS-T34,KXLOWTPERIOD-26NOV15BOS,"Newark, Newark International Airport",min,2026-11-15,Below 34°F,NO,0.71,0.0853,0.1847,,
 2026-11-13T08:47+00:00,KXLOWTAUS-26NOV13-B44.5,KXLOWTAUS-26NOV13,Austin-Bergstrom International Airport,min,2026-11-13,44° to 45°,NO,0.77,0.0371,0.1729,,
+2026-11-13T09:43+00:00,KXLOWTLV-26NOV13-T55,KXLOWTLV-26NOV13,Harry Reid International Airport,min,2026-11-13,56° or above,YES,0.25,0.4818,0.2118,,
