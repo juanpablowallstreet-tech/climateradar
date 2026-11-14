@@ -1083,3 +1083,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-14T20:19+00:00,KXLOWTMIA-26NOV15-B61.5,KXLOWTMIA-26NOV15,"Miami, Miami International Airport",min,2026-11-15,61° to 62°,NO,0.65,0.1343,0.1957,,
 2026-11-14T20:19+00:00,KXLOWTBOS-26NOV15-B36.5,KXLOWTBOS-26NOV15,"Boston, Logan International Airport",min,2026-11-15,36° to 37°,NO,0.55,0.2394,0.1906,,
 2026-11-14T20:19+00:00,KXLOWTPHX-26NOV15-B56.5,KXLOWTPHX-26NOV15,"Phoenix, Phoenix Sky Harbor International Airport",min,2026-11-15,56° to 57°,NO,0.62,0.1766,0.1834,,
+2026-11-14T20:58+00:00,KXLOWTOKC-26NOV15-B39.5,KXLOWTOKC-26NOV15,"Oklahoma City, Will Rogers World Airport",min,2026-11-15,39° to 40°,NO,0.56,0.2292,0.1908,,
+2026-11-14T20:58+00:00,KXLOWTLAX-26NOV15-B54.5,KXLOWTLAX-26NOV15,"Los Angeles, Los Angeles International Airport",min,2026-11-15,54° to 55°,YES,0.08,0.2787,0.1887,,
+2026-11-14T20:58+00:00,KXLOWTAUS-26NOV15-B49.5,KXLOWTAUS-26NOV15,Austin-Bergstrom International Airport,min,2026-11-15,49° to 50°,NO,0.60,0.2025,0.1775,,
+2026-11-14T20:58+00:00,KXLOWTMIA-26NOV15-B57.5,KXLOWTMIA-26NOV15,"Miami, Miami International Airport",min,2026-11-15,57° to 58°,YES,0.11,0.2970,0.1770,,
