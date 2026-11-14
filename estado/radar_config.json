@@ -1652,9 +1652,13 @@
     "KXHIGHNY-26NOV15-T49|YES": [
       0.17254138697540786,
       "2026-11-15"
+    ],
+    "KXLOWTDC-26NOV15-T42|NO": [
+      0.213487830645374,
+      "2026-11-15"
     ]
   },
-  "last_scan_ts": 1794694174.4243608,
+  "last_scan_ts": 1794696228.7763815,
   "model_version": 6,
   "trading": {
     "activo": false,
