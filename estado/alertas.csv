@@ -1065,3 +1065,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-14T15:42+00:00,KXHIGHDEN-26NOV14-B54.5,KXHIGHDEN-26NOV14,"Denver, Denver International Airport",max,2026-11-14,54° to 55°,YES,0.06,0.2623,0.1923,,
 2026-11-14T15:42+00:00,KXHIGHMIA-26NOV15-B78.5,KXHIGHMIA-26NOV15,"Miami, Miami International Airport",max,2026-11-15,78° to 79°,NO,0.49,0.3032,0.1868,,
 2026-11-14T16:22+00:00,KXHIGHTDAL-26NOV15-T50,KXHIGHTDAL-26NOV15,Dallas/Fort Worth International Airport,max,2026-11-15,49° or below,YES,0.10,0.2891,0.1791,,
+2026-11-14T17:10+00:00,KXHIGHAUS-26NOV14-B67.5,KXHIGHAUS-26NOV14,Austin-Bergstrom International Airport,max,2026-11-14,67° to 68°,NO,0.51,0.2520,0.2180,,
+2026-11-14T17:10+00:00,KXHIGHTDC-26NOV15-T52,KXHIGHTDC-26NOV15,"Washington/Reagan National Airport, DC",max,2026-11-15,51° or below,YES,0.08,0.2819,0.1919,,
+2026-11-14T17:10+00:00,KXLOWTEWR-26NOV15-B34.5,KXLOWTEWR-26NOV15,"Newark, Newark International Airport",min,2026-11-15,34° to 35°,YES,0.09,0.2880,0.1880,,
