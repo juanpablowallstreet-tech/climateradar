@@ -1025,3 +1025,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-14T03:10+00:00,KXLOWTTTN-26NOV14-T34,KXLOWTTTN-26NOV14,Trenton-Mercer Airport,min,2026-11-14,35° or above,YES,0.41,0.6335,0.2035,,
 2026-11-14T03:10+00:00,KXLOWTPERIOD-26NOV15NYC-T36,KXLOWTPERIOD-26NOV15NYC,"Newark, Newark International Airport",min,2026-11-15,Below 36°F,YES,0.21,0.4163,0.1863,,
 2026-11-14T03:57+00:00,KXLOWTAUS-26NOV14-B46.5,KXLOWTAUS-26NOV14,Austin-Bergstrom International Airport,min,2026-11-14,46° to 47°,NO,0.72,0.0345,0.2255,,
+2026-11-14T04:44+00:00,KXLOWTDEN-26NOV13-T33,KXLOWTDEN-26NOV13,"Denver, Denver International Airport",min,2026-11-13,32° or below,NO,0.77,0.0000,0.2100,,
