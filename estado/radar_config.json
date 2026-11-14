@@ -1424,9 +1424,13 @@
     "KXLOWTLAX-26NOV14-T60|YES": [
       0.17678293024538794,
       "2026-11-14"
+    ],
+    "KXLOWTPHIL-26NOV14-B35.5|YES": [
+      0.17868342959693448,
+      "2026-11-14"
     ]
   },
-  "last_scan_ts": 1794641859.3996427,
+  "last_scan_ts": 1794644708.95516,
   "model_version": 6,
   "trading": {
     "activo": false,
