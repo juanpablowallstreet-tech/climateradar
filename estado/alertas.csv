@@ -1068,3 +1068,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-14T17:10+00:00,KXHIGHAUS-26NOV14-B67.5,KXHIGHAUS-26NOV14,Austin-Bergstrom International Airport,max,2026-11-14,67° to 68°,NO,0.51,0.2520,0.2180,,
 2026-11-14T17:10+00:00,KXHIGHTDC-26NOV15-T52,KXHIGHTDC-26NOV15,"Washington/Reagan National Airport, DC",max,2026-11-15,51° or below,YES,0.08,0.2819,0.1919,,
 2026-11-14T17:10+00:00,KXLOWTEWR-26NOV15-B34.5,KXLOWTEWR-26NOV15,"Newark, Newark International Airport",min,2026-11-15,34° to 35°,YES,0.09,0.2880,0.1880,,
+2026-11-14T17:39+00:00,KXHIGHTNOLA-26NOV14-B61.5,KXHIGHTNOLA-26NOV14,"New Orleans, New Orleans International Airport",max,2026-11-14,61° to 62°,NO,0.50,0.2717,0.2083,,
+2026-11-14T17:39+00:00,KXLOWTSFO-26NOV15-B54.5,KXLOWTSFO-26NOV15,"San Francisco, San Francisco International Airport",min,2026-11-15,54° to 55°,NO,0.50,0.2958,0.1842,,
+2026-11-14T17:39+00:00,KXHIGHTBOS-26NOV15-B47.5,KXHIGHTBOS-26NOV15,"Boston, Logan International Airport",max,2026-11-15,47° to 48°,YES,0.12,0.3061,0.1761,,
