@@ -1640,9 +1640,13 @@
     "KXLOWTMIA-26NOV15-B57.5|YES": [
       0.17699945360485492,
       "2026-11-15"
+    ],
+    "KXHIGHTDAL-26NOV15-B50.5|NO": [
+      0.17462675646101258,
+      "2026-11-15"
     ]
   },
-  "last_scan_ts": 1794689889.4064505,
+  "last_scan_ts": 1794691789.7278762,
   "model_version": 6,
   "trading": {
     "activo": false,
