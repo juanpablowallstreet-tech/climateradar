@@ -1388,9 +1388,13 @@
     "KXLOWTPERIOD-26NOV15NYC-T36|YES": [
       0.18630259205968014,
       "2026-11-15"
+    ],
+    "KXLOWTAUS-26NOV14-B46.5|NO": [
+      0.22546852216728966,
+      "2026-11-14"
     ]
   },
-  "last_scan_ts": 1794625828.7285163,
+  "last_scan_ts": 1794628637.2447236,
   "model_version": 6,
   "trading": {
     "activo": false,
