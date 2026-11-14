@@ -1078,3 +1078,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-14T19:01+00:00,KXHIGHDEN-26NOV14-B52.5,KXHIGHDEN-26NOV14,"Denver, Denver International Airport",max,2026-11-14,52° to 53°,NO,0.58,0.2092,0.1908,,
 2026-11-14T19:01+00:00,KXHIGHAUS-26NOV14-T67,KXHIGHAUS-26NOV14,Austin-Bergstrom International Airport,max,2026-11-14,66° or below,YES,0.36,0.5613,0.1813,,
 2026-11-14T19:01+00:00,KXLOWTNYC-26NOV15-B39.5,KXLOWTNYC-26NOV15,"New York City, Central Park",min,2026-11-15,39° to 40°,NO,0.61,0.1894,0.1806,,
+2026-11-14T19:49+00:00,KXLOWTDAL-26NOV15-T46,KXLOWTDAL-26NOV15,Dallas/Fort Worth International Airport,min,2026-11-15,47° or above,YES,0.09,0.2877,0.1877,,
