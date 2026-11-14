@@ -1038,3 +1038,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-14T09:20+00:00,KXHIGHTSAN-26NOV14-B72.5,KXHIGHTSAN-26NOV14,San Diego International Airport,max,2026-11-14,72° to 73°,NO,0.39,0.3808,0.2092,,
 2026-11-14T09:20+00:00,KXHIGHTLV-26NOV14-B71.5,KXHIGHTLV-26NOV14,Harry Reid International Airport,max,2026-11-14,71° to 72°,YES,0.08,0.2744,0.1844,,
 2026-11-14T09:20+00:00,KXHIGHTHOU-26NOV14-B70.5,KXHIGHTHOU-26NOV14,"Houston, Houston Hobby Airport",max,2026-11-14,70° to 71°,YES,0.11,0.2904,0.1704,,
+2026-11-14T09:59+00:00,KXHIGHLAX-26NOV14-B73.5,KXHIGHLAX-26NOV14,"Los Angeles, Los Angeles International Airport",max,2026-11-14,73° to 74°,YES,0.11,0.3169,0.1969,,
