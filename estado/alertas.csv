@@ -1071,3 +1071,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-14T17:39+00:00,KXHIGHTNOLA-26NOV14-B61.5,KXHIGHTNOLA-26NOV14,"New Orleans, New Orleans International Airport",max,2026-11-14,61° to 62°,NO,0.50,0.2717,0.2083,,
 2026-11-14T17:39+00:00,KXLOWTSFO-26NOV15-B54.5,KXLOWTSFO-26NOV15,"San Francisco, San Francisco International Airport",min,2026-11-15,54° to 55°,NO,0.50,0.2958,0.1842,,
 2026-11-14T17:39+00:00,KXHIGHTBOS-26NOV15-B47.5,KXHIGHTBOS-26NOV15,"Boston, Logan International Airport",max,2026-11-15,47° to 48°,YES,0.12,0.3061,0.1761,,
+2026-11-14T18:14+00:00,KXLOWTSDF-26NOV15-T32,KXLOWTSDF-26NOV15,Louisville Muhammad Ali International Airport,min,2026-11-15,33° or above,NO,0.47,0.2928,0.2172,,
+2026-11-14T18:14+00:00,KXLOWTNYC-26NOV15-B41.5,KXLOWTNYC-26NOV15,"New York City, Central Park",min,2026-11-15,41° to 42°,NO,0.65,0.1489,0.1811,,
