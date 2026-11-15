@@ -1160,3 +1160,8 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-15T17:11+00:00,KXHIGHTSEA-26NOV16-B50.5,KXHIGHTSEA-26NOV16,"Seattle, Seattle-Tacoma International Airport",max,2026-11-16,50° to 51°,YES,0.11,0.2948,0.1748,,
 2026-11-15T17:51+00:00,KXHIGHPHIL-26NOV16-T53,KXHIGHPHIL-26NOV16,"Philadelphia, Philadelphia International Airport",max,2026-11-16,52° or below,YES,0.07,0.3082,0.2282,,
 2026-11-15T17:51+00:00,KXLOWTHOU-26NOV16-B48.5,KXLOWTHOU-26NOV16,"Houston, Houston Hobby Airport",min,2026-11-16,48° to 49°,NO,0.61,0.1990,0.1710,,
+2026-11-15T18:29+00:00,KXHIGHLAX-26NOV16-B70.5,KXHIGHLAX-26NOV16,"Los Angeles, Los Angeles International Airport",max,2026-11-16,70° to 71°,NO,0.52,0.2422,0.2178,,
+2026-11-15T18:29+00:00,KXLOWTBOS-26NOV16-B34.5,KXLOWTBOS-26NOV16,"Boston, Logan International Airport",min,2026-11-16,34° to 35°,YES,0.06,0.2559,0.1859,,
+2026-11-15T18:29+00:00,KXLOWTCHI-26NOV16-B31.5,KXLOWTCHI-26NOV16,"Chicago, Chicago Midway Airport",min,2026-11-16,31° to 32°,NO,0.62,0.1757,0.1843,,
+2026-11-15T18:29+00:00,KXHIGHPHIL-26NOV16-B53.5,KXHIGHPHIL-26NOV16,"Philadelphia, Philadelphia International Airport",max,2026-11-16,53° to 54°,NO,0.61,0.1898,0.1802,,
+2026-11-15T18:29+00:00,KXHIGHTSATX-26NOV16-B58.5,KXHIGHTSATX-26NOV16,"San Antonio, San Antonio International Airport",max,2026-11-16,58° to 59°,NO,0.59,0.2102,0.1798,,
