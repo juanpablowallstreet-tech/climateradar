@@ -1580,9 +1580,13 @@
     "KXHIGHTSDF-26NOV16-B53.5|NO": [
       0.17093722463114594,
       "2026-11-16"
+    ],
+    "KXLOWTDAL-26NOV16-B44.5|NO": [
+      0.17239018596579717,
+      "2026-11-16"
     ]
   },
-  "last_scan_ts": 1794770284.3401725,
+  "last_scan_ts": 1794772687.9617457,
   "model_version": 6,
   "trading": {
     "activo": false,

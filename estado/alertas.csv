@@ -1171,3 +1171,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-15T19:18+00:00,KXLOWTSATX-26NOV15-B52.5,KXLOWTSATX-26NOV15,"San Antonio, San Antonio International Airport",min,2026-11-15,52° to 53°,NO,0.60,0.1921,0.1879,,
 2026-11-15T19:18+00:00,KXHIGHTDAL-26NOV16-B58.5,KXHIGHTDAL-26NOV16,Dallas/Fort Worth International Airport,max,2026-11-16,58° to 59°,YES,0.07,0.2539,0.1739,,
 2026-11-15T19:18+00:00,KXHIGHTSDF-26NOV16-B53.5,KXHIGHTSDF-26NOV16,Louisville Muhammad Ali International Airport,max,2026-11-16,53° to 54°,NO,0.60,0.2091,0.1709,,
+2026-11-15T19:58+00:00,KXLOWTDAL-26NOV16-B44.5,KXLOWTDAL-26NOV16,Dallas/Fort Worth International Airport,min,2026-11-16,44° to 45°,NO,0.65,0.1576,0.1724,,
