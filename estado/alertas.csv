@@ -1154,3 +1154,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-15T16:30+00:00,KXHIGHTATL-26NOV16-B57.5,KXHIGHTATL-26NOV16,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-16,57° to 58°,NO,0.61,0.1788,0.1912,,
 2026-11-15T16:30+00:00,KXHIGHTBOS-26NOV16-B47.5,KXHIGHTBOS-26NOV16,"Boston, Logan International Airport",max,2026-11-16,47° to 48°,YES,0.08,0.2674,0.1774,,
 2026-11-15T16:30+00:00,KXHIGHTSEA-26NOV16-B52.5,KXHIGHTSEA-26NOV16,"Seattle, Seattle-Tacoma International Airport",max,2026-11-16,52° to 53°,NO,0.49,0.3138,0.1762,,
+2026-11-15T17:11+00:00,KXHIGHDEN-26NOV15-B56.5,KXHIGHDEN-26NOV15,"Denver, Denver International Airport",max,2026-11-15,56° to 57°,NO,0.54,0.2395,0.2005,,
+2026-11-15T17:11+00:00,KXHIGHTDAL-26NOV16-T61,KXHIGHTDAL-26NOV16,Dallas/Fort Worth International Airport,max,2026-11-16,62° or above,NO,0.52,0.2602,0.1998,,
+2026-11-15T17:11+00:00,KXLOWTSDF-26NOV16-B33.5,KXLOWTSDF-26NOV16,Louisville Muhammad Ali International Airport,min,2026-11-16,33° to 34°,NO,0.52,0.2735,0.1865,,
+2026-11-15T17:11+00:00,KXHIGHTSEA-26NOV16-B50.5,KXHIGHTSEA-26NOV16,"Seattle, Seattle-Tacoma International Airport",max,2026-11-16,50° to 51°,YES,0.11,0.2948,0.1748,,
