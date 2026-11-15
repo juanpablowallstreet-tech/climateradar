@@ -1416,9 +1416,13 @@
     "KXHIGHLAX-26NOV15-B71.5|NO": [
       0.18845035632401533,
       "2026-11-15"
+    ],
+    "KXHIGHTOKC-26NOV15-B46.5|YES": [
+      0.19917566951399307,
+      "2026-11-15"
     ]
   },
-  "last_scan_ts": 1794733962.568117,
+  "last_scan_ts": 1794736855.1617093,
   "model_version": 6,
   "trading": {
     "activo": false,
