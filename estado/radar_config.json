@@ -1420,9 +1420,13 @@
     "KXHIGHTOKC-26NOV15-B46.5|YES": [
       0.19917566951399307,
       "2026-11-15"
+    ],
+    "KXHIGHTSEA-26NOV15-B58.5|NO": [
+      0.20711155778686022,
+      "2026-11-15"
     ]
   },
-  "last_scan_ts": 1794741856.983422,
+  "last_scan_ts": 1794744540.8725803,
   "model_version": 6,
   "trading": {
     "activo": false,
