@@ -1292,9 +1292,13 @@
     "KXHIGHPHIL-26NOV15-B53.5|YES": [
       0.1720789733060555,
       "2026-11-15"
+    ],
+    "KXLOWTDC-26NOV15-B41.5|NO": [
+      0.21730611786333112,
+      "2026-11-15"
     ]
   },
-  "last_scan_ts": 1794700849.7388387,
+  "last_scan_ts": 1794702992.5537953,
   "model_version": 6,
   "trading": {
     "activo": false,

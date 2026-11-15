@@ -1099,3 +1099,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-15T00:00+00:00,KXHIGHTNOLA-26NOV15-B66.5,KXHIGHTNOLA-26NOV15,"New Orleans, New Orleans International Airport",max,2026-11-15,66° to 67°,YES,0.15,0.3422,0.1822,,
 2026-11-15T00:00+00:00,KXLOWTPHIL-26NOV15-B37.5,KXLOWTPHIL-26NOV15,"Philadelphia, Philadelphia International Airport",min,2026-11-15,37° to 38°,YES,0.09,0.2822,0.1822,,
 2026-11-15T00:00+00:00,KXHIGHPHIL-26NOV15-B53.5,KXHIGHPHIL-26NOV15,"Philadelphia, Philadelphia International Airport",max,2026-11-15,53° to 54°,YES,0.18,0.3721,0.1721,,
+2026-11-15T00:36+00:00,KXLOWTDC-26NOV15-B41.5,KXLOWTDC-26NOV15,"Washington/Reagan National Airport, DC",min,2026-11-15,41° to 42°,NO,0.55,0.2127,0.2173,,
