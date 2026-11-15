@@ -1149,3 +1149,8 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-15T15:55+00:00,KXHIGHTTTN-26NOV16-T53,KXHIGHTTTN-26NOV16,Trenton-Mercer Airport,max,2026-11-16,52° or below,NO,0.37,0.4049,0.2051,,
 2026-11-15T15:55+00:00,KXLOWTDC-26NOV16-T40,KXLOWTDC-26NOV16,"Washington/Reagan National Airport, DC",min,2026-11-16,41° or above,NO,0.42,0.3619,0.1981,,
 2026-11-15T15:55+00:00,KXHIGHTSFO-26NOV16-B60.5,KXHIGHTSFO-26NOV16,"San Francisco, San Francisco International Airport",max,2026-11-16,60° to 61°,NO,0.58,0.2025,0.1975,,
+2026-11-15T16:30+00:00,KXLOWTNOLA-26NOV16-T53,KXLOWTNOLA-26NOV16,"New Orleans, New Orleans International Airport",min,2026-11-16,54° or above,YES,0.14,0.3742,0.2242,,
+2026-11-15T16:30+00:00,KXLOWTLAX-26NOV16-T59,KXLOWTLAX-26NOV16,"Los Angeles, Los Angeles International Airport",min,2026-11-16,60° or above,NO,0.52,0.2424,0.2176,,
+2026-11-15T16:30+00:00,KXHIGHTATL-26NOV16-B57.5,KXHIGHTATL-26NOV16,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-16,57° to 58°,NO,0.61,0.1788,0.1912,,
+2026-11-15T16:30+00:00,KXHIGHTBOS-26NOV16-B47.5,KXHIGHTBOS-26NOV16,"Boston, Logan International Airport",max,2026-11-16,47° to 48°,YES,0.08,0.2674,0.1774,,
+2026-11-15T16:30+00:00,KXHIGHTSEA-26NOV16-B52.5,KXHIGHTSEA-26NOV16,"Seattle, Seattle-Tacoma International Airport",max,2026-11-16,52° to 53°,NO,0.49,0.3138,0.1762,,
