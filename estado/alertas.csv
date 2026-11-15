@@ -1125,3 +1125,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-15T07:28+00:00,KXLOWTMIN-26NOV15-T26,KXLOWTMIN-26NOV15,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-15,27° or above,NO,0.13,0.6296,0.2304,,
 2026-11-15T07:28+00:00,KXHIGHCHI-26NOV15-B52.5,KXHIGHCHI-26NOV15,"Chicago, Chicago Midway Airport",max,2026-11-15,52° to 53°,YES,0.22,0.4392,0.1992,,
 2026-11-15T07:28+00:00,KXHIGHTBOS-26NOV15-B51.5,KXHIGHTBOS-26NOV15,"Boston, Logan International Airport",max,2026-11-15,51° to 52°,YES,0.16,0.3641,0.1941,,
+2026-11-15T08:28+00:00,KXHIGHDEN-26NOV15-B60.5,KXHIGHDEN-26NOV15,"Denver, Denver International Airport",max,2026-11-15,60° to 61°,YES,0.12,0.3401,0.2101,,
+2026-11-15T08:28+00:00,KXLOWTCHI-26NOV15-B30.5,KXLOWTCHI-26NOV15,"Chicago, Chicago Midway Airport",min,2026-11-15,30° to 31°,NO,0.61,0.1859,0.1841,,
+2026-11-15T08:28+00:00,KXHIGHTSEA-26NOV15-B54.5,KXHIGHTSEA-26NOV15,"Seattle, Seattle-Tacoma International Airport",max,2026-11-15,54° to 55°,YES,0.21,0.4113,0.1813,,
