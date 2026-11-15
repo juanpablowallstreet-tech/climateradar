@@ -1296,9 +1296,13 @@
     "KXLOWTDC-26NOV15-B41.5|NO": [
       0.21730611786333112,
       "2026-11-15"
+    ],
+    "KXLOWTBOS-26NOV15-B34.5|YES": [
+      0.1772101940628732,
+      "2026-11-15"
     ]
   },
-  "last_scan_ts": 1794702992.5537953,
+  "last_scan_ts": 1794707352.5561216,
   "model_version": 6,
   "trading": {
     "activo": false,
