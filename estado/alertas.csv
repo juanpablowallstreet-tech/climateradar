@@ -1106,3 +1106,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-15T02:35+00:00,KXHIGHTSFO-26NOV15-B64.5,KXHIGHTSFO-26NOV15,"San Francisco, San Francisco International Airport",max,2026-11-15,64° to 65°,NO,0.44,0.3392,0.2008,,
 2026-11-15T02:35+00:00,KXLOWTCHI-26NOV15-B32.5,KXLOWTCHI-26NOV15,"Chicago, Chicago Midway Airport",min,2026-11-15,32° to 33°,NO,0.57,0.2176,0.1924,,
 2026-11-15T02:35+00:00,KXLOWTMIA-26NOV15-B59.5,KXLOWTMIA-26NOV15,"Miami, Miami International Airport",min,2026-11-15,59° to 60°,NO,0.71,0.0979,0.1721,,
+2026-11-15T03:29+00:00,KXLOWTSDF-26NOV15-B31.5,KXLOWTSDF-26NOV15,Louisville Muhammad Ali International Airport,min,2026-11-15,31° to 32°,NO,0.65,0.1077,0.2223,,
+2026-11-15T03:29+00:00,KXHIGHTHOU-26NOV15-T65,KXHIGHTHOU-26NOV15,"Houston, Houston Hobby Airport",max,2026-11-15,64° or below,NO,0.55,0.2266,0.2034,,
