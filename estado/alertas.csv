@@ -1191,3 +1191,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-15T23:03+00:00,KXHIGHTDAL-26NOV16-B60.5,KXHIGHTDAL-26NOV16,Dallas/Fort Worth International Airport,max,2026-11-16,60° to 61°,NO,0.58,0.2290,0.1710,,
 2026-11-15T23:48+00:00,KXLOWTLV-26NOV16-B52.5,KXLOWTLV-26NOV16,Harry Reid International Airport,min,2026-11-16,52° to 53°,NO,0.63,0.1721,0.1779,,
 2026-11-15T23:48+00:00,KXHIGHTHOU-26NOV16-T64,KXHIGHTHOU-26NOV16,"Houston, Houston Hobby Airport",max,2026-11-16,65° or above,NO,0.54,0.2644,0.1756,,
+2026-11-16T00:37+00:00,KXHIGHCHI-26NOV16-B51.5,KXHIGHCHI-26NOV16,"Chicago, Chicago Midway Airport",max,2026-11-16,51° to 52°,YES,0.17,0.3579,0.1779,,
+2026-11-16T00:37+00:00,KXLOWTSEA-26NOV15-B43.5,KXLOWTSEA-26NOV15,"Seattle, Seattle-Tacoma International Airport",min,2026-11-15,43° to 44°,NO,0.55,0.2564,0.1736,,
