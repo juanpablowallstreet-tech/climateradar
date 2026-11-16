@@ -1203,3 +1203,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-16T03:59+00:00,KXLOWTMIA-26NOV16-B66.5,KXLOWTMIA-26NOV16,"Miami, Miami International Airport",min,2026-11-16,66° to 67°,NO,0.66,0.1115,0.2085,,
 2026-11-16T03:59+00:00,KXLOWTDC-26NOV16-T40,KXLOWTDC-26NOV16,"Washington/Reagan National Airport, DC",min,2026-11-16,41° or above,YES,0.39,0.5913,0.1813,,
 2026-11-16T03:59+00:00,KXLOWTATL-26NOV16-T38,KXLOWTATL-26NOV16,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-16,39° or above,YES,0.50,0.6915,0.1715,,
+2026-11-16T05:28+00:00,KXLOWTDEN-26NOV16-B32.5,KXLOWTDEN-26NOV16,"Denver, Denver International Airport",min,2026-11-16,32° to 33°,NO,0.68,0.1071,0.1929,,
+2026-11-16T05:28+00:00,KXHIGHTSAN-26NOV16-T69,KXHIGHTSAN-26NOV16,San Diego International Airport,max,2026-11-16,68° or below,YES,0.12,0.3214,0.1914,,
