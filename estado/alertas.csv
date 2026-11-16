@@ -1198,3 +1198,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-16T02:07+00:00,KXLOWTOKC-26NOV16-T41,KXLOWTOKC-26NOV16,"Oklahoma City, Will Rogers World Airport",min,2026-11-16,42° or above,YES,0.33,0.5477,0.1977,,
 2026-11-16T02:07+00:00,KXLOWTSDF-26NOV16-T34,KXLOWTSDF-26NOV16,Louisville Muhammad Ali International Airport,min,2026-11-16,35° or above,YES,0.50,0.7098,0.1898,,
 2026-11-16T02:07+00:00,KXLOWTDEN-26NOV16-B34.5,KXLOWTDEN-26NOV16,"Denver, Denver International Airport",min,2026-11-16,34° to 35°,NO,0.67,0.1349,0.1751,,
+2026-11-16T02:58+00:00,KXLOWTDEN-26NOV15-B35.5,KXLOWTDEN-26NOV15,"Denver, Denver International Airport",min,2026-11-15,35° to 36°,NO,0.63,0.1413,0.2087,,
+2026-11-16T02:58+00:00,KXLOWTDC-26NOV16-B39.5,KXLOWTDC-26NOV16,"Washington/Reagan National Airport, DC",min,2026-11-16,39° to 40°,NO,0.62,0.1613,0.1987,,
