@@ -1264,3 +1264,8 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-16T19:43+00:00,KXHIGHTHOU-26NOV17-B70.5,KXHIGHTHOU-26NOV17,"Houston, Houston Hobby Airport",max,2026-11-17,70° to 71°,NO,0.70,0.1099,0.1701,,
 2026-11-16T20:33+00:00,KXLOWTLV-26NOV17-B46.5,KXLOWTLV-26NOV17,Harry Reid International Airport,min,2026-11-17,46° to 47°,NO,0.62,0.1573,0.2027,,
 2026-11-16T20:33+00:00,KXLOWTMIN-26NOV17-T42,KXLOWTMIN-26NOV17,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-17,43° or above,NO,0.49,0.3125,0.1775,,
+2026-11-16T21:26+00:00,KXHIGHTSATX-26NOV17-B64.5,KXHIGHTSATX-26NOV17,"San Antonio, San Antonio International Airport",max,2026-11-17,64° to 65°,NO,0.47,0.2935,0.2165,,
+2026-11-16T21:26+00:00,KXHIGHTLV-26NOV17-T61,KXHIGHTLV-26NOV17,Harry Reid International Airport,max,2026-11-17,60° or below,YES,0.14,0.3665,0.2165,,
+2026-11-16T21:26+00:00,KXHIGHTPHX-26NOV17-B72.5,KXHIGHTPHX-26NOV17,"Phoenix, Phoenix Sky Harbor International Airport",max,2026-11-17,72° to 73°,NO,0.62,0.1806,0.1794,,
+2026-11-16T21:26+00:00,KXHIGHTLV-26NOV16-T66,KXHIGHTLV-26NOV16,Harry Reid International Airport,max,2026-11-16,65° or below,NO,0.34,0.4666,0.1734,,
+2026-11-16T21:26+00:00,KXHIGHTSEA-26NOV17-B50.5,KXHIGHTSEA-26NOV17,"Seattle, Seattle-Tacoma International Airport",max,2026-11-17,50° to 51°,NO,0.49,0.3176,0.1724,,
