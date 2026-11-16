@@ -1262,3 +1262,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-16T19:43+00:00,KXHIGHTBOS-26NOV17-B55.5,KXHIGHTBOS-26NOV17,"Boston, Logan International Airport",max,2026-11-17,55° to 56°,YES,0.16,0.3476,0.1776,,
 2026-11-16T19:43+00:00,KXHIGHTSFO-26NOV17-B58.5,KXHIGHTSFO-26NOV17,"San Francisco, San Francisco International Airport",max,2026-11-17,58° to 59°,YES,0.14,0.3252,0.1752,,
 2026-11-16T19:43+00:00,KXHIGHTHOU-26NOV17-B70.5,KXHIGHTHOU-26NOV17,"Houston, Houston Hobby Airport",max,2026-11-17,70° to 71°,NO,0.70,0.1099,0.1701,,
+2026-11-16T20:33+00:00,KXLOWTLV-26NOV17-B46.5,KXLOWTLV-26NOV17,Harry Reid International Airport,min,2026-11-17,46° to 47°,NO,0.62,0.1573,0.2027,,
+2026-11-16T20:33+00:00,KXLOWTMIN-26NOV17-T42,KXLOWTMIN-26NOV17,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-17,43° or above,NO,0.49,0.3125,0.1775,,
