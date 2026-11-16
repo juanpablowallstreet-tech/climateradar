@@ -1269,3 +1269,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-16T21:26+00:00,KXHIGHTPHX-26NOV17-B72.5,KXHIGHTPHX-26NOV17,"Phoenix, Phoenix Sky Harbor International Airport",max,2026-11-17,72° to 73°,NO,0.62,0.1806,0.1794,,
 2026-11-16T21:26+00:00,KXHIGHTLV-26NOV16-T66,KXHIGHTLV-26NOV16,Harry Reid International Airport,max,2026-11-16,65° or below,NO,0.34,0.4666,0.1734,,
 2026-11-16T21:26+00:00,KXHIGHTSEA-26NOV17-B50.5,KXHIGHTSEA-26NOV17,"Seattle, Seattle-Tacoma International Airport",max,2026-11-17,50° to 51°,NO,0.49,0.3176,0.1724,,
+2026-11-16T22:15+00:00,KXHIGHTSAN-26NOV17-B66.5,KXHIGHTSAN-26NOV17,San Diego International Airport,max,2026-11-17,66° to 67°,YES,0.06,0.2888,0.2188,,
