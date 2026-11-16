@@ -1214,3 +1214,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-16T09:42+00:00,KXHIGHTSDF-26NOV16-B55.5,KXHIGHTSDF-26NOV16,Louisville Muhammad Ali International Airport,max,2026-11-16,55° to 56°,NO,0.62,0.1844,0.1756,,
 2026-11-16T09:42+00:00,KXHIGHTPHX-26NOV16-B78.5,KXHIGHTPHX-26NOV16,"Phoenix, Phoenix Sky Harbor International Airport",max,2026-11-16,78° to 79°,NO,0.79,0.0152,0.1748,,
 2026-11-16T09:42+00:00,KXLOWTPHX-26NOV16-T57,KXLOWTPHX-26NOV16,"Phoenix, Phoenix Sky Harbor International Airport",min,2026-11-16,58° or above,NO,0.31,0.4954,0.1746,,
+2026-11-16T11:06+00:00,KXHIGHTMIN-26NOV16-B56.5,KXHIGHTMIN-26NOV16,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-16,56° to 57°,NO,0.46,0.3042,0.2158,,
+2026-11-16T11:06+00:00,KXHIGHLAX-26NOV16-B72.5,KXHIGHLAX-26NOV16,"Los Angeles, Los Angeles International Airport",max,2026-11-16,72° to 73°,YES,0.12,0.3294,0.1994,,
+2026-11-16T11:06+00:00,KXHIGHTSAN-26NOV16-B73.5,KXHIGHTSAN-26NOV16,San Diego International Airport,max,2026-11-16,73° to 74°,YES,0.07,0.2764,0.1964,,
