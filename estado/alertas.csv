@@ -1210,3 +1210,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-16T07:06+00:00,KXHIGHTLV-26NOV16-B66.5,KXHIGHTLV-26NOV16,Harry Reid International Airport,max,2026-11-16,66° to 67°,NO,0.50,0.2909,0.1891,,
 2026-11-16T07:06+00:00,KXLOWTDEN-26NOV16-T35,KXLOWTDEN-26NOV16,"Denver, Denver International Airport",min,2026-11-16,36° or above,YES,0.20,0.3985,0.1785,,
 2026-11-16T07:06+00:00,KXLOWTLV-26NOV16-T53,KXLOWTLV-26NOV16,Harry Reid International Airport,min,2026-11-16,54° or above,YES,0.50,0.6915,0.1715,,
+2026-11-16T09:42+00:00,KXHIGHLAX-26NOV16-B68.5,KXHIGHLAX-26NOV16,"Los Angeles, Los Angeles International Airport",max,2026-11-16,68° to 69°,NO,0.75,0.0042,0.2258,,
+2026-11-16T09:42+00:00,KXHIGHTSDF-26NOV16-B55.5,KXHIGHTSDF-26NOV16,Louisville Muhammad Ali International Airport,max,2026-11-16,55° to 56°,NO,0.62,0.1844,0.1756,,
+2026-11-16T09:42+00:00,KXHIGHTPHX-26NOV16-B78.5,KXHIGHTPHX-26NOV16,"Phoenix, Phoenix Sky Harbor International Airport",max,2026-11-16,78° to 79°,NO,0.79,0.0152,0.1748,,
+2026-11-16T09:42+00:00,KXLOWTPHX-26NOV16-T57,KXLOWTPHX-26NOV16,"Phoenix, Phoenix Sky Harbor International Airport",min,2026-11-16,58° or above,NO,0.31,0.4954,0.1746,,
