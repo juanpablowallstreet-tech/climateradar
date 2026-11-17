@@ -1279,3 +1279,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-17T00:28+00:00,KXHIGHTDAL-26NOV17-B63.5,KXHIGHTDAL-26NOV17,Dallas/Fort Worth International Airport,max,2026-11-17,63° to 64°,YES,0.14,0.3257,0.1757,,
 2026-11-17T00:28+00:00,KXHIGHCHI-26NOV17-B55.5,KXHIGHCHI-26NOV17,"Chicago, Chicago Midway Airport",max,2026-11-17,55° to 56°,YES,0.16,0.3439,0.1739,,
 2026-11-17T01:48+00:00,KXLOWTDAL-26NOV17-T42,KXLOWTDAL-26NOV17,Dallas/Fort Worth International Airport,min,2026-11-17,43° or above,YES,0.16,0.3871,0.2171,,
+2026-11-17T02:46+00:00,KXHIGHTMIN-26NOV17-B55.5,KXHIGHTMIN-26NOV17,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-17,55° to 56°,YES,0.08,0.3187,0.2287,,
+2026-11-17T02:46+00:00,KXLOWTNYC-26NOV17-B41.5,KXLOWTNYC-26NOV17,"New York City, Central Park",min,2026-11-17,41° to 42°,NO,0.61,0.1580,0.2120,,
+2026-11-17T02:46+00:00,KXLOWTSDF-26NOV17-B32.5,KXLOWTSDF-26NOV17,Louisville Muhammad Ali International Airport,min,2026-11-17,32° to 33°,NO,0.73,0.0797,0.1703,,
