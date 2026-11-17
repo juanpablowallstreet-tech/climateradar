@@ -1293,3 +1293,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-17T04:34+00:00,KXLOWTCHI-26NOV17-B34.5,KXLOWTCHI-26NOV17,"Chicago, Chicago Midway Airport",min,2026-11-17,34° to 35°,NO,0.70,0.1093,0.1707,,
 2026-11-17T05:35+00:00,KXHIGHTEWR-26NOV17-B60.5,KXHIGHTEWR-26NOV17,"Newark, Newark International Airport",max,2026-11-17,60° to 61°,NO,0.46,0.3123,0.2077,,
 2026-11-17T05:35+00:00,KXLOWTSATX-26NOV17-B42.5,KXLOWTSATX-26NOV17,"San Antonio, San Antonio International Airport",min,2026-11-17,42° to 43°,NO,0.66,0.1348,0.1852,,
+2026-11-17T06:37+00:00,KXHIGHTBOS-26NOV17-T58,KXHIGHTBOS-26NOV17,"Boston, Logan International Airport",max,2026-11-17,59° or above,YES,0.12,0.3577,0.2277,,
+2026-11-17T06:37+00:00,KXHIGHAUS-26NOV17-B66.5,KXHIGHAUS-26NOV17,Austin-Bergstrom International Airport,max,2026-11-17,66° to 67°,NO,0.59,0.1775,0.2125,,
+2026-11-17T06:37+00:00,KXLOWTCHI-26NOV17-T37,KXLOWTCHI-26NOV17,"Chicago, Chicago Midway Airport",min,2026-11-17,38° or above,YES,0.06,0.2564,0.1864,,
