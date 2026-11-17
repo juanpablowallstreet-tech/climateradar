@@ -1380,9 +1380,13 @@
     "KXHIGHTBOS-26NOV17-B55.5|NO": [
       0.1756284753323434,
       "2026-11-17"
+    ],
+    "KXHIGHNY-26NOV17-B55.5|NO": [
+      0.17308315088814666,
+      "2026-11-17"
     ]
   },
-  "last_scan_ts": 1794905742.0998628,
+  "last_scan_ts": 1794908813.6565316,
   "model_version": 6,
   "trading": {
     "activo": false,
