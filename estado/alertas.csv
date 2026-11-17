@@ -1339,3 +1339,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-17T17:45+00:00,KXLOWTPHIL-26NOV18-B37.5,KXLOWTPHIL-26NOV18,"Philadelphia, Philadelphia International Airport",min,2026-11-18,37° to 38°,NO,0.52,0.2674,0.1926,,
 2026-11-17T17:45+00:00,KXHIGHTSDF-26NOV18-B65.5,KXHIGHTSDF-26NOV18,Louisville Muhammad Ali International Airport,max,2026-11-18,65° to 66°,NO,0.52,0.2732,0.1868,,
 2026-11-17T17:45+00:00,KXHIGHTSFO-26NOV18-B58.5,KXHIGHTSFO-26NOV18,"San Francisco, San Francisco International Airport",max,2026-11-18,58° to 59°,NO,0.49,0.3176,0.1724,,
+2026-11-17T18:37+00:00,KXLOWTAUS-26NOV18-T43,KXLOWTAUS-26NOV18,Austin-Bergstrom International Airport,min,2026-11-18,44° or above,YES,0.11,0.3539,0.2339,,
+2026-11-17T18:37+00:00,KXLOWTOKC-26NOV18-T40,KXLOWTOKC-26NOV18,"Oklahoma City, Will Rogers World Airport",min,2026-11-18,41° or above,YES,0.15,0.3830,0.2230,,
+2026-11-17T18:37+00:00,KXHIGHTMIN-26NOV17-B55.5,KXHIGHTMIN-26NOV17,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-17,55° to 56°,NO,0.51,0.2543,0.2157,,
+2026-11-17T18:37+00:00,KXHIGHTSDF-26NOV18-B67.5,KXHIGHTSDF-26NOV18,Louisville Muhammad Ali International Airport,max,2026-11-18,67° to 68°,NO,0.68,0.0905,0.2095,,
