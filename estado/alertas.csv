@@ -1395,3 +1395,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-18T06:27+00:00,KXLOWTBOS-26NOV18-T42,KXLOWTBOS-26NOV18,"Boston, Logan International Airport",min,2026-11-18,43° or above,NO,0.13,0.6571,0.2029,,
 2026-11-18T06:27+00:00,KXHIGHTBOS-26NOV18-B64.5,KXHIGHTBOS-26NOV18,"Boston, Logan International Airport",max,2026-11-18,64° to 65°,NO,0.47,0.3167,0.1933,,
 2026-11-18T06:27+00:00,KXHIGHMIA-26NOV18-B80.5,KXHIGHMIA-26NOV18,"Miami, Miami International Airport",max,2026-11-18,80° to 81°,YES,0.14,0.3204,0.1704,,
+2026-11-18T08:44+00:00,KXHIGHPHIL-26NOV18-B66.5,KXHIGHPHIL-26NOV18,"Philadelphia, Philadelphia International Airport",max,2026-11-18,66° to 67°,YES,0.06,0.3052,0.2352,,
+2026-11-18T08:44+00:00,KXHIGHTEWR-26NOV18-B65.5,KXHIGHTEWR-26NOV18,"Newark, Newark International Airport",max,2026-11-18,65° to 66°,NO,0.37,0.3907,0.2193,,
+2026-11-18T08:44+00:00,KXLOWTDEN-26NOV18-B34.5,KXLOWTDEN-26NOV18,"Denver, Denver International Airport",min,2026-11-18,34° to 35°,NO,0.74,0.0619,0.1781,,
