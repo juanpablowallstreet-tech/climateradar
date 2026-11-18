@@ -1387,3 +1387,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-18T02:23+00:00,KXLOWTLV-26NOV18-T43,KXLOWTLV-26NOV18,Harry Reid International Airport,min,2026-11-18,44° or above,YES,0.45,0.6569,0.1869,,
 2026-11-18T02:23+00:00,KXLOWTHOU-26NOV18-T54,KXLOWTHOU-26NOV18,"Houston, Houston Hobby Airport",min,2026-11-18,55° or above,YES,0.48,0.6863,0.1863,,
 2026-11-18T02:23+00:00,KXLOWTSFO-26NOV18-B51.5,KXLOWTSFO-26NOV18,"San Francisco, San Francisco International Airport",min,2026-11-18,51° to 52°,NO,0.54,0.2602,0.1798,,
+2026-11-18T03:24+00:00,KXLOWTSEA-26NOV18-T39,KXLOWTSEA-26NOV18,"Seattle, Seattle-Tacoma International Airport",min,2026-11-18,40° or above,YES,0.50,0.7497,0.2297,,
