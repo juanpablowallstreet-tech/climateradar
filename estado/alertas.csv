@@ -1374,3 +1374,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-17T23:24+00:00,KXLOWTNOLA-26NOV18-T57,KXLOWTNOLA-26NOV18,"New Orleans, New Orleans International Airport",min,2026-11-18,58° or above,NO,0.36,0.4476,0.1724,,
 2026-11-17T23:24+00:00,KXHIGHTEWR-26NOV18-B63.5,KXHIGHTEWR-26NOV18,"Newark, Newark International Airport",max,2026-11-18,63° to 64°,YES,0.14,0.3202,0.1702,,
 2026-11-18T00:14+00:00,KXHIGHTTTN-26NOV18-B64.5,KXHIGHTTTN-26NOV18,Trenton-Mercer Airport,max,2026-11-18,64° to 65°,NO,0.69,0.0806,0.2094,,
+2026-11-18T01:24+00:00,KXLOWTSATX-26NOV18-B43.5,KXLOWTSATX-26NOV18,"San Antonio, San Antonio International Airport",min,2026-11-18,43° to 44°,NO,0.52,0.2761,0.1839,,
+2026-11-18T01:24+00:00,KXHIGHTSEA-26NOV18-T48,KXHIGHTSEA-26NOV18,"Seattle, Seattle-Tacoma International Airport",max,2026-11-18,47° or below,YES,0.06,0.2526,0.1826,,
