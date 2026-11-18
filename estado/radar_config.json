@@ -1484,9 +1484,13 @@
     "KXHIGHTSEA-26NOV18-B52.5|YES": [
       0.1869890390887596,
       "2026-11-18"
+    ],
+    "KXHIGHNY-26NOV18-B62.5|NO": [
+      0.21844911270141468,
+      "2026-11-18"
     ]
   },
-  "last_scan_ts": 1795005874.706821,
+  "last_scan_ts": 1795010370.8860972,
   "model_version": 6,
   "trading": {
     "activo": false,
