@@ -1388,3 +1388,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-18T02:23+00:00,KXLOWTHOU-26NOV18-T54,KXLOWTHOU-26NOV18,"Houston, Houston Hobby Airport",min,2026-11-18,55° or above,YES,0.48,0.6863,0.1863,,
 2026-11-18T02:23+00:00,KXLOWTSFO-26NOV18-B51.5,KXLOWTSFO-26NOV18,"San Francisco, San Francisco International Airport",min,2026-11-18,51° to 52°,NO,0.54,0.2602,0.1798,,
 2026-11-18T03:24+00:00,KXLOWTSEA-26NOV18-T39,KXLOWTSEA-26NOV18,"Seattle, Seattle-Tacoma International Airport",min,2026-11-18,40° or above,YES,0.50,0.7497,0.2297,,
+2026-11-18T05:22+00:00,KXLOWTNOLA-26NOV18-B56.5,KXLOWTNOLA-26NOV18,"New Orleans, New Orleans International Airport",min,2026-11-18,56° to 57°,NO,0.63,0.1549,0.1951,,
+2026-11-18T05:22+00:00,KXLOWTCHI-26NOV18-B41.5,KXLOWTCHI-26NOV18,"Chicago, Chicago Midway Airport",min,2026-11-18,41° to 42°,NO,0.65,0.1467,0.1833,,
