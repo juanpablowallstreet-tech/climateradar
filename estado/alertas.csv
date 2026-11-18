@@ -1463,3 +1463,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-18T20:31+00:00,KXLOWTNOLA-26NOV19-T60,KXLOWTNOLA-26NOV19,"New Orleans, New Orleans International Airport",min,2026-11-19,61° or above,NO,0.34,0.4242,0.2158,,
 2026-11-18T20:31+00:00,KXLOWTSDF-26NOV19-T38,KXLOWTSDF-26NOV19,Louisville Muhammad Ali International Airport,min,2026-11-19,39° or above,YES,0.07,0.2782,0.1982,,
 2026-11-18T20:31+00:00,KXHIGHTMIN-26NOV19-B55.5,KXHIGHTMIN-26NOV19,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-19,55° to 56°,NO,0.53,0.2771,0.1729,,
+2026-11-18T21:29+00:00,KXLOWTTTN-26NOV19-T36,KXLOWTTTN-26NOV19,Trenton-Mercer Airport,min,2026-11-19,37° or above,YES,0.14,0.3866,0.2366,,
+2026-11-18T21:29+00:00,KXHIGHTNOLA-26NOV19-B70.5,KXHIGHTNOLA-26NOV19,"New Orleans, New Orleans International Airport",max,2026-11-19,70° to 71°,NO,0.50,0.2834,0.1966,,
+2026-11-18T21:29+00:00,KXLOWTPHX-26NOV19-B51.5,KXLOWTPHX-26NOV19,"Phoenix, Phoenix Sky Harbor International Airport",min,2026-11-19,51° to 52°,NO,0.60,0.1890,0.1910,,
+2026-11-18T21:29+00:00,KXLOWTSFO-26NOV19-B50.5,KXLOWTSFO-26NOV19,"San Francisco, San Francisco International Airport",min,2026-11-19,50° to 51°,NO,0.53,0.2724,0.1776,,
