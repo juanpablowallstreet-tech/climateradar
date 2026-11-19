@@ -1756,9 +1756,13 @@
     "KXHIGHTDAL-26NOV20-B74.5|NO": [
       0.17847646459071467,
       "2026-11-20"
+    ],
+    "KXLOWTDC-26NOV20-T41|YES": [
+      0.2020773826296077,
+      "2026-11-20"
     ]
   },
-  "last_scan_ts": 1795129590.7822592,
+  "last_scan_ts": 1795132297.8536177,
   "model_version": 6,
   "trading": {
     "activo": false,

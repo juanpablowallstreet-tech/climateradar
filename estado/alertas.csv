@@ -1576,3 +1576,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-19T23:06+00:00,KXHIGHTDC-26NOV20-B70.5,KXHIGHTDC-26NOV20,"Washington/Reagan National Airport, DC",max,2026-11-20,70° to 71°,NO,0.51,0.2728,0.1972,,
 2026-11-19T23:06+00:00,KXHIGHTHOU-26NOV20-B75.5,KXHIGHTHOU-26NOV20,"Houston, Houston Hobby Airport",max,2026-11-20,75° to 76°,NO,0.47,0.3263,0.1837,,
 2026-11-19T23:06+00:00,KXHIGHTDAL-26NOV20-B74.5,KXHIGHTDAL-26NOV20,Dallas/Fort Worth International Airport,max,2026-11-20,74° to 75°,NO,0.50,0.3015,0.1785,,
+2026-11-19T23:51+00:00,KXLOWTDC-26NOV20-T41,KXLOWTDC-26NOV20,"Washington/Reagan National Airport, DC",min,2026-11-20,42° or above,YES,0.20,0.4221,0.2021,,
