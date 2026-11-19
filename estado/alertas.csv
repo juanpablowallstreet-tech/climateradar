@@ -1570,3 +1570,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-19T20:37+00:00,KXHIGHTSEA-26NOV20-T46,KXHIGHTSEA-26NOV20,"Seattle, Seattle-Tacoma International Airport",max,2026-11-20,45° or below,YES,0.06,0.2486,0.1786,,
 2026-11-19T20:37+00:00,KXLOWTAUS-26NOV20-B48.5,KXLOWTAUS-26NOV20,Austin-Bergstrom International Airport,min,2026-11-20,48° to 49°,NO,0.63,0.1735,0.1765,,
 2026-11-19T20:37+00:00,KXLOWTTTN-26NOV20-B35.5,KXLOWTTTN-26NOV20,Trenton-Mercer Airport,min,2026-11-20,35° to 36°,NO,0.62,0.1840,0.1760,,
+2026-11-19T21:27+00:00,KXHIGHTSDF-26NOV20-B72.5,KXHIGHTSDF-26NOV20,Louisville Muhammad Ali International Airport,max,2026-11-20,72° to 73°,NO,0.65,0.1322,0.1978,,
+2026-11-19T21:27+00:00,KXLOWTMIA-26NOV20-T72,KXLOWTMIA-26NOV20,"Miami, Miami International Airport",min,2026-11-20,73° or above,YES,0.12,0.3048,0.1748,,
