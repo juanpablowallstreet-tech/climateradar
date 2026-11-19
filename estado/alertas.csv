@@ -1485,3 +1485,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-19T03:20+00:00,KXLOWTDEN-26NOV19-B28.5,KXLOWTDEN-26NOV19,"Denver, Denver International Airport",min,2026-11-19,28° to 29°,NO,0.70,0.0797,0.2003,,
 2026-11-19T03:20+00:00,KXHIGHTDAL-26NOV19-B70.5,KXHIGHTDAL-26NOV19,Dallas/Fort Worth International Airport,max,2026-11-19,70° to 71°,YES,0.08,0.2743,0.1843,,
 2026-11-19T03:20+00:00,KXLOWTOKC-26NOV19-B43.5,KXLOWTOKC-26NOV19,"Oklahoma City, Will Rogers World Airport",min,2026-11-19,43° to 44°,NO,0.74,0.0680,0.1720,,
+2026-11-19T04:22+00:00,KXLOWTDAL-26NOV19-B49.5,KXLOWTDAL-26NOV19,Dallas/Fort Worth International Airport,min,2026-11-19,49° to 50°,NO,0.65,0.1404,0.1896,,
+2026-11-19T04:22+00:00,KXHIGHMIA-26NOV19-B82.5,KXHIGHMIA-26NOV19,"Miami, Miami International Airport",max,2026-11-19,82° to 83°,NO,0.62,0.1815,0.1785,,
