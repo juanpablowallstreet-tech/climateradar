@@ -1472,3 +1472,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-18T22:21+00:00,KXHIGHNY-26NOV19-B61.5,KXHIGHNY-26NOV19,"New York City, Central Park",max,2026-11-19,61° to 62°,YES,0.12,0.3026,0.1726,,
 2026-11-19T00:04+00:00,KXHIGHTDAL-26NOV19-B74.5,KXHIGHTDAL-26NOV19,Dallas/Fort Worth International Airport,max,2026-11-19,74° to 75°,NO,0.65,0.1259,0.2041,,
 2026-11-19T00:04+00:00,KXLOWTATL-26NOV19-B50.5,KXLOWTATL-26NOV19,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-19,50° to 51°,NO,0.58,0.2052,0.1948,,
+2026-11-19T01:12+00:00,KXHIGHLAX-26NOV19-T64,KXHIGHLAX-26NOV19,"Los Angeles, Los Angeles International Airport",max,2026-11-19,63° or below,YES,0.08,0.3269,0.2369,,
+2026-11-19T01:12+00:00,KXLOWTSAN-26NOV19-B58.5,KXLOWTSAN-26NOV19,San Diego International Airport,min,2026-11-19,58° to 59°,NO,0.60,0.1587,0.2213,,
+2026-11-19T01:12+00:00,KXHIGHTATL-26NOV19-B64.5,KXHIGHTATL-26NOV19,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-19,64° to 65°,YES,0.08,0.2626,0.1726,,
