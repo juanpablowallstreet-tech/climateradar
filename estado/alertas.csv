@@ -1499,3 +1499,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-19T07:52+00:00,KXHIGHTOKC-26NOV19-B70.5,KXHIGHTOKC-26NOV19,"Oklahoma City, Will Rogers World Airport",max,2026-11-19,70° to 71°,NO,0.74,0.0421,0.1979,,
 2026-11-19T07:52+00:00,KXHIGHDEN-26NOV19-B52.5,KXHIGHDEN-26NOV19,"Denver, Denver International Airport",max,2026-11-19,52° to 53°,NO,0.69,0.1165,0.1735,,
 2026-11-19T08:53+00:00,KXLOWTTTN-26NOV19-B33.5,KXLOWTTTN-26NOV19,Trenton-Mercer Airport,min,2026-11-19,33° to 34°,NO,0.67,0.0978,0.2122,,
+2026-11-19T09:45+00:00,KXHIGHTSAN-26NOV19-B71.5,KXHIGHTSAN-26NOV19,San Diego International Airport,max,2026-11-19,71° to 72°,YES,0.15,0.3624,0.2024,,
