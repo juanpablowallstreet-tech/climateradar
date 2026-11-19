@@ -1505,3 +1505,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-19T10:42+00:00,KXHIGHTPHX-26NOV19-B77.5,KXHIGHTPHX-26NOV19,"Phoenix, Phoenix Sky Harbor International Airport",max,2026-11-19,77° to 78°,YES,0.15,0.3570,0.1970,,
 2026-11-19T10:42+00:00,KXHIGHTATL-26NOV19-T69,KXHIGHTATL-26NOV19,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-19,70° or above,YES,0.15,0.3453,0.1853,,
 2026-11-19T10:42+00:00,KXHIGHTOKC-26NOV19-B66.5,KXHIGHTOKC-26NOV19,"Oklahoma City, Will Rogers World Airport",max,2026-11-19,66° to 67°,YES,0.09,0.2707,0.1707,,
+2026-11-19T11:40+00:00,KXHIGHAUS-26NOV19-B76.5,KXHIGHAUS-26NOV19,Austin-Bergstrom International Airport,max,2026-11-19,76° to 77°,YES,0.07,0.2813,0.2013,,
+2026-11-19T11:40+00:00,KXHIGHMIA-26NOV19-B80.5,KXHIGHMIA-26NOV19,"Miami, Miami International Airport",max,2026-11-19,80° to 81°,NO,0.54,0.2566,0.1834,,
