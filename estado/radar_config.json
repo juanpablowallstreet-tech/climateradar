@@ -1536,9 +1536,13 @@
     "KXLOWTPHX-26NOV20-T53|YES": [
       0.1708267239495664,
       "2026-11-20"
+    ],
+    "KXHIGHTDAL-26NOV20-B72.5|YES": [
+      0.18265273071036153,
+      "2026-11-20"
     ]
   },
-  "last_scan_ts": 1795183275.4673927,
+  "last_scan_ts": 1795186275.8673854,
   "model_version": 6,
   "trading": {
     "activo": false,
