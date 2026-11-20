@@ -1638,3 +1638,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-20T18:40+00:00,KXHIGHTEWR-26NOV21-B64.5,KXHIGHTEWR-26NOV21,"Newark, Newark International Airport",max,2026-11-21,64° to 65°,NO,0.52,0.2396,0.2204,,
 2026-11-20T18:40+00:00,KXHIGHTSEA-26NOV20-T46,KXHIGHTSEA-26NOV20,"Seattle, Seattle-Tacoma International Airport",max,2026-11-20,45° or below,NO,0.17,0.6234,0.1966,,
 2026-11-20T18:40+00:00,KXHIGHPHIL-26NOV21-B67.5,KXHIGHPHIL-26NOV21,"Philadelphia, Philadelphia International Airport",max,2026-11-21,67° to 68°,NO,0.56,0.2473,0.1727,,
+2026-11-20T19:42+00:00,KXLOWTTTN-26NOV21-B37.5,KXLOWTTTN-26NOV21,Trenton-Mercer Airport,min,2026-11-21,37° to 38°,NO,0.60,0.1687,0.2113,,
+2026-11-20T19:42+00:00,KXHIGHTLV-26NOV20-B60.5,KXHIGHTLV-26NOV20,Harry Reid International Airport,max,2026-11-20,60° to 61°,NO,0.60,0.1717,0.2083,,
+2026-11-20T19:42+00:00,KXHIGHMIA-26NOV21-B84.5,KXHIGHMIA-26NOV21,"Miami, Miami International Airport",max,2026-11-21,84° to 85°,NO,0.62,0.1742,0.1858,,
+2026-11-20T19:42+00:00,KXHIGHTATL-26NOV21-T65,KXHIGHTATL-26NOV21,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-21,64° or below,NO,0.19,0.6118,0.1782,,
