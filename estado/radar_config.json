@@ -1508,9 +1508,13 @@
     "KXLOWTHOU-26NOV20-B54.5|YES": [
       0.17000136106211944,
       "2026-11-20"
+    ],
+    "KXHIGHTSFO-26NOV20-B57.5|NO": [
+      0.17920112176044348,
+      "2026-11-20"
     ]
   },
-  "last_scan_ts": 1795156504.2537582,
+  "last_scan_ts": 1795161189.8025465,
   "model_version": 6,
   "trading": {
     "activo": false,
