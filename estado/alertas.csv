@@ -1601,3 +1601,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-20T04:31+00:00,KXLOWTNYC-26NOV20-T48,KXLOWTNYC-26NOV20,"New York City, Central Park",min,2026-11-20,49° or above,YES,0.20,0.3974,0.1774,,
 2026-11-20T04:31+00:00,KXLOWTOKC-26NOV20-B47.5,KXLOWTOKC-26NOV20,"Oklahoma City, Will Rogers World Airport",min,2026-11-20,47° to 48°,NO,0.76,0.0456,0.1744,,
 2026-11-20T04:31+00:00,KXHIGHTOKC-26NOV20-B67.5,KXHIGHTOKC-26NOV20,"Oklahoma City, Will Rogers World Airport",max,2026-11-20,67° to 68°,YES,0.06,0.2424,0.1724,,
+2026-11-20T05:31+00:00,KXLOWTNYC-26NOV20-T48,KXLOWTNYC-26NOV20,"New York City, Central Park",min,2026-11-20,49° or above,NO,0.73,0.0269,0.2231,,
