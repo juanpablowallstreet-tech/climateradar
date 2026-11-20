@@ -1653,3 +1653,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-20T21:36+00:00,KXLOWTMIN-26NOV21-B44.5,KXLOWTMIN-26NOV21,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-21,44° to 45°,NO,0.60,0.1919,0.1881,,
 2026-11-20T21:36+00:00,KXHIGHCHI-26NOV21-B68.5,KXHIGHCHI-26NOV21,"Chicago, Chicago Midway Airport",max,2026-11-21,68° to 69°,NO,0.50,0.2956,0.1844,,
 2026-11-20T21:36+00:00,KXHIGHTPHX-26NOV21-B67.5,KXHIGHTPHX-26NOV21,"Phoenix, Phoenix Sky Harbor International Airport",max,2026-11-21,67° to 68°,NO,0.52,0.2822,0.1778,,
+2026-11-20T22:14+00:00,KXLOWTSAN-26NOV21-B48.5,KXLOWTSAN-26NOV21,San Diego International Airport,min,2026-11-21,48° to 49°,NO,0.55,0.2101,0.2199,,
+2026-11-20T22:14+00:00,KXHIGHTSFO-26NOV21-B57.5,KXHIGHTSFO-26NOV21,"San Francisco, San Francisco International Airport",max,2026-11-21,57° to 58°,NO,0.45,0.3485,0.1815,,
+2026-11-20T22:14+00:00,KXLOWTNYC-26NOV21-B43.5,KXLOWTNYC-26NOV21,"New York City, Central Park",min,2026-11-21,43° to 44°,YES,0.06,0.2401,0.1701,,
