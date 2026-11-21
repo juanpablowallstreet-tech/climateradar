@@ -1444,9 +1444,13 @@
     "KXLOWTAUS-26NOV21-B49.5|NO": [
       0.19186393682218975,
       "2026-11-21"
+    ],
+    "KXHIGHTDAL-26NOV21-B75.5|NO": [
+      0.20013741045534675,
+      "2026-11-21"
     ]
   },
-  "last_scan_ts": 1795235581.1744843,
+  "last_scan_ts": 1795239150.3663905,
   "model_version": 6,
   "trading": {
     "activo": false,
