@@ -1730,3 +1730,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-21T17:26+00:00,KXLOWTNYC-26NOV22-B52.5,KXLOWTNYC-26NOV22,"New York City, Central Park",min,2026-11-22,52° to 53°,NO,0.60,0.1826,0.1974,,
 2026-11-21T17:26+00:00,KXHIGHTSFO-26NOV22-B55.5,KXHIGHTSFO-26NOV22,"San Francisco, San Francisco International Airport",max,2026-11-22,55° to 56°,NO,0.45,0.3570,0.1730,,
 2026-11-21T17:26+00:00,KXHIGHTDC-26NOV21-B67.5,KXHIGHTDC-26NOV21,"Washington/Reagan National Airport, DC",max,2026-11-21,67° to 68°,NO,0.66,0.1474,0.1726,,
+2026-11-21T18:07+00:00,KXHIGHTDAL-26NOV21-T73,KXHIGHTDAL-26NOV21,Dallas/Fort Worth International Airport,max,2026-11-21,72° or below,YES,0.16,0.3664,0.1964,,
+2026-11-21T18:07+00:00,KXHIGHTOKC-26NOV21-B70.5,KXHIGHTOKC-26NOV21,"Oklahoma City, Will Rogers World Airport",max,2026-11-21,70° to 71°,YES,0.07,0.2631,0.1831,,
