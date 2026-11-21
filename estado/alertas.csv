@@ -1699,3 +1699,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-21T09:25+00:00,KXHIGHTBOS-26NOV21-B58.5,KXHIGHTBOS-26NOV21,"Boston, Logan International Airport",max,2026-11-21,58° to 59°,NO,0.68,0.1283,0.1717,,
 2026-11-21T10:19+00:00,KXHIGHTDAL-26NOV21-B73.5,KXHIGHTDAL-26NOV21,Dallas/Fort Worth International Airport,max,2026-11-21,73° to 74°,NO,0.63,0.1397,0.2103,,
 2026-11-21T10:19+00:00,KXHIGHTTTN-26NOV21-B67.5,KXHIGHTTTN-26NOV21,Trenton-Mercer Airport,max,2026-11-21,67° to 68°,YES,0.22,0.4202,0.1802,,
+2026-11-21T11:02+00:00,KXHIGHTDAL-26NOV21-B77.5,KXHIGHTDAL-26NOV21,Dallas/Fort Worth International Airport,max,2026-11-21,77° to 78°,YES,0.06,0.3012,0.2312,,
