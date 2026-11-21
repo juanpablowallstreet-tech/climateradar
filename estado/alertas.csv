@@ -1744,3 +1744,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-21T20:22+00:00,KXLOWTPHX-26NOV22-T49,KXLOWTPHX-26NOV22,"Phoenix, Phoenix Sky Harbor International Airport",min,2026-11-22,50° or above,NO,0.58,0.2026,0.1974,,
 2026-11-21T20:22+00:00,KXHIGHTEWR-26NOV22-T61,KXHIGHTEWR-26NOV22,"Newark, Newark International Airport",max,2026-11-22,60° or below,YES,0.13,0.3333,0.1933,,
 2026-11-21T20:22+00:00,KXHIGHAUS-26NOV22-T73,KXHIGHAUS-26NOV22,Austin-Bergstrom International Airport,max,2026-11-22,72° or below,YES,0.24,0.4446,0.1846,,
+2026-11-21T21:10+00:00,KXLOWTSDF-26NOV22-B43.5,KXLOWTSDF-26NOV22,Louisville Muhammad Ali International Airport,min,2026-11-22,43° to 44°,NO,0.59,0.2133,0.1767,,
