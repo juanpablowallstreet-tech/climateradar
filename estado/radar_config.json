@@ -1712,9 +1712,13 @@
     "KXLOWTSDF-26NOV22-B43.5|NO": [
       0.17669692992812883,
       "2026-11-22"
+    ],
+    "KXHIGHTSATX-26NOV22-B73.5|NO": [
+      0.17384260167445612,
+      "2026-11-22"
     ]
   },
-  "last_scan_ts": 1795295406.7722623,
+  "last_scan_ts": 1795297738.8034132,
   "model_version": 6,
   "trading": {
     "activo": false,
