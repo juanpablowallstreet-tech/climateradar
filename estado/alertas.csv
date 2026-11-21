@@ -1697,3 +1697,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-21T09:25+00:00,KXHIGHTOKC-26NOV21-T68,KXHIGHTOKC-26NOV21,"Oklahoma City, Will Rogers World Airport",max,2026-11-21,67° or below,YES,0.15,0.3452,0.1852,,
 2026-11-21T09:25+00:00,KXLOWTSFO-26NOV21-T47,KXLOWTSFO-26NOV21,"San Francisco, San Francisco International Airport",min,2026-11-21,48° or above,YES,0.06,0.2496,0.1796,,
 2026-11-21T09:25+00:00,KXHIGHTBOS-26NOV21-B58.5,KXHIGHTBOS-26NOV21,"Boston, Logan International Airport",max,2026-11-21,58° to 59°,NO,0.68,0.1283,0.1717,,
+2026-11-21T10:19+00:00,KXHIGHTDAL-26NOV21-B73.5,KXHIGHTDAL-26NOV21,Dallas/Fort Worth International Airport,max,2026-11-21,73° to 74°,NO,0.63,0.1397,0.2103,,
+2026-11-21T10:19+00:00,KXHIGHTTTN-26NOV21-B67.5,KXHIGHTTTN-26NOV21,Trenton-Mercer Airport,max,2026-11-21,67° to 68°,YES,0.22,0.4202,0.1802,,
