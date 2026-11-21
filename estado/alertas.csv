@@ -1675,3 +1675,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-21T03:35+00:00,KXLOWTPHIL-26NOV21-T42,KXLOWTPHIL-26NOV21,"Philadelphia, Philadelphia International Airport",min,2026-11-21,43° or above,YES,0.61,0.8202,0.1902,,
 2026-11-21T03:35+00:00,KXLOWTDAL-26NOV21-B55.5,KXLOWTDAL-26NOV21,Dallas/Fort Worth International Airport,min,2026-11-21,55° to 56°,NO,0.71,0.0880,0.1820,,
 2026-11-21T03:35+00:00,KXLOWTMIA-26NOV21-T71,KXLOWTMIA-26NOV21,"Miami, Miami International Airport",min,2026-11-21,72° or above,YES,0.46,0.6565,0.1765,,
+2026-11-21T04:33+00:00,KXLOWTPHX-26NOV21-T49,KXLOWTPHX-26NOV21,"Phoenix, Phoenix Sky Harbor International Airport",min,2026-11-21,50° or above,NO,0.26,0.4984,0.2216,,
+2026-11-21T04:33+00:00,KXLOWTMIA-26NOV21-B70.5,KXLOWTMIA-26NOV21,"Miami, Miami International Airport",min,2026-11-21,70° to 71°,NO,0.58,0.1837,0.2163,,
+2026-11-21T04:33+00:00,KXLOWTAUS-26NOV21-B49.5,KXLOWTAUS-26NOV21,Austin-Bergstrom International Airport,min,2026-11-21,49° to 50°,NO,0.76,0.0281,0.1919,,
