@@ -1746,3 +1746,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-21T20:22+00:00,KXHIGHAUS-26NOV22-T73,KXHIGHAUS-26NOV22,Austin-Bergstrom International Airport,max,2026-11-22,72° or below,YES,0.24,0.4446,0.1846,,
 2026-11-21T21:10+00:00,KXLOWTSDF-26NOV22-B43.5,KXLOWTSDF-26NOV22,Louisville Muhammad Ali International Airport,min,2026-11-22,43° to 44°,NO,0.59,0.2133,0.1767,,
 2026-11-21T21:48+00:00,KXHIGHTSATX-26NOV22-B73.5,KXHIGHTSATX-26NOV22,"San Antonio, San Antonio International Airport",max,2026-11-22,73° to 74°,NO,0.65,0.1562,0.1738,,
+2026-11-21T22:24+00:00,KXHIGHDEN-26NOV22-T48,KXHIGHDEN-26NOV22,"Denver, Denver International Airport",max,2026-11-22,49° or above,YES,0.09,0.3134,0.2134,,
+2026-11-21T22:24+00:00,KXLOWTATL-26NOV22-B55.5,KXLOWTATL-26NOV22,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-22,55° to 56°,NO,0.56,0.2493,0.1707,,
