@@ -1732,3 +1732,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-21T17:26+00:00,KXHIGHTDC-26NOV21-B67.5,KXHIGHTDC-26NOV21,"Washington/Reagan National Airport, DC",max,2026-11-21,67° to 68°,NO,0.66,0.1474,0.1726,,
 2026-11-21T18:07+00:00,KXHIGHTDAL-26NOV21-T73,KXHIGHTDAL-26NOV21,Dallas/Fort Worth International Airport,max,2026-11-21,72° or below,YES,0.16,0.3664,0.1964,,
 2026-11-21T18:07+00:00,KXHIGHTOKC-26NOV21-B70.5,KXHIGHTOKC-26NOV21,"Oklahoma City, Will Rogers World Airport",max,2026-11-21,70° to 71°,YES,0.07,0.2631,0.1831,,
+2026-11-21T18:52+00:00,KXHIGHTDAL-26NOV22-T66,KXHIGHTDAL-26NOV22,Dallas/Fort Worth International Airport,max,2026-11-22,65° or below,YES,0.16,0.4013,0.2313,,
+2026-11-21T18:52+00:00,KXLOWTSDF-26NOV22-B37.5,KXLOWTSDF-26NOV22,Louisville Muhammad Ali International Airport,min,2026-11-22,37° to 38°,NO,0.72,0.0762,0.1838,,
+2026-11-21T18:52+00:00,KXHIGHTMIN-26NOV22-B45.5,KXHIGHTMIN-26NOV22,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-22,45° to 46°,NO,0.65,0.1479,0.1821,,
