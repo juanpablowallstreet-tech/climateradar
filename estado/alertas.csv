@@ -1661,3 +1661,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-20T23:02+00:00,KXLOWTBOS-26NOV21-B44.5,KXLOWTBOS-26NOV21,"Boston, Logan International Airport",min,2026-11-21,44° to 45°,NO,0.65,0.1552,0.1748,,
 2026-11-20T23:02+00:00,KXHIGHTBOS-26NOV21-B60.5,KXHIGHTBOS-26NOV21,"Boston, Logan International Airport",max,2026-11-21,60° to 61°,NO,0.53,0.2786,0.1714,,
 2026-11-20T23:50+00:00,KXLOWTSEA-26NOV21-B32.5,KXLOWTSEA-26NOV21,"Seattle, Seattle-Tacoma International Airport",min,2026-11-21,32° to 33°,NO,0.61,0.1950,0.1750,,
+2026-11-21T00:34+00:00,KXLOWTNOLA-26NOV21-B62.5,KXLOWTNOLA-26NOV21,"New Orleans, New Orleans International Airport",min,2026-11-21,62° to 63°,NO,0.63,0.1775,0.1725,,
