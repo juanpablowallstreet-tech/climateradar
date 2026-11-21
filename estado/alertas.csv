@@ -1750,3 +1750,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-21T22:24+00:00,KXLOWTATL-26NOV22-B55.5,KXLOWTATL-26NOV22,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-22,55° to 56°,NO,0.56,0.2493,0.1707,,
 2026-11-21T23:06+00:00,KXHIGHPHIL-26NOV22-B65.5,KXHIGHPHIL-26NOV22,"Philadelphia, Philadelphia International Airport",max,2026-11-22,65° to 66°,NO,0.58,0.1736,0.2264,,
 2026-11-21T23:06+00:00,KXLOWTDEN-26NOV21-B28.5,KXLOWTDEN-26NOV21,"Denver, Denver International Airport",min,2026-11-21,28° to 29°,NO,0.55,0.2242,0.2058,,
+2026-11-21T23:42+00:00,KXLOWTLV-26NOV22-B40.5,KXLOWTLV-26NOV22,Harry Reid International Airport,min,2026-11-22,40° to 41°,NO,0.62,0.1801,0.1799,,
