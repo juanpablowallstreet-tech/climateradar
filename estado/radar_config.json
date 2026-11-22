@@ -1480,9 +1480,13 @@
     "KXHIGHTSFO-26NOV22-B57.5|YES": [
       0.18794965555902352,
       "2026-11-22"
+    ],
+    "KXLOWTMIN-26NOV22-T30|NO": [
+      0.20834892955655107,
+      "2026-11-22"
     ]
   },
-  "last_scan_ts": 1795345190.5521085,
+  "last_scan_ts": 1795348313.12736,
   "model_version": 6,
   "trading": {
     "activo": false,
