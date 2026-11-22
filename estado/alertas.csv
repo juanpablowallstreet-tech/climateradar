@@ -1812,3 +1812,8 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-22T16:41+00:00,KXLOWTPHIL-26NOV23-T48,KXLOWTPHIL-26NOV23,"Philadelphia, Philadelphia International Airport",min,2026-11-23,49° or above,NO,0.26,0.5318,0.1882,,
 2026-11-22T16:41+00:00,KXHIGHTSDF-26NOV23-B52.5,KXHIGHTSDF-26NOV23,Louisville Muhammad Ali International Airport,max,2026-11-23,52° to 53°,YES,0.07,0.2568,0.1768,,
 2026-11-22T16:41+00:00,KXHIGHTDC-26NOV23-T66,KXHIGHTDC-26NOV23,"Washington/Reagan National Airport, DC",max,2026-11-23,65° or below,YES,0.11,0.2939,0.1739,,
+2026-11-22T17:28+00:00,KXHIGHTDAL-26NOV23-B57.5,KXHIGHTDAL-26NOV23,Dallas/Fort Worth International Airport,max,2026-11-23,57° to 58°,NO,0.47,0.2843,0.2257,,
+2026-11-22T17:28+00:00,KXHIGHTSDF-26NOV23-B56.5,KXHIGHTSDF-26NOV23,Louisville Muhammad Ali International Airport,max,2026-11-23,56° to 57°,NO,0.57,0.1954,0.2146,,
+2026-11-22T17:28+00:00,KXHIGHLAX-26NOV22-B69.5,KXHIGHLAX-26NOV22,"Los Angeles, Los Angeles International Airport",max,2026-11-22,69° to 70°,YES,0.07,0.2825,0.2025,,
+2026-11-22T17:28+00:00,KXLOWTMIA-26NOV23-B67.5,KXLOWTMIA-26NOV23,"Miami, Miami International Airport",min,2026-11-23,67° to 68°,NO,0.47,0.3091,0.2009,,
+2026-11-22T17:28+00:00,KXLOWTAUS-26NOV23-B44.5,KXLOWTAUS-26NOV23,Austin-Bergstrom International Airport,min,2026-11-23,44° to 45°,NO,0.58,0.2252,0.1748,,
