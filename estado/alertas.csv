@@ -1778,3 +1778,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-22T06:32+00:00,KXHIGHNY-26NOV22-T61,KXHIGHNY-26NOV22,"New York City, Central Park",max,2026-11-22,60° or below,NO,0.50,0.2634,0.2166,,
 2026-11-22T06:32+00:00,KXHIGHTEWR-26NOV22-B65.5,KXHIGHTEWR-26NOV22,"Newark, Newark International Airport",max,2026-11-22,65° to 66°,YES,0.08,0.2873,0.1973,,
 2026-11-22T06:32+00:00,KXLOWTAUS-26NOV22-B54.5,KXLOWTAUS-26NOV22,Austin-Bergstrom International Airport,min,2026-11-22,54° to 55°,NO,0.58,0.2261,0.1739,,
+2026-11-22T07:49+00:00,KXHIGHMIA-26NOV22-B85.5,KXHIGHMIA-26NOV22,"Miami, Miami International Airport",max,2026-11-22,85° to 86°,NO,0.47,0.2858,0.2242,,
+2026-11-22T07:49+00:00,KXHIGHTSATX-26NOV22-T71,KXHIGHTSATX-26NOV22,"San Antonio, San Antonio International Airport",max,2026-11-22,70° or below,YES,0.12,0.3306,0.2006,,
