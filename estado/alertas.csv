@@ -1783,3 +1783,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-22T09:26+00:00,KXHIGHTSDF-26NOV22-B69.5,KXHIGHTSDF-26NOV22,Louisville Muhammad Ali International Airport,max,2026-11-22,69° to 70°,YES,0.08,0.2986,0.2086,,
 2026-11-22T10:15+00:00,KXHIGHTTTN-26NOV22-B61.5,KXHIGHTTTN-26NOV22,Trenton-Mercer Airport,max,2026-11-22,61° to 62°,NO,0.58,0.1875,0.2125,,
 2026-11-22T10:15+00:00,KXLOWTOKC-26NOV22-B39.5,KXLOWTOKC-26NOV22,"Oklahoma City, Will Rogers World Airport",min,2026-11-22,39° to 40°,NO,0.59,0.1918,0.1982,,
+2026-11-22T10:59+00:00,KXHIGHTSFO-26NOV22-B57.5,KXHIGHTSFO-26NOV22,"San Francisco, San Francisco International Airport",max,2026-11-22,57° to 58°,YES,0.20,0.4079,0.1879,,
