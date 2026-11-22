@@ -1822,3 +1822,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-22T18:08+00:00,KXLOWTLV-26NOV23-T45,KXLOWTLV-26NOV23,Harry Reid International Airport,min,2026-11-23,46° or above,YES,0.08,0.2725,0.1825,,
 2026-11-22T18:08+00:00,KXLOWTMIN-26NOV22-B29.5,KXLOWTMIN-26NOV22,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-22,29° to 30°,NO,0.58,0.2264,0.1736,,
 2026-11-22T18:08+00:00,KXHIGHTDC-26NOV23-B68.5,KXHIGHTDC-26NOV23,"Washington/Reagan National Airport, DC",max,2026-11-23,68° to 69°,NO,0.56,0.2483,0.1717,,
+2026-11-22T18:54+00:00,KXHIGHDEN-26NOV23-T40,KXHIGHDEN-26NOV23,"Denver, Denver International Airport",max,2026-11-23,39° or below,NO,0.33,0.4476,0.2024,,
+2026-11-22T18:54+00:00,KXLOWTDAL-26NOV23-T42,KXLOWTDAL-26NOV23,Dallas/Fort Worth International Airport,min,2026-11-23,43° or above,YES,0.23,0.4418,0.1918,,
+2026-11-22T18:54+00:00,KXLOWTSATX-26NOV22-T52,KXLOWTSATX-26NOV22,"San Antonio, San Antonio International Airport",min,2026-11-22,51° or below,YES,0.08,0.2654,0.1754,,
+2026-11-22T18:54+00:00,KXLOWTLAX-26NOV23-B53.5,KXLOWTLAX-26NOV23,"Los Angeles, Los Angeles International Airport",min,2026-11-23,53° to 54°,NO,0.66,0.1452,0.1748,,
