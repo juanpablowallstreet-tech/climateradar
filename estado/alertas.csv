@@ -1781,3 +1781,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-22T07:49+00:00,KXHIGHMIA-26NOV22-B85.5,KXHIGHMIA-26NOV22,"Miami, Miami International Airport",max,2026-11-22,85° to 86°,NO,0.47,0.2858,0.2242,,
 2026-11-22T07:49+00:00,KXHIGHTSATX-26NOV22-T71,KXHIGHTSATX-26NOV22,"San Antonio, San Antonio International Airport",max,2026-11-22,70° or below,YES,0.12,0.3306,0.2006,,
 2026-11-22T09:26+00:00,KXHIGHTSDF-26NOV22-B69.5,KXHIGHTSDF-26NOV22,Louisville Muhammad Ali International Airport,max,2026-11-22,69° to 70°,YES,0.08,0.2986,0.2086,,
+2026-11-22T10:15+00:00,KXHIGHTTTN-26NOV22-B61.5,KXHIGHTTTN-26NOV22,Trenton-Mercer Airport,max,2026-11-22,61° to 62°,NO,0.58,0.1875,0.2125,,
+2026-11-22T10:15+00:00,KXLOWTOKC-26NOV22-B39.5,KXLOWTOKC-26NOV22,"Oklahoma City, Will Rogers World Airport",min,2026-11-22,39° to 40°,NO,0.59,0.1918,0.1982,,
