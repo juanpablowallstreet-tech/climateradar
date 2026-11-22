@@ -1464,9 +1464,13 @@
     "KXHIGHTSATX-26NOV22-T71|YES": [
       0.2006454613562213,
       "2026-11-22"
+    ],
+    "KXHIGHTSDF-26NOV22-B69.5|YES": [
+      0.20859069701871225,
+      "2026-11-22"
     ]
   },
-  "last_scan_ts": 1795336649.416301,
+  "last_scan_ts": 1795339589.8088255,
   "model_version": 6,
   "trading": {
     "activo": false,
