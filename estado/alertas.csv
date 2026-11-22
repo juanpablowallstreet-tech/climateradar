@@ -1800,3 +1800,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-22T15:14+00:00,KXLOWTSEA-26NOV23-T40,KXLOWTSEA-26NOV23,"Seattle, Seattle-Tacoma International Airport",min,2026-11-23,41° or above,NO,0.46,0.3279,0.1921,,
 2026-11-22T15:14+00:00,KXLOWTLV-26NOV23-B42.5,KXLOWTLV-26NOV23,Harry Reid International Airport,min,2026-11-23,42° to 43°,NO,0.62,0.1800,0.1800,,
 2026-11-22T15:14+00:00,KXHIGHPHIL-26NOV23-B69.5,KXHIGHPHIL-26NOV23,"Philadelphia, Philadelphia International Airport",max,2026-11-23,69° to 70°,NO,0.59,0.2117,0.1783,,
+2026-11-22T15:59+00:00,KXLOWTAUS-26NOV22-T50,KXLOWTAUS-26NOV22,Austin-Bergstrom International Airport,min,2026-11-22,49° or below,YES,0.12,0.3467,0.2167,,
+2026-11-22T15:59+00:00,KXHIGHTMIN-26NOV23-B32.5,KXHIGHTMIN-26NOV23,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-23,32° to 33°,NO,0.48,0.2878,0.2122,,
+2026-11-22T15:59+00:00,KXHIGHTDC-26NOV22-B64.5,KXHIGHTDC-26NOV22,"Washington/Reagan National Airport, DC",max,2026-11-22,64° to 65°,NO,0.58,0.2087,0.1913,,
+2026-11-22T15:59+00:00,KXHIGHTEWR-26NOV23-B69.5,KXHIGHTEWR-26NOV23,"Newark, Newark International Airport",max,2026-11-23,69° to 70°,NO,0.54,0.2658,0.1742,,
