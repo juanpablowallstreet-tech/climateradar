@@ -1840,3 +1840,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-22T20:30+00:00,KXHIGHTATL-26NOV23-B68.5,KXHIGHTATL-26NOV23,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-23,68° to 69°,NO,0.56,0.2497,0.1703,,
 2026-11-22T21:16+00:00,KXHIGHAUS-26NOV23-T61,KXHIGHAUS-26NOV23,Austin-Bergstrom International Airport,max,2026-11-23,60° or below,YES,0.32,0.5149,0.1749,,
 2026-11-22T21:16+00:00,KXHIGHTLV-26NOV23-B59.5,KXHIGHTLV-26NOV23,Harry Reid International Airport,max,2026-11-23,59° to 60°,YES,0.10,0.2820,0.1720,,
+2026-11-22T21:59+00:00,KXHIGHLAX-26NOV23-B69.5,KXHIGHLAX-26NOV23,"Los Angeles, Los Angeles International Airport",max,2026-11-23,69° to 70°,NO,0.50,0.2502,0.2298,,
+2026-11-22T21:59+00:00,KXLOWTSEA-26NOV22-T40,KXLOWTSEA-26NOV22,"Seattle, Seattle-Tacoma International Airport",min,2026-11-22,41° or above,NO,0.52,0.2623,0.1977,,
+2026-11-22T21:59+00:00,KXHIGHPHIL-26NOV23-B67.5,KXHIGHPHIL-26NOV23,"Philadelphia, Philadelphia International Airport",max,2026-11-23,67° to 68°,NO,0.51,0.2822,0.1878,,
+2026-11-22T21:59+00:00,KXHIGHTOKC-26NOV23-B48.5,KXHIGHTOKC-26NOV23,"Oklahoma City, Will Rogers World Airport",max,2026-11-23,48° to 49°,NO,0.48,0.3231,0.1769,,
