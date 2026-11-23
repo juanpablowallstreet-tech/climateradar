@@ -1857,3 +1857,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-23T04:40+00:00,KXLOWTSATX-26NOV22-B52.5,KXLOWTSATX-26NOV22,"San Antonio, San Antonio International Airport",min,2026-11-22,52° to 53°,NO,0.74,0.0288,0.2112,,
 2026-11-23T04:40+00:00,KXLOWTATL-26NOV23-B52.5,KXLOWTATL-26NOV23,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-23,52° to 53°,NO,0.62,0.1660,0.1940,,
 2026-11-23T04:40+00:00,KXLOWTBOS-26NOV23-B49.5,KXLOWTBOS-26NOV23,"Boston, Logan International Airport",min,2026-11-23,49° to 50°,NO,0.67,0.1245,0.1855,,
+2026-11-23T05:46+00:00,KXLOWTMIA-26NOV23-T68,KXLOWTMIA-26NOV23,"Miami, Miami International Airport",min,2026-11-23,69° or above,YES,0.20,0.4478,0.2278,,
+2026-11-23T05:46+00:00,KXLOWTDEN-26NOV23-B20.5,KXLOWTDEN-26NOV23,"Denver, Denver International Airport",min,2026-11-23,20° to 21°,NO,0.65,0.1103,0.2197,,
+2026-11-23T05:46+00:00,KXHIGHTATL-26NOV23-T68,KXHIGHTATL-26NOV23,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-23,67° or below,NO,0.69,0.1190,0.1710,,
