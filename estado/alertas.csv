@@ -1844,3 +1844,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-22T21:59+00:00,KXLOWTSEA-26NOV22-T40,KXLOWTSEA-26NOV22,"Seattle, Seattle-Tacoma International Airport",min,2026-11-22,41° or above,NO,0.52,0.2623,0.1977,,
 2026-11-22T21:59+00:00,KXHIGHPHIL-26NOV23-B67.5,KXHIGHPHIL-26NOV23,"Philadelphia, Philadelphia International Airport",max,2026-11-23,67° to 68°,NO,0.51,0.2822,0.1878,,
 2026-11-22T21:59+00:00,KXHIGHTOKC-26NOV23-B48.5,KXHIGHTOKC-26NOV23,"Oklahoma City, Will Rogers World Airport",max,2026-11-23,48° to 49°,NO,0.48,0.3231,0.1769,,
+2026-11-23T01:17+00:00,KXHIGHCHI-26NOV23-B42.5,KXHIGHCHI-26NOV23,"Chicago, Chicago Midway Airport",max,2026-11-23,42° to 43°,NO,0.47,0.3052,0.2048,,
+2026-11-23T01:17+00:00,KXHIGHTTTN-26NOV23-B66.5,KXHIGHTTTN-26NOV23,Trenton-Mercer Airport,max,2026-11-23,66° to 67°,NO,0.49,0.2908,0.1992,,
