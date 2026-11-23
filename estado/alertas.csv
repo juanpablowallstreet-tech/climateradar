@@ -1863,3 +1863,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-23T06:53+00:00,KXHIGHTDAL-26NOV23-B55.5,KXHIGHTDAL-26NOV23,Dallas/Fort Worth International Airport,max,2026-11-23,55° to 56°,YES,0.09,0.3086,0.2086,,
 2026-11-23T06:53+00:00,KXHIGHTSEA-26NOV23-B49.5,KXHIGHTSEA-26NOV23,"Seattle, Seattle-Tacoma International Airport",max,2026-11-23,49° to 50°,YES,0.08,0.2745,0.1845,,
 2026-11-23T06:53+00:00,KXLOWTDEN-26NOV23-B22.5,KXLOWTDEN-26NOV23,"Denver, Denver International Airport",min,2026-11-23,22° to 23°,NO,0.65,0.1599,0.1701,,
+2026-11-23T08:23+00:00,KXHIGHTNOLA-26NOV23-B70.5,KXHIGHTNOLA-26NOV23,"New Orleans, New Orleans International Airport",max,2026-11-23,70° to 71°,NO,0.55,0.2325,0.1975,,
+2026-11-23T08:23+00:00,KXLOWTLV-26NOV23-B44.5,KXLOWTLV-26NOV23,Harry Reid International Airport,min,2026-11-23,44° to 45°,NO,0.59,0.2136,0.1764,,
