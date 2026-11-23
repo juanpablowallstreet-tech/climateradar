@@ -1854,3 +1854,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-23T03:25+00:00,KXLOWTAUS-26NOV22-B52.5,KXLOWTAUS-26NOV22,Austin-Bergstrom International Airport,min,2026-11-22,52° to 53°,NO,0.57,0.2084,0.2016,,
 2026-11-23T03:25+00:00,KXLOWTSATX-26NOV23-B45.5,KXLOWTSATX-26NOV23,"San Antonio, San Antonio International Airport",min,2026-11-23,45° to 46°,NO,0.55,0.2502,0.1798,,
 2026-11-23T03:25+00:00,KXHIGHMIA-26NOV23-B81.5,KXHIGHMIA-26NOV23,"Miami, Miami International Airport",max,2026-11-23,81° to 82°,NO,0.65,0.1598,0.1702,,
+2026-11-23T04:40+00:00,KXLOWTSATX-26NOV22-B52.5,KXLOWTSATX-26NOV22,"San Antonio, San Antonio International Airport",min,2026-11-22,52° to 53°,NO,0.74,0.0288,0.2112,,
+2026-11-23T04:40+00:00,KXLOWTATL-26NOV23-B52.5,KXLOWTATL-26NOV23,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-23,52° to 53°,NO,0.62,0.1660,0.1940,,
+2026-11-23T04:40+00:00,KXLOWTBOS-26NOV23-B49.5,KXLOWTBOS-26NOV23,"Boston, Logan International Airport",min,2026-11-23,49° to 50°,NO,0.67,0.1245,0.1855,,
