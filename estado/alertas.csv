@@ -1860,3 +1860,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-23T05:46+00:00,KXLOWTMIA-26NOV23-T68,KXLOWTMIA-26NOV23,"Miami, Miami International Airport",min,2026-11-23,69° or above,YES,0.20,0.4478,0.2278,,
 2026-11-23T05:46+00:00,KXLOWTDEN-26NOV23-B20.5,KXLOWTDEN-26NOV23,"Denver, Denver International Airport",min,2026-11-23,20° to 21°,NO,0.65,0.1103,0.2197,,
 2026-11-23T05:46+00:00,KXHIGHTATL-26NOV23-T68,KXHIGHTATL-26NOV23,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-23,67° or below,NO,0.69,0.1190,0.1710,,
+2026-11-23T06:53+00:00,KXHIGHTDAL-26NOV23-B55.5,KXHIGHTDAL-26NOV23,Dallas/Fort Worth International Airport,max,2026-11-23,55° to 56°,YES,0.09,0.3086,0.2086,,
+2026-11-23T06:53+00:00,KXHIGHTSEA-26NOV23-B49.5,KXHIGHTSEA-26NOV23,"Seattle, Seattle-Tacoma International Airport",max,2026-11-23,49° to 50°,YES,0.08,0.2745,0.1845,,
+2026-11-23T06:53+00:00,KXLOWTDEN-26NOV23-B22.5,KXLOWTDEN-26NOV23,"Denver, Denver International Airport",min,2026-11-23,22° to 23°,NO,0.65,0.1599,0.1701,,
