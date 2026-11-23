@@ -1932,3 +1932,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-23T21:06+00:00,KXHIGHTDC-26NOV24-B52.5,KXHIGHTDC-26NOV24,"Washington/Reagan National Airport, DC",max,2026-11-24,52° to 53°,NO,0.50,0.2932,0.1868,,
 2026-11-23T21:06+00:00,KXHIGHTMIN-26NOV24-B32.5,KXHIGHTMIN-26NOV24,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-24,32° to 33°,NO,0.58,0.2201,0.1799,,
 2026-11-23T21:06+00:00,KXLOWTBOS-26NOV24-B34.5,KXLOWTBOS-26NOV24,"Boston, Logan International Airport",min,2026-11-24,34° to 35°,NO,0.55,0.2544,0.1756,,
+2026-11-23T21:55+00:00,KXHIGHCHI-26NOV24-B42.5,KXHIGHCHI-26NOV24,"Chicago, Chicago Midway Airport",max,2026-11-24,42° to 43°,NO,0.56,0.2275,0.1925,,
