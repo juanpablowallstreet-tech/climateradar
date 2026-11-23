@@ -1866,3 +1866,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-23T08:23+00:00,KXHIGHTNOLA-26NOV23-B70.5,KXHIGHTNOLA-26NOV23,"New Orleans, New Orleans International Airport",max,2026-11-23,70° to 71°,NO,0.55,0.2325,0.1975,,
 2026-11-23T08:23+00:00,KXLOWTLV-26NOV23-B44.5,KXLOWTLV-26NOV23,Harry Reid International Airport,min,2026-11-23,44° to 45°,NO,0.59,0.2136,0.1764,,
 2026-11-23T09:48+00:00,KXLOWTSATX-26NOV23-B47.5,KXLOWTSATX-26NOV23,"San Antonio, San Antonio International Airport",min,2026-11-23,47° to 48°,NO,0.56,0.2193,0.2007,,
+2026-11-23T10:50+00:00,KXHIGHNY-26NOV23-B70.5,KXHIGHNY-26NOV23,"New York City, Central Park",max,2026-11-23,70° to 71°,YES,0.08,0.2859,0.1959,,

@@ -1396,9 +1396,13 @@
     "KXLOWTSATX-26NOV23-B47.5|NO": [
       0.2007339460379142,
       "2026-11-23"
+    ],
+    "KXHIGHNY-26NOV23-B70.5|YES": [
+      0.19590080366188017,
+      "2026-11-23"
     ]
   },
-  "last_scan_ts": 1795427330.1990535,
+  "last_scan_ts": 1795431007.3122308,
   "model_version": 6,
   "trading": {
     "activo": false,
