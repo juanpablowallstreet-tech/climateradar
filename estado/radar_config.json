@@ -1596,9 +1596,13 @@
     "KXHIGHTSAN-26NOV25-T72|YES": [
       0.17435398066505714,
       "2026-11-25"
+    ],
+    "KXLOWTATL-26NOV25-B43.5|NO": [
+      0.20400278026615418,
+      "2026-11-25"
     ]
   },
-  "last_scan_ts": 1795549158.4771924,
+  "last_scan_ts": 1795552192.6455178,
   "model_version": 6,
   "trading": {
     "activo": false,
