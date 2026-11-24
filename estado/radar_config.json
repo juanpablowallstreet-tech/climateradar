@@ -1396,9 +1396,13 @@
     "KXHIGHTSEA-26NOV24-T55|YES": [
       0.19417570439241894,
       "2026-11-24"
+    ],
+    "KXLOWTNYC-26NOV24-T36|YES": [
+      0.19668920168999832,
+      "2026-11-24"
     ]
   },
-  "last_scan_ts": 1795515902.06878,
+  "last_scan_ts": 1795519204.228011,
   "model_version": 6,
   "trading": {
     "activo": false,
