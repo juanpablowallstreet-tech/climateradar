@@ -1946,3 +1946,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-24T02:42+00:00,KXLOWTPHX-26NOV24-T48,KXLOWTPHX-26NOV24,"Phoenix, Phoenix Sky Harbor International Airport",min,2026-11-24,49° or above,YES,0.61,0.8029,0.1729,,
 2026-11-24T02:42+00:00,KXHIGHLAX-26NOV24-B72.5,KXHIGHLAX-26NOV24,"Los Angeles, Los Angeles International Airport",max,2026-11-24,72° to 73°,NO,0.48,0.3287,0.1713,,
 2026-11-24T02:42+00:00,KXHIGHTSAN-26NOV24-B71.5,KXHIGHTSAN-26NOV24,San Diego International Airport,max,2026-11-24,71° to 72°,YES,0.06,0.2411,0.1711,,
+2026-11-24T03:41+00:00,KXLOWTDEN-26NOV24-B21.5,KXLOWTDEN-26NOV24,"Denver, Denver International Airport",min,2026-11-24,21° to 22°,NO,0.68,0.0703,0.2297,,
+2026-11-24T03:41+00:00,KXHIGHTMIN-26NOV24-T32,KXHIGHTMIN-26NOV24,"Minneapolis, Minneapolis-St. Paul International Airport",max,2026-11-24,31° or below,YES,0.06,0.2895,0.2195,,
+2026-11-24T03:41+00:00,KXHIGHPHIL-26NOV24-B51.5,KXHIGHPHIL-26NOV24,"Philadelphia, Philadelphia International Airport",max,2026-11-24,51° to 52°,YES,0.07,0.2853,0.2053,,
