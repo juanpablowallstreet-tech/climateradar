@@ -1938,3 +1938,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-23T23:35+00:00,KXHIGHTTTN-26NOV24-B48.5,KXHIGHTTTN-26NOV24,Trenton-Mercer Airport,max,2026-11-24,48° to 49°,YES,0.11,0.2961,0.1761,,
 2026-11-24T00:27+00:00,KXLOWTCHI-26NOV24-B28.5,KXLOWTCHI-26NOV24,"Chicago, Chicago Midway Airport",min,2026-11-24,28° to 29°,NO,0.48,0.3067,0.1933,,
 2026-11-24T00:27+00:00,KXHIGHTHOU-26NOV24-T59,KXHIGHTHOU-26NOV24,"Houston, Houston Hobby Airport",max,2026-11-24,58° or below,NO,0.38,0.4166,0.1834,,
+2026-11-24T01:47+00:00,KXLOWTNOLA-26NOV24-B53.5,KXLOWTNOLA-26NOV24,"New Orleans, New Orleans International Airport",min,2026-11-24,53° to 54°,NO,0.53,0.2734,0.1766,,

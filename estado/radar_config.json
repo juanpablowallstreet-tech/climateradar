@@ -1300,9 +1300,13 @@
     "KXHIGHTHOU-26NOV24-T59|NO": [
       0.18339324518710057,
       "2026-11-24"
+    ],
+    "KXLOWTNOLA-26NOV24-B53.5|NO": [
+      0.17659354075612413,
+      "2026-11-24"
     ]
   },
-  "last_scan_ts": 1795480024.4167407,
+  "last_scan_ts": 1795484821.9695842,
   "model_version": 6,
   "trading": {
     "activo": false,
