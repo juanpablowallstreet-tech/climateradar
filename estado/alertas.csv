@@ -1955,3 +1955,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-24T04:49+00:00,KXHIGHTSFO-26NOV24-B60.5,KXHIGHTSFO-26NOV24,"San Francisco, San Francisco International Airport",max,2026-11-24,60° to 61°,NO,0.61,0.1936,0.1764,,
 2026-11-24T05:45+00:00,KXLOWTCHI-26NOV24-B26.5,KXLOWTCHI-26NOV24,"Chicago, Chicago Midway Airport",min,2026-11-24,26° to 27°,NO,0.69,0.0836,0.2064,,
 2026-11-24T05:45+00:00,KXHIGHNY-26NOV24-B49.5,KXHIGHNY-26NOV24,"New York City, Central Park",max,2026-11-24,49° to 50°,YES,0.13,0.3101,0.1701,,
+2026-11-24T06:45+00:00,KXLOWTLAX-26NOV24-B52.5,KXLOWTLAX-26NOV24,"Los Angeles, Los Angeles International Airport",min,2026-11-24,52° to 53°,NO,0.62,0.1412,0.2188,,
+2026-11-24T06:45+00:00,KXLOWTLV-26NOV24-B41.5,KXLOWTLV-26NOV24,Harry Reid International Airport,min,2026-11-24,41° to 42°,NO,0.70,0.1093,0.1707,,
