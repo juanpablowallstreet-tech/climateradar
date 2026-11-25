@@ -2097,3 +2097,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-25T18:04+00:00,KXLOWTCHI-26NOV26-B39.5,KXLOWTCHI-26NOV26,"Chicago, Chicago Midway Airport",min,2026-11-26,39° to 40°,NO,0.54,0.2307,0.2093,,
 2026-11-25T18:04+00:00,KXLOWTPHX-26NOV26-T54,KXLOWTPHX-26NOV26,"Phoenix, Phoenix Sky Harbor International Airport",min,2026-11-26,55° or above,NO,0.48,0.3114,0.1886,,
 2026-11-25T18:04+00:00,KXHIGHTSEA-26NOV25-T60,KXHIGHTSEA-26NOV25,"Seattle, Seattle-Tacoma International Airport",max,2026-11-25,61° or above,NO,0.56,0.2444,0.1756,,
+2026-11-25T18:55+00:00,KXLOWTDC-26NOV26-T48,KXLOWTDC-26NOV26,"Washington/Reagan National Airport, DC",min,2026-11-26,49° or above,YES,0.08,0.2987,0.2087,,
+2026-11-25T18:55+00:00,KXHIGHCHI-26NOV25-B43.5,KXHIGHCHI-26NOV25,"Chicago, Chicago Midway Airport",max,2026-11-25,43° to 44°,NO,0.52,0.2536,0.2064,,
+2026-11-25T18:55+00:00,KXLOWTHOU-26NOV26-B38.5,KXLOWTHOU-26NOV26,"Houston, Houston Hobby Airport",min,2026-11-26,38° to 39°,NO,0.60,0.1927,0.1873,,
+2026-11-25T18:55+00:00,KXHIGHTDC-26NOV26-B57.5,KXHIGHTDC-26NOV26,"Washington/Reagan National Airport, DC",max,2026-11-26,57° to 58°,NO,0.68,0.1240,0.1760,,
