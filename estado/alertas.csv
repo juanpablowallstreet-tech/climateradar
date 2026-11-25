@@ -2043,3 +2043,4 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-25T03:32+00:00,KXHIGHTSAN-26NOV25-B72.5,KXHIGHTSAN-26NOV25,San Diego International Airport,max,2026-11-25,72° to 73°,NO,0.46,0.2993,0.2207,,
 2026-11-25T03:32+00:00,KXLOWTDEN-26NOV25-B21.5,KXLOWTDEN-26NOV25,"Denver, Denver International Airport",min,2026-11-25,21° to 22°,NO,0.70,0.0782,0.2018,,
 2026-11-25T03:32+00:00,KXLOWTSFO-26NOV25-B54.5,KXLOWTSFO-26NOV25,"San Francisco, San Francisco International Airport",min,2026-11-25,54° to 55°,NO,0.55,0.2338,0.1962,,
+2026-11-25T04:43+00:00,KXLOWTSATX-26NOV25-B36.5,KXLOWTSATX-26NOV25,"San Antonio, San Antonio International Airport",min,2026-11-25,36° to 37°,NO,0.61,0.1919,0.1781,,
