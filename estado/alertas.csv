@@ -2116,3 +2116,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-25T20:39+00:00,KXHIGHLAX-26NOV26-B80.5,KXHIGHLAX-26NOV26,"Los Angeles, Los Angeles International Airport",max,2026-11-26,80° to 81°,NO,0.51,0.2826,0.1874,,
 2026-11-25T20:39+00:00,KXLOWTPHIL-26NOV26-T47,KXLOWTPHIL-26NOV26,"Philadelphia, Philadelphia International Airport",min,2026-11-26,48° or above,YES,0.09,0.2789,0.1789,,
 2026-11-25T20:39+00:00,KXLOWTOKC-26NOV26-B25.5,KXLOWTOKC-26NOV26,"Oklahoma City, Will Rogers World Airport",min,2026-11-26,25° to 26°,NO,0.63,0.1719,0.1781,,
+2026-11-25T21:38+00:00,KXLOWTSEA-26NOV26-B48.5,KXLOWTSEA-26NOV26,"Seattle, Seattle-Tacoma International Airport",min,2026-11-26,48° to 49°,NO,0.46,0.3328,0.1872,,
+2026-11-25T21:38+00:00,KXLOWTLAX-26NOV26-B55.5,KXLOWTLAX-26NOV26,"Los Angeles, Los Angeles International Airport",min,2026-11-26,55° to 56°,NO,0.65,0.1457,0.1843,,
+2026-11-25T21:38+00:00,KXHIGHTEWR-26NOV26-T55,KXHIGHTEWR-26NOV26,"Newark, Newark International Airport",max,2026-11-26,54° or below,NO,0.50,0.2987,0.1813,,
+2026-11-25T21:38+00:00,KXLOWTSDF-26NOV26-B38.5,KXLOWTSDF-26NOV26,Louisville Muhammad Ali International Airport,min,2026-11-26,38° to 39°,NO,0.65,0.1598,0.1702,,
