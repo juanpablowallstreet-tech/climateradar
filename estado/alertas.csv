@@ -2022,3 +2022,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-25T00:05+00:00,KXHIGHTSEA-26NOV25-B59.5,KXHIGHTSEA-26NOV25,"Seattle, Seattle-Tacoma International Airport",max,2026-11-25,59° to 60°,NO,0.62,0.1427,0.2173,,
 2026-11-25T00:05+00:00,KXLOWTPHX-26NOV25-B53.5,KXLOWTPHX-26NOV25,"Phoenix, Phoenix Sky Harbor International Airport",min,2026-11-25,53° to 54°,NO,0.64,0.1402,0.1998,,
 2026-11-25T00:05+00:00,KXHIGHTSFO-26NOV25-B62.5,KXHIGHTSFO-26NOV25,"San Francisco, San Francisco International Airport",max,2026-11-25,62° to 63°,NO,0.57,0.2352,0.1748,,
+2026-11-25T01:16+00:00,KXLOWTOKC-26NOV25-B25.5,KXLOWTOKC-26NOV25,"Oklahoma City, Will Rogers World Airport",min,2026-11-25,25° to 26°,NO,0.60,0.1805,0.1995,,
+2026-11-25T01:16+00:00,KXLOWTDAL-26NOV24-B37.5,KXLOWTDAL-26NOV24,Dallas/Fort Worth International Airport,min,2026-11-24,37° to 38°,YES,0.06,0.2560,0.1860,,
