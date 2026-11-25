@@ -2044,3 +2044,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-25T03:32+00:00,KXLOWTDEN-26NOV25-B21.5,KXLOWTDEN-26NOV25,"Denver, Denver International Airport",min,2026-11-25,21° to 22°,NO,0.70,0.0782,0.2018,,
 2026-11-25T03:32+00:00,KXLOWTSFO-26NOV25-B54.5,KXLOWTSFO-26NOV25,"San Francisco, San Francisco International Airport",min,2026-11-25,54° to 55°,NO,0.55,0.2338,0.1962,,
 2026-11-25T04:43+00:00,KXLOWTSATX-26NOV25-B36.5,KXLOWTSATX-26NOV25,"San Antonio, San Antonio International Airport",min,2026-11-25,36° to 37°,NO,0.61,0.1919,0.1781,,
+2026-11-25T05:42+00:00,KXHIGHPHIL-26NOV25-B52.5,KXHIGHPHIL-26NOV25,"Philadelphia, Philadelphia International Airport",max,2026-11-25,52° to 53°,YES,0.07,0.3125,0.2325,,
+2026-11-25T05:42+00:00,KXLOWTLV-26NOV25-B43.5,KXLOWTLV-26NOV25,Harry Reid International Airport,min,2026-11-25,43° to 44°,NO,0.70,0.0949,0.1851,,
+2026-11-25T05:42+00:00,KXHIGHDEN-26NOV25-B51.5,KXHIGHDEN-26NOV25,"Denver, Denver International Airport",max,2026-11-25,51° to 52°,NO,0.72,0.0780,0.1820,,
