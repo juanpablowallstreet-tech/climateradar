@@ -2124,3 +2124,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-25T22:33+00:00,KXHIGHTSEA-26NOV26-B58.5,KXHIGHTSEA-26NOV26,"Seattle, Seattle-Tacoma International Airport",max,2026-11-26,58° to 59°,NO,0.72,0.0757,0.1843,,
 2026-11-25T23:27+00:00,KXLOWTSEA-26NOV25-T49,KXLOWTSEA-26NOV25,"Seattle, Seattle-Tacoma International Airport",min,2026-11-25,50° or above,NO,0.13,0.6781,0.1819,,
 2026-11-25T23:27+00:00,KXLOWTMIN-26NOV25-B25.5,KXLOWTMIN-26NOV25,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-25,25° to 26°,NO,0.55,0.2546,0.1754,,
+2026-11-26T00:17+00:00,KXLOWTSDF-26NOV26-T41,KXLOWTSDF-26NOV26,Louisville Muhammad Ali International Airport,min,2026-11-26,42° or above,YES,0.22,0.4130,0.1730,,
+2026-11-26T00:17+00:00,KXLOWTMIN-26NOV26-B21.5,KXLOWTMIN-26NOV26,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-26,21° to 22°,NO,0.59,0.2176,0.1724,,
