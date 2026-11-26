@@ -2144,3 +2144,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-26T05:51+00:00,KXLOWTSATX-26NOV26-B34.5,KXLOWTSATX-26NOV26,"San Antonio, San Antonio International Airport",min,2026-11-26,34° to 35°,NO,0.67,0.1080,0.2020,,
 2026-11-26T05:51+00:00,KXLOWTDEN-26NOV26-B27.5,KXLOWTDEN-26NOV26,"Denver, Denver International Airport",min,2026-11-26,27° to 28°,NO,0.72,0.0805,0.1795,,
 2026-11-26T05:51+00:00,KXHIGHTSAN-26NOV26-B78.5,KXHIGHTSAN-26NOV26,San Diego International Airport,max,2026-11-26,78° to 79°,NO,0.63,0.1765,0.1735,,
+2026-11-26T06:57+00:00,KXHIGHTOKC-26NOV26-B47.5,KXHIGHTOKC-26NOV26,"Oklahoma City, Will Rogers World Airport",max,2026-11-26,47° to 48°,NO,0.46,0.2918,0.2282,,
+2026-11-26T06:57+00:00,KXHIGHDEN-26NOV26-B60.5,KXHIGHDEN-26NOV26,"Denver, Denver International Airport",max,2026-11-26,60° to 61°,NO,0.53,0.2458,0.2042,,
