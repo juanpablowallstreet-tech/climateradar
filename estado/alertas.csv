@@ -2135,3 +2135,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-26T02:42+00:00,KXLOWTBOS-26NOV26-B38.5,KXLOWTBOS-26NOV26,"Boston, Logan International Airport",min,2026-11-26,38° to 39°,NO,0.67,0.0933,0.2167,,
 2026-11-26T02:42+00:00,KXHIGHTDAL-26NOV26-B52.5,KXHIGHTDAL-26NOV26,Dallas/Fort Worth International Airport,max,2026-11-26,52° to 53°,YES,0.14,0.3590,0.2090,,
 2026-11-26T02:42+00:00,KXLOWTPHX-26NOV26-T54,KXLOWTPHX-26NOV26,"Phoenix, Phoenix Sky Harbor International Airport",min,2026-11-26,55° or above,YES,0.32,0.5367,0.1967,,
+2026-11-26T03:42+00:00,KXLOWTCHI-26NOV26-T40,KXLOWTCHI-26NOV26,"Chicago, Chicago Midway Airport",min,2026-11-26,41° or above,YES,0.32,0.5528,0.2128,,
+2026-11-26T03:42+00:00,KXLOWTNOLA-26NOV26-B43.5,KXLOWTNOLA-26NOV26,"New Orleans, New Orleans International Airport",min,2026-11-26,43° to 44°,NO,0.57,0.2316,0.1784,,
