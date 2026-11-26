@@ -2150,3 +2150,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-26T08:27+00:00,KXHIGHLAX-26NOV26-B84.5,KXHIGHLAX-26NOV26,"Los Angeles, Los Angeles International Airport",max,2026-11-26,84° to 85°,YES,0.12,0.3247,0.1947,,
 2026-11-26T08:27+00:00,KXHIGHTSFO-26NOV26-B65.5,KXHIGHTSFO-26NOV26,"San Francisco, San Francisco International Airport",max,2026-11-26,65° to 66°,YES,0.20,0.4082,0.1882,,
 2026-11-26T08:27+00:00,KXLOWTLAX-26NOV26-T56,KXLOWTLAX-26NOV26,"Los Angeles, Los Angeles International Airport",min,2026-11-26,57° or above,YES,0.14,0.3300,0.1800,,
+2026-11-26T09:41+00:00,KXLOWTDEN-26NOV26-T28,KXLOWTDEN-26NOV26,"Denver, Denver International Airport",min,2026-11-26,29° or above,YES,0.41,0.6316,0.2016,,
+2026-11-26T09:41+00:00,KXHIGHTNOLA-26NOV26-B55.5,KXHIGHTNOLA-26NOV26,"New Orleans, New Orleans International Airport",max,2026-11-26,55° to 56°,NO,0.52,0.2890,0.1710,,
