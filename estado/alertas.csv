@@ -2220,3 +2220,8 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-26T21:53+00:00,KXHIGHTSDF-26NOV27-B43.5,KXHIGHTSDF-26NOV27,Louisville Muhammad Ali International Airport,max,2026-11-27,43° to 44°,NO,0.49,0.3020,0.1880,,
 2026-11-26T21:53+00:00,KXLOWTATL-26NOV27-B37.5,KXLOWTATL-26NOV27,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-27,37° to 38°,NO,0.53,0.2768,0.1732,,
 2026-11-26T21:53+00:00,KXHIGHTDC-26NOV27-B54.5,KXHIGHTDC-26NOV27,"Washington/Reagan National Airport, DC",max,2026-11-27,54° to 55°,NO,0.58,0.2274,0.1726,,
+2026-11-26T22:46+00:00,KXLOWTATL-26NOV27-B39.5,KXLOWTATL-26NOV27,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-27,39° to 40°,NO,0.61,0.1484,0.2216,,
+2026-11-26T22:46+00:00,KXHIGHLAX-26NOV27-B83.5,KXHIGHLAX-26NOV27,"Los Angeles, Los Angeles International Airport",max,2026-11-27,83° to 84°,NO,0.52,0.2728,0.1872,,
+2026-11-26T22:46+00:00,KXHIGHTTTN-26NOV26-B53.5,KXHIGHTTTN-26NOV26,Trenton-Mercer Airport,max,2026-11-26,53° to 54°,YES,0.38,0.5827,0.1827,,
+2026-11-26T22:46+00:00,KXLOWTBOS-26NOV27-B45.5,KXLOWTBOS-26NOV27,"Boston, Logan International Airport",min,2026-11-27,45° to 46°,NO,0.55,0.2566,0.1734,,
+2026-11-26T22:46+00:00,KXLOWTOKC-26NOV27-B25.5,KXLOWTOKC-26NOV27,"Oklahoma City, Will Rogers World Airport",min,2026-11-27,25° to 26°,NO,0.77,0.0366,0.1734,,
