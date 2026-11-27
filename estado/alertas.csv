@@ -2321,3 +2321,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-27T22:32+00:00,KXHIGHLAX-26NOV28-B73.5,KXHIGHLAX-26NOV28,"Los Angeles, Los Angeles International Airport",max,2026-11-28,73° to 74°,NO,0.55,0.2522,0.1778,,
 2026-11-27T22:32+00:00,KXHIGHTEWR-26NOV28-B52.5,KXHIGHTEWR-26NOV28,"Newark, Newark International Airport",max,2026-11-28,52° to 53°,NO,0.56,0.2463,0.1737,,
 2026-11-27T22:32+00:00,KXHIGHTSAN-26NOV28-T76,KXHIGHTSAN-26NOV28,San Diego International Airport,max,2026-11-28,75° or below,NO,0.27,0.5370,0.1730,,
+2026-11-27T23:28+00:00,KXHIGHTDC-26NOV28-B58.5,KXHIGHTDC-26NOV28,"Washington/Reagan National Airport, DC",max,2026-11-28,58° to 59°,NO,0.53,0.2394,0.2106,,
+2026-11-27T23:28+00:00,KXLOWTSATX-26NOV28-B40.5,KXLOWTSATX-26NOV28,"San Antonio, San Antonio International Airport",min,2026-11-28,40° to 41°,NO,0.56,0.2477,0.1723,,
