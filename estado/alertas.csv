@@ -2247,3 +2247,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-27T04:55+00:00,KXHIGHPHIL-26NOV27-B57.5,KXHIGHPHIL-26NOV27,"Philadelphia, Philadelphia International Airport",max,2026-11-27,57° to 58°,NO,0.56,0.2120,0.2080,,
 2026-11-27T04:55+00:00,KXLOWTSFO-26NOV27-B48.5,KXLOWTSFO-26NOV27,"San Francisco, San Francisco International Airport",min,2026-11-27,48° to 49°,NO,0.69,0.1015,0.1885,,
 2026-11-27T05:54+00:00,KXHIGHDEN-26NOV27-B60.5,KXHIGHDEN-26NOV27,"Denver, Denver International Airport",max,2026-11-27,60° to 61°,YES,0.15,0.3365,0.1765,,
+2026-11-27T06:59+00:00,KXHIGHTDAL-26NOV27-B69.5,KXHIGHTDAL-26NOV27,Dallas/Fort Worth International Airport,max,2026-11-27,69° to 70°,NO,0.41,0.3402,0.2298,,
+2026-11-27T06:59+00:00,KXHIGHTHOU-26NOV27-B66.5,KXHIGHTHOU-26NOV27,"Houston, Houston Hobby Airport",max,2026-11-27,66° to 67°,NO,0.54,0.2204,0.2196,,
