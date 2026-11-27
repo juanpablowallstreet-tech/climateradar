@@ -1484,9 +1484,13 @@
     "KXLOWTNYC-26NOV27-B44.5|NO": [
       0.17631652244602805,
       "2026-11-27"
+    ],
+    "KXHIGHTOKC-26NOV27-B62.5|NO": [
+      0.21019536253143115,
+      "2026-11-27"
     ]
   },
-  "last_scan_ts": 1795779133.9714046,
+  "last_scan_ts": 1795783048.3827505,
   "model_version": 6,
   "trading": {
     "activo": false,
