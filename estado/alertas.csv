@@ -2231,3 +2231,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-26T23:40+00:00,KXHIGHNY-26NOV26-B56.5,KXHIGHNY-26NOV26,"New York City, Central Park",max,2026-11-26,56° to 57°,YES,0.09,0.2727,0.1727,,
 2026-11-27T00:41+00:00,KXLOWTMIN-26NOV27-B20.5,KXLOWTMIN-26NOV27,"Minneapolis, Minneapolis-St. Paul International Airport",min,2026-11-27,20° to 21°,NO,0.60,0.1686,0.2114,,
 2026-11-27T00:41+00:00,KXLOWTMIA-26NOV27-B62.5,KXLOWTMIA-26NOV27,"Miami, Miami International Airport",min,2026-11-27,62° to 63°,NO,0.57,0.2116,0.1984,,
+2026-11-27T01:58+00:00,KXLOWTTTN-26NOV27-B42.5,KXLOWTTTN-26NOV27,Trenton-Mercer Airport,min,2026-11-27,42° to 43°,NO,0.60,0.1921,0.1879,,
+2026-11-27T01:58+00:00,KXHIGHDEN-26NOV27-B62.5,KXHIGHDEN-26NOV27,"Denver, Denver International Airport",max,2026-11-27,62° to 63°,NO,0.50,0.3076,0.1724,,
