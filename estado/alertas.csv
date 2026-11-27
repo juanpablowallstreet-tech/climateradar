@@ -2297,3 +2297,8 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-27T18:37+00:00,KXHIGHTSDF-26NOV28-B52.5,KXHIGHTSDF-26NOV28,Louisville Muhammad Ali International Airport,max,2026-11-28,52° to 53°,YES,0.15,0.3385,0.1785,,
 2026-11-27T18:37+00:00,KXLOWTDC-26NOV27-B44.5,KXLOWTDC-26NOV27,"Washington/Reagan National Airport, DC",min,2026-11-27,44° to 45°,NO,0.56,0.2470,0.1730,,
 2026-11-27T18:37+00:00,KXHIGHTNOLA-26NOV28-B69.5,KXHIGHTNOLA-26NOV28,"New Orleans, New Orleans International Airport",max,2026-11-28,69° to 70°,NO,0.63,0.1772,0.1728,,
+2026-11-27T19:38+00:00,KXLOWTAUS-26NOV28-B42.5,KXLOWTAUS-26NOV28,Austin-Bergstrom International Airport,min,2026-11-28,42° to 43°,YES,0.06,0.2983,0.2283,,
+2026-11-27T19:38+00:00,KXHIGHTSFO-26NOV27-T62,KXHIGHTSFO-26NOV27,"San Francisco, San Francisco International Airport",max,2026-11-27,61° or below,YES,0.21,0.4222,0.1922,,
+2026-11-27T19:38+00:00,KXHIGHTATL-26NOV28-B58.5,KXHIGHTATL-26NOV28,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-28,58° to 59°,YES,0.06,0.2505,0.1805,,
+2026-11-27T19:38+00:00,KXHIGHTDC-26NOV28-B56.5,KXHIGHTDC-26NOV28,"Washington/Reagan National Airport, DC",max,2026-11-28,56° to 57°,YES,0.11,0.2922,0.1722,,
+2026-11-27T19:38+00:00,KXHIGHTBOS-26NOV28-B53.5,KXHIGHTBOS-26NOV28,"Boston, Logan International Airport",max,2026-11-28,53° to 54°,NO,0.56,0.2479,0.1721,,
