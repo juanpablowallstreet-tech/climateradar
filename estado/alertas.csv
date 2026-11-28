@@ -2338,3 +2338,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-28T02:38+00:00,KXHIGHLAX-26NOV28-B77.5,KXHIGHLAX-26NOV28,"Los Angeles, Los Angeles International Airport",max,2026-11-28,77° to 78°,YES,0.07,0.2666,0.1866,,
 2026-11-28T02:38+00:00,KXLOWTMIA-26NOV28-T62,KXLOWTMIA-26NOV28,"Miami, Miami International Airport",min,2026-11-28,63° or above,YES,0.43,0.6292,0.1792,,
 2026-11-28T02:38+00:00,KXLOWTATL-26NOV28-B36.5,KXLOWTATL-26NOV28,"Atlanta, Hartsfield - Jackson Atlanta International Airport",min,2026-11-28,36° to 37°,NO,0.71,0.0918,0.1782,,
+2026-11-28T03:33+00:00,KXHIGHTHOU-26NOV28-B75.5,KXHIGHTHOU-26NOV28,"Houston, Houston Hobby Airport",max,2026-11-28,75° to 76°,NO,0.48,0.3194,0.1806,,
+2026-11-28T03:33+00:00,KXLOWTOKC-26NOV28-B35.5,KXLOWTOKC-26NOV28,"Oklahoma City, Will Rogers World Airport",min,2026-11-28,35° to 36°,NO,0.79,0.0195,0.1705,,
