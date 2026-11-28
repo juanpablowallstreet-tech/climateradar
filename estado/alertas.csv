@@ -2323,3 +2323,6 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-27T22:32+00:00,KXHIGHTSAN-26NOV28-T76,KXHIGHTSAN-26NOV28,San Diego International Airport,max,2026-11-28,75° or below,NO,0.27,0.5370,0.1730,,
 2026-11-27T23:28+00:00,KXHIGHTDC-26NOV28-B58.5,KXHIGHTDC-26NOV28,"Washington/Reagan National Airport, DC",max,2026-11-28,58° to 59°,NO,0.53,0.2394,0.2106,,
 2026-11-27T23:28+00:00,KXLOWTSATX-26NOV28-B40.5,KXLOWTSATX-26NOV28,"San Antonio, San Antonio International Airport",min,2026-11-28,40° to 41°,NO,0.56,0.2477,0.1723,,
+2026-11-28T00:19+00:00,KXHIGHAUS-26NOV28-B73.5,KXHIGHAUS-26NOV28,Austin-Bergstrom International Airport,max,2026-11-28,73° to 74°,NO,0.54,0.2300,0.2100,,
+2026-11-28T00:19+00:00,KXHIGHTSFO-26NOV28-B66.5,KXHIGHTSFO-26NOV28,"San Francisco, San Francisco International Airport",max,2026-11-28,66° to 67°,YES,0.09,0.2780,0.1780,,
+2026-11-28T00:19+00:00,KXHIGHTLV-26NOV28-B67.5,KXHIGHTLV-26NOV28,Harry Reid International Airport,max,2026-11-28,67° to 68°,NO,0.53,0.2732,0.1768,,
