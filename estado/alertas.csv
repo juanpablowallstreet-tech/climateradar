@@ -2356,3 +2356,5 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-28T10:30+00:00,KXLOWTDAL-26NOV28-B43.5,KXLOWTDAL-26NOV28,Dallas/Fort Worth International Airport,min,2026-11-28,43° to 44°,NO,0.71,0.0657,0.2043,,
 2026-11-28T10:30+00:00,KXHIGHTPHX-26NOV28-B77.5,KXHIGHTPHX-26NOV28,"Phoenix, Phoenix Sky Harbor International Airport",max,2026-11-28,77° to 78°,YES,0.10,0.3049,0.1949,,
 2026-11-28T10:30+00:00,KXHIGHTSFO-26NOV28-B64.5,KXHIGHTSFO-26NOV28,"San Francisco, San Francisco International Airport",max,2026-11-28,64° to 65°,NO,0.60,0.1861,0.1939,,
+2026-11-28T11:28+00:00,KXHIGHTOKC-26NOV28-B61.5,KXHIGHTOKC-26NOV28,"Oklahoma City, Will Rogers World Airport",max,2026-11-28,61° to 62°,YES,0.08,0.2784,0.1884,,
+2026-11-28T11:28+00:00,KXHIGHTHOU-26NOV28-B73.5,KXHIGHTHOU-26NOV28,"Houston, Houston Hobby Airport",max,2026-11-28,73° to 74°,NO,0.79,0.0188,0.1712,,
