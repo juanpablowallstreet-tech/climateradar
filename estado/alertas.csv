@@ -2349,3 +2349,7 @@ fecha_alerta,ticker,evento,ciudad,tipo,fecha_evento,rango,lado,precio,modelo,edg
 2026-11-28T08:43+00:00,KXLOWTNOLA-26NOV28-B39.5,KXLOWTNOLA-26NOV28,"New Orleans, New Orleans International Airport",min,2026-11-28,39° to 40°,NO,0.73,0.0302,0.2198,,
 2026-11-28T08:43+00:00,KXHIGHNY-26NOV28-T52,KXHIGHNY-26NOV28,"New York City, Central Park",max,2026-11-28,51° or below,NO,0.21,0.5545,0.2155,,
 2026-11-28T08:43+00:00,KXLOWTDEN-26NOV28-B24.5,KXLOWTDEN-26NOV28,"Denver, Denver International Airport",min,2026-11-28,24° to 25°,NO,0.75,0.0223,0.2077,,
+2026-11-28T09:37+00:00,KXHIGHTSFO-26NOV28-B68.5,KXHIGHTSFO-26NOV28,"San Francisco, San Francisco International Airport",max,2026-11-28,68° to 69°,YES,0.06,0.2910,0.2210,,
+2026-11-28T09:37+00:00,KXLOWTSFO-26NOV28-B52.5,KXLOWTSFO-26NOV28,"San Francisco, San Francisco International Airport",min,2026-11-28,52° to 53°,NO,0.52,0.2416,0.2184,,
+2026-11-28T09:37+00:00,KXLOWTNYC-26NOV28-B40.5,KXLOWTNYC-26NOV28,"New York City, Central Park",min,2026-11-28,40° to 41°,NO,0.57,0.2047,0.2053,,
+2026-11-28T09:37+00:00,KXHIGHTATL-26NOV28-T63,KXHIGHTATL-26NOV28,"Atlanta, Hartsfield - Jackson Atlanta International Airport",max,2026-11-28,64° or above,YES,0.12,0.3167,0.1867,,
